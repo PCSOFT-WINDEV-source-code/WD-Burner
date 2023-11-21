@@ -1,0 +1,88 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Bubble
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Bubble
+ identifier : 0x219cbebe0f7c2729
+ internal_properties : CAAAAAgAAAARa8g7u4Gw55rsFhFibKrT24ai5YbdtZ/NqMqSVozr4xn3BuepU9vcBoDWSK01aVgNg8QXOFa6df2CXPcAK+THEqhneV8m/1QYFMcIJ4I3N0SKEgBDOo4//O8RG1NluyCDsXML0YEHDmHO9waFc+a3wzAjC1yG10iFTdzJ+NBwBs2pndKcJYcBrVmRC44zFB3QuHjUDuWgL1RfEWU9avRVsrspPzwOdOHV1VN802yvLhQuW0v4hNjRECJPsJO+K/Fgt4EGBA21V8toKVRl3n1Pyj2Ml6LcoasxaeM7UWoPL71QZZKIA+zSnykRru7iUFJhMKLhQg3PLL/Hvu3mTj+qt+Rb1jpMOVbJiaKxYBDJgQU5Bp5VS6P96yvA6OSO1a+wQUNkdI3amiPfca5VXx0xAxafP0l/iJCF0E+iemMbN4on1gMXu0TqVhvcu9CqcMu7V7m49LRsOmyN2EvDo8q+2/ZGrhlnfAZeFuVMijL8s7+tQVChvF4CQZ7bWs947sB0zf4Oxw/IT1S9AjMaM0UXx9HapQ0rV13EmRLlaoH99e+2qSJtHKIW4wTqv2WQuOcAaw5fi9qKyAIXyyb5geEHOy5iWAWPUiaLZ7mocpBFQniJvXTNMYb7Ax/c4ZR/ZZXpLi5iVh5TSfWIIyZOWRO3QKqNky7sw84dNO22
+ properties :
+  width : 80
+  height : 32
+ controls :
+  -
+    name : Option
+    identifier : 0x219cbebe0f7d2729
+    internal_properties : CAAAAAgAAAC6TOxx86+ldD17533Ki9ypqB38zSa1Z/0SGXWf9yiGMxrHfcs5oiQTbBkgy8pIdtLMuBiEcfbRPCqwPwvCuJRSbZ49kjioa1REqefan6mKtXX2UyePgzg+1mXaeJWz1JPnjTmi7MwHgqBFuPjAILQaW/n6EGDF8e0SNuQr0nqFprbRg9JzLm8ST3XN+7hYjvxuUa9RtNOi4eQkhCP4W0R2unAzcbwct3px9OHGtp07+Mrg38xLmsxI+3o0GKbCbCaJ+ZCVjvTIbddMrfD9Z5A/2nBOACoW53s6IbgKfUFkMG/T369ox1XgcyKRursx+H8a3umN+mnwX91+d7JDakRAlB4gcH9KK+rGomncY3gD1tRjjLUuhgE=
+    properties :
+     width : 80
+     height : 23
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+ menu :
+  name : _Menu
+  identifier : 0x275d713709ce2ae4
+  internal_properties : CAAAAAgAAAAoagsXE0xucBO2e0ia94vQrRWSYO17FDggaUaeRKNmgp14OlvHidYQADmCe7JzSJ/iKr5/Bl/WV71r91Q/sDYDdLqwsTKTRz9u6D0iJop7i+W+LJQFAWVumkmWJDkEpFSI/3Isl72sizXgIGa6ceDcVwxLKYotV/mMqpwrFnyD72otbjY33rrJB0BU1QDpjXP/hy2K72XPUh586oOx/dcjilW8iumXoyb12Pn4c9m1zBiqwt5h1BaxnU3jtI9jdwvFT4lDQEH//KnAMHelnxzoooufws/wvKpA
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAACbA2syhWZGN0Nq9sRiI4fyJLb8yFWCMQAqWRtZGzmghkSTu1xI02PkOoUWd+wAPTTNwqFB1xGHoLvc/lYz95zpIpX2qEWCTMazbjlUx+DTm6//SniNKme++meZzweu
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+      Procedure WIN_Bubble(x, y, width, caption)
+      
+      MySelf..X = x
+      MySelf..Y = y
+      MySelf..Width = width
+      Option..Width = TextWidth(Option,ExtractString(caption,1,CR),tSingleLine) + 10
+      Option..Caption = ExtractString(caption,1,CR)
+      
+      MySelf..Width = Option..Width 
+      MySelf..X = x - (Option..Width  / 2 - width / 2)
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : fnBulle
+resources :
+ string_res :
+  identifier : 0x141fbe160105105f
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

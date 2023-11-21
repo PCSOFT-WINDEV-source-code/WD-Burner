@@ -1,0 +1,258 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Procedures of burn operation
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x119cbec503a741bb
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAAAw0ffv+NfLsYNZYmN7UuPFjekwIIIlCbmbELL4s4fmcZUjzBQcVm/LDRCeCak/4uajX8JGTMELMVsbieBE1PhNKJ/Qcp7dDhEexBm6oWTiSZw1AAqFIgPPLge1ZDSZH8mGMYN9fR6V8eqhAeojhA==
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : BurnThe_files
+     internal_properties : CAAAAAgAAAC3U0/FrLzyEev134nnCEBWq+hdEF1vimlcoPvL1SBpc4mU9HRPJ4PIVRmknUhQT0xI6rUIiGjRSuIZQzvf7blVHASPe/7bEeLxIAtmKljfRQ3I8qBi8rY+23IG2ph7yc5xZ8dIKNsKQAUq5Uktw3+OMDsb+UV61G5gq+0aRPwFbPrZYa++7nPmgREBiI9VWFF7RAWvlKJ5nfiRxvaScb2an0CxPDroPqQWX3H6n1HhM9riUNjADm+DQkHza7O1GXuUUJ6RRgs8FXq4tA==
+     procedure_id : 1269098948390830523
+     type_code : 15
+     code : |1+
+      // Summary: This procedure checks the status of the burner and the status of the disk. Different checks are performed
+      // 		- Availability of the burner
+      //		- presence of a disk
+      //		- sufficient available space on the disk
+      //		- adds the files to the list of files to burn
+      // Syntax:
+      //[ <Result> = ] BurnThe_files (<sPListOfFiles> is string, <TypeOfCDDVD> is int [, <pCDDVDName> is string])
+      //
+      // Parameters:
+      //	sPListOfFiles (string): String containing the list of files to burn: <Path File1>;<Path on CD/DVD>CR<Path File1>;<Path on CD/DVD>RC
+      //	TypeOfCDDVD (integer): Data CD: DataCompile or Audio CD: AudioCompile
+      //	pCDDVDName (string - default value="Compilation1"): Enter the name of the CD/DVD
+      // Return value:
+      // 	boolean:  <specify the possible values as well as their interpretation>
+      //
+      // Example:
+      //  This global procedure is used with the windows
+      // 		- WIN_Burn
+      //		- WIN_Erase.
+      // 	
+      //
+      Procedure BurnThe_files(sPListOfFiles is string,TypeOfCDDVD is int, pCDDVDName is string = “Compile1”)
+      
+      // Calculate the space that will be taken by the files
+      
+      //extract the files from the string
+      sfil 			is string
+      sFilPath   	is string
+      rSizeFiles is numeric // Size in bytes
+      
+      
+      //BurnerStatus: Status of the burner
+      IF BurnerStatus()<>burnerInactive THEN
+      	Error(“The burner is not available.”)
+      	RESULT False
+      END
+      
+      // Calculate the size of the files to burn
+      FOR EACH string sfil of sPListOfFiles SEPAREE by CR
+      	IF sfil <> “” THEN
+      		sFilPath 		= ExtractString(sfil,1,“;”)
+      		// Total size to burn
+      		rSizeFiles += fSize(sFilPath)
+      	END
+      END
+      
+      //CD/DVD ready in the drive?
+      nCDDVDFormat is int
+      rAvailSize is numeric
+      LOOP
+      	nCDDVDFormat=BurnerMediaInfo(mediaFormat)
+      	IF (nCDDVDFormat=0 _OR_ BinaryAND(nCDDVDFormat,mediaFormat_Unusable)) THEN
+      		//Pb with CD/DVD, eject
+      		BurnerEject()		
+      		//1: Retry (change or clean the CD/DVD)
+      		//2: Cancel the burn process
+      		//1: Retry (change or clean the CD/DVD)
+      		//2: Cancel the burn process
+      		IF Dialog(<§?141FCCF701722E6C§>)=2 THEN
+      			RESULT False		
+      		END
+      	ELSE
+      		//CD/DVD OK
+      		//enough space?
+      		
+      		//Size in blocks, 1 1 block = 2048 bytes so, to get the free size in MB, it must be divided by 2048/1024/1024, so divided by 512
+      		rAvailSize=BurnerMediaInfo(mediaFreeSize)*2048 //512
+      		IF rAvailSize<rSizeFiles THEN
+      			//no enough space on the CD/DVD
+      			//RW CD/DVD/BD?
+      			IF BinaryAND(nCDDVDFormat,mediaFormat_RW) _OR_ BinaryAND(nCDDVDFormat,mediaFormat_DVDminusRW) _OR_ BinaryAND(nCDDVDFormat,mediaFormat_DVDplusRW) _OR_ BinaryAND(nCDDVDFormat,mediaFormat_DVDplusRW_DL) _OR_ BinaryAND(nCDDVDFormat,mediaFormat_BD_RE) THEN
+      				//RW CC/DVD				
+      				//1: Erase the RW CD/DVD before the burn process
+      				//2: Retry (Change the CD/DVD in this case)
+      				//3: Cancel the burn process				
+      				SWITCH Dialog(<§?141FCD5C01AAB9EE§>, NumToString(rSizeFiles, “,2fS”) ,NumToString(rAvailSize , “,2fS”))
+      				//1: Erase the RW CD/DVD
+      				//2: Retry (change the CD/DVD)
+      				//3: Cancel the burn process
+      					CASE 1 // Erase the RW CD/DVD before the burn process
+      						//fast erase of the CD/DVD RW, without eject
+      						//locking burn window because BurnerErase is not locking
+      						IF NOT Open(WIN_Clear) THEN 
+      							BurnerCancel()
+      							RESULT False
+      						END
+      //						//It would also be possible to start BurnerErase here 
+      //						//In this case, the following code must be used 
+      //						//	IF not BurnerErase(False) THEN //Fast erase
+      //						//		gsErrorMessage="Failure erasing the RW CD/DVD RW"+CR+ErrorInfo()
+      //						//		//Cancel the current burn process (erase) 
+      //						//		BurnerCancel()
+      //						//		Result False
+      //						//	END
+      //						//And the following code for waiting for the end of burn process:
+      //						While BurnerStatus()<>BurnerInactive						
+      //							Multitask(-30) //negative to allow the cancelation (via Esc)
+      //							if KeyPressed(kpEscape) _and_ YesNo("Cancel the current erase process of RW CD/DVD?") THEN
+      //								//Cancel the current burn process (erase) 
+      //								BurnerCancel()
+      //								Result False
+      //							END
+      //						END	
+      						
+      					CASE 2 // Retry (Change the CD/DVD in this case)
+      						//loop
+      						
+      					CASE 3 // Canceling the burn process	
+      						BurnerCancel()					
+      						RESULT False
+      				END
+      				
+      			ELSE
+      				//Insufficient size, it is not a RW CD/DVD
+      				//Eject the CD/DVD
+      				BurnerEject()
+      				//1: Retry (Insert another CD/DVD into the drive)
+      				//2: Cancel the burn process
+      				SWITCH Dialog(<§?141FCE07021656F0§>,NumToString(rSizeFiles, “,2fS”),NumToString(rAvailSize , “,2fS”) )
+      					
+      					CASE 1 // Retry (Insert another CD into the drive)
+      						
+      						
+      					CASE 2 // Canceling the burn process
+      						BurnerCancel()
+      						RESULT False
+      				END
+      			END
+      		ELSE
+      			//not enough space on the CD/DVD
+      			BREAK
+      		END		
+      	END
+      END
+      
+      // Name of the CD/DVD
+      ResName is int = BurnerVolumeName(pCDDVDName)
+      // Has an error occurred?
+      IF NOT ResName THEN
+      	// Display the error
+      	Error(ErrorInfo(errMessage))
+      END
+      	
+      
+      // Open the window for burning
+      sRes is string = Open(WIN_Burn,sPListOfFiles,TypeOfCDDVD)
+      IF sRes <> “1”  THEN
+      	Error(“An error occurred during the burn process”,sRes)
+      	RESULT False
+      ELSE
+      	RESULT True
+      END
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x141d7d66001ba40b
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+ dialogs :
+  -
+    identifier : 0x141fccf701722e6c
+    internal_properties : CAAAAAgAAAB8xOgie8OjVtTQpthofhY4GYd/dZBrTftFG469e3erZ1Hl
+    label :
+     fr-FR : "Il n'y a pas de CD/DVD dans le lecteur ou il n'est pas inscriptible. \r\nQue désirez-vous faire ?"
+     en-GB : "No CD/DVD is inserted into the drive or the CD/DVD cannot be burned. \r\nWhat do you want to do?"
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : Re-essayer (changez ou nettoyez le CD)
+        en-GB : Retry (change or clean the CD)
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : Annuler la gravure
+        en-GB : Cancel the burn operation
+       image : {}
+       value : 2
+  -
+    identifier : 0x141fcd5c01aab9ee
+    internal_properties : CAAAAAgAAAA8BKjiu4PjlhQgxrgo3rZ4WddvBQA7fcsFW079uzdrpxEl
+    label :
+     fr-FR : "Le CD/DVD qui se trouve dans le lecteur n'a pas assez de place pour graver votre sélection.\r\nPlace nécessaire : %1 Mo\r\nPlace libre sur le CD : %2 Mo\r\n\r\nQue désirez-vous faire ?"
+     en-GB : "Insufficient space to burn your selection on the CD/DVD that is inserted into the drive.\r\nRequired space: %1 MB\r\nFree space on CD: %2 MB\r\n\r\nWhat do you want to do?"
+    image : {}
+    cancel_button : 2
+    buttons :
+     -
+       label :
+        fr-FR : Effacer le CD-RW
+        en-GB : Erase the CD-RW
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : Re-essayer (changer le CD)
+        en-GB : Retry (change the CD)
+       image : {}
+       value : 2
+     -
+       label :
+        fr-FR : Annuler la gravure
+        en-GB : Cancel the burn operation
+       image : {}
+       value : 3
+  -
+    identifier : 0x141fce07021656f0
+    internal_properties : CAAAAAgAAAB8xOgie8OjVtQABrio3ra42TePZaAbHStFG469e3erZ1Hl
+    label :
+     fr-FR : "Le CD/DVD qui se trouve dans le lecteur n'a pas assez de place pour graver votre sélection.\r\nPlace nécessaire : %1\r\nPlace libre sur le CD : %2\r\n\r\nQue désirez-vous faire ?"
+     en-GB : "Insufficient space to burn your selection on the CD/DVD that is inserted into the drive.\r\nRequired space: %1\r\nFree space on CD: %2\r\n\r\nWhat do you want to do?"
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : Re-essayer (Mettre un autre CD dans le lecteur)
+        en-GB : Retry (Insert another CD into the drive)
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : Annuler la gravure
+        en-GB : Cancel the burn operation
+       image : {}
+       value : 2
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

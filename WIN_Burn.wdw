@@ -1,0 +1,523 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Burn
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : Window for starting the burn process
+ subtype : 0
+window :
+ name : WIN_Burn
+ identifier : 0x219cbec2118b35c9
+ internal_properties : CAAAAAgAAABRC/7uyUlTte/Fq9PIYFN1Sm8aUKHaRPwjc3Po0e0n6RmniAuYzZtmUZ5SM3UN5FZ9J3ktqRhfoa+vI8UkPsrnmQ7SFlYsp1hb9bSkJZO5YGhZa3ekHLNYFn4SxfijSPmHDSZCTg8Oo1bcbzJoR+v6j/zs/dLeSiKlLUVlNJx1K2NRH3XB0eln215h1SA7clWR/9mXu/e89E0Oid6EfGLjMjdtTt54T8hJ02fOsAQdHPZ+dPwoRAznwIa3yQ+RJbb32oS+dxgZ7q8WdvjSFJqvBNJ9CdmvODAMXzMza4nq8CCAb1cel/35VptR9c7rz0Ll8Gawclf5vpgCsN3am+oFdGYPJwtFX5hinNSI8JmbEz2R3iFYPELqEulrDo8rfPLXmumhnmGYtRP2LAhUQSbo7E41UcY+X4how0R4Bu8T8mSQvywZJlh6apI6rSjduWFN0+Zcf+qJnDMq320N0DexgWpon4p7MyaL3zw+xcCaCKeTnCQpqQsZ0vBwVBtZHBU2HtlV0/oEopxiIlTPOLOn76/ar4wGIAETNxdfcGQ+ERgXMhNCoYq9msHHS4jPdD9DJzJjWCtrCtsUevZHXhc+d0loSpaFdGVuvQkBOHzwZGiUF7OdJKurhd1/0PGTOqIbB/BRNZ8n74aIjxW6N5j3aHcOA4I2Q+BCOFo5iKtjJ4B266MpWnuDPdML+zhw4NRSmpEQP1lJSH8O1ZTWyrxvcKcaODULSA==
+ properties :
+  width : 391
+  height : 436
+  widthClient : 389
+  heightClient : 404
+ controls :
+  -
+    name : BTN_Cancel
+    identifier : 0x219cbec2118d35c9
+    internal_properties : CAAAAAgAAAAl7+eTPrBcqkwE/x8ojTaLn/58FIxIp72m0fCWBM74FbSibBySlveSPTPNpmHsd9IBkfpBkOuZR8KLPuawjkRG6G0tEsw6YGv8v4PeDv6cW/olfWKlb1zdcvsaC5GmnN/uVaifGvToQjTAmasIQbtEqPvEbXo8BYgWMe8ZRxFUjCIAfeWuqbhZwTAHCq8m1ssFToQiZzDQBpaUBkPQfcXy0I3g4DVr28cpOjmjsXpx4d4FkBVnpXw/HwJcnnMFLtjdysAGYnai53AFWFFP67lCQgkBA28mJa5KPwnKoz4qFTK0ymN//3BMTAQI7+JYhRtCGJ7yu+lVnOnR6JY6sXHy35P/KpBub34kPggvqYRiVB4svK4vuH2xoYY3QopVRgrpEpcW7iTzJzbI/J1hqke7AWcV3XqbVABJ8ugdd8fxgqsf8BY/QxebzJjH3rwAQZh9Weqh6t49xm9W2VNRub+6XbOffmzjCrSzhjhIYdY09ctA0CTsSzfLWI49UAu8rhPzZCEZ4B3TM/UTShJBDfIP/maa3j9mjrSjO89utY4kz4VdDhXMmDYyxEJLbre2A3u8A35KBIndFZrw6EnknEpHJvjCJuBZ9WsiRIa5/Mw++g4ZODeyn1mZOHBGU4ZJ0ytrppoqYgN14rIuaM6KXTt52rcuxXwzqbiJSn0dMuvohKumPBQfXwygcp/9UgEX08q7hnRp4vwQvt7MTu+e2NAVexztWdveKxxw7qFit96hjU3KBg==
+    properties :
+     x : 204
+     y : 352
+     width : 48
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         IF YesNo(“Do you want to cancel the current burn process?”) THEN
+         	// call the method for canceling the burn process of IMAPI
+         	BurnerCancel()	
+         	MySelf..State=Grayed
+         	Close(“”,False)
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Burn
+    identifier : 0x219cbec2118e35c9
+    internal_properties : CAAAAAgAAADcI4MU6c00vYqJECtKU7eP/LQ/D8C7PHRD2UZdl4NAX917U05rZYHPbMldD58zZMGrqkR8IDuCc0uFm+eV0GTO6BZTi/NDDOS4hDSMKaKYMLXGN93beRhGApyh1zi4m0dNYW3y1GIMraRgPP8u/T7OPN/buE3WTTLXPhX0v7uCLJtyeyycyA3QadKpV47uENisCF8OZOBmQWvtgxVWpfeb/mXGoZfOsFESYgbf1GvbIP4P6Y91I/Wa6+dG/TRCMNytY+UoAfaabj6VL6jnvaavlegcWDAQjRdH1VWv9zBVaxVqa7t6Owk4A2IZNA9G8EIen00LdTZJxUbo5Xf067wilmg5LF82+q9GFT9FNBbAXqULGGhz4wnQ6OLY9d0tAHmoHYHpprWrWWFaiBXqdcBE8/uc+naDrP0tqTo4yg1Gv3P+ZZ1UGIy1YaOfTdYr4qpyFFcQIA038QUPLjJ0vnMcBCkJGSx3FJnIgEJnAbrxzwGQnOPTUz6k67mnq78iLwMLE02azA0j3ZJDTuW+x0rSC8phgfT1x1UCSx+S7Tc76d7jtLwkw1b3yOkosZzBtXVjgbLCHnsY8xPm5eJVtxV7UmxJhskWkhW0iFY037GDVzG/Pn5JL6KyzVHFChzVnBNCpiv6+SikCT8lMB6jDggWMdbMyeyTXZD0wu4Mw5vdIS9w3ZjhIGtiTdGg2B3bfNphg6pM0579oFlfl0YqizFck2NpVmGfCX5U
+    properties :
+     x : 138
+     y : 350
+     width : 48
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         nGbParameter1 is int
+         
+         //Starts the burn process
+         IF CBOX_Eject = 1 THEN
+         	nGbParameter1 = burnerAutoEject
+         ELSE
+         	nGbParameter1 = burnerNoEject
+         END
+         
+         IF NOT BurnerSave(nGbParameter1,BurnProgress) THEN
+         	Error(“Burn failure.”+CR+ErrorInfo())
+         	Close(“”,False)
+         END	
+         
+         MySelf..State = Grayed
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : CBOX_Eject
+    identifier : 0x219cbec2118f35c9
+    internal_properties : CAAAAAgAAAAUwLRVu0ihDIcBislvSRUPCjwr9LyHBHGzpTDTZ07GzrmrmJdwDNF9WPB7oBq3Hq6bTmEsXY+lL6ieD/V6z6ftzO7uwetd6tY00u3KBtvTFBTIbgl9utnFSww3n/zPwZQDXqA4muPqG1Lk5KBxmvMc5LA6JcFPyTfDQdwQAQR23WAPcBTjeGq/pjw/QKyffPAa4f28AGyvPOeDNpeqKUs0cND+LDLeaXi9SKDjjy6xNuttv4B8mUzdKYJhm+lOy5kYZyux4bd9EZoPTAVNpt9E7Y28XFVSjywc4DCZTMWeVv4cq5My4iIVIykoZQPbCI3SAiyVl1wQLBI90Z8HedkyPZ3AZUkuUGwJnHT9YVYah5sOmEz37bRhG0SuS1Sri9VoWpDVWH6LITC39kZBQMLJ0bWu1kxOso2EVfX2ulYYfoDNjVEZ+oEVles3XFpX1V1n6fiK1FopLE/lihH2hmq/YO/1Jkvpx8PV1Et35yu+ToaToRod49YMsosI+vB0NbDOaiuO8sopbfgABFdL52zc9/ck2qIaMIermQO2k1C0vvNerCpofzEBy0VGRSioZlrq4Q1LzDX/HFGak/Vf6toUCOAYeZMwCBA9L9oGtp1jDJQ1z02aEgLdd2k9m7Wbo2pwxOehMdlRnEamcCSPzbQ8JBV6AfL7lJSZaoaEA+6N2mZtswne7XfaXmSu1EbaUXsBBQ==
+    properties :
+     x : 100
+     y : 44
+     width : 250
+     height : 26
+    options :
+     -
+       internal_properties : CAAAAAgAAADs88WmHN7kErxQhojtRz8KwS2poTXXqkBTrDh/U35rDzN8ZqT5raXZvaimugihXObyy60ZUG8DtMxZiJWT/zzvt/Kqx3klwV0MiOJfv+zS7VXLFeepHqEf2wd17GPWA5wN9Dv2UuWsK6/a0trozh6lfZ8EcQKV0/dalKpCnGB6uto6LXx4JqXdJTAbTkQx/YlU1FknNI+Gp8wS0Dln5Q8=
+    type : 5
+    controls : []
+    code_elements :
+     type_code : 5
+     p_codes :
+      -
+        code : |1+
+         MySelf = 1
+        type : 14
+  -
+    name : PROGBAR_BLOCKS
+    identifier : 0x219cbec2119135c9
+    internal_properties : CAAAAAgAAAAheGqnFrlICr9zJKTh0boiI4rLBb18JHIEIBkHT0d2cnoh9I3PBekztVCkRB4Jnym9OhbjDOIoV93C1mY0lBecg92lVNhE1yBQi5OT9kQ/TiVSxO3wmWU7NFeGZAFo3o7REluLjFBbOjtO52WHjxdxh0WuLaMOYt8N2UNY2uHIRemvRMZHXLBF1h3dUhUqugEI6VQPdL3eep8dbJB4uG+LTjikKob4EIB+Sy8Ft0tECaVxTXXYnjaWRDVA3vC07RSpW7hu8QdrtczT10s/33vebDwMd2UnORID1ayVMNG2144pRlFv+1flRk25SzfkJWE769a+Neqh1+6juZCPpdV42Uc5hkDYeOtNufGapmPNpJDyeOFfQA5Mkba77P7WB3dhgeqi39aIBFpP43Pp7vmRquweju6GVekoK01p8ROCC5jyI/RhE0Xty7oGAaP8dQ19O/nFPdrd32EjlJrvjZ9aOXKWZpa+C3qchH6QxQtXOiO7R9PWK8R8vXmDbbob6Q7x0NW2tmyJN60DBuhEM2YsuS9nT7COXowa3eYT47iH6se3V6aNCBSGVl9/q2pnkg1laA4XThZHgnjZuLwSglZT8G06Wen+Sy7BVpimRIktNbGDXv42uL9D/J68iIpiilLC4URh0n+yUlatgmp6zQ7BHfAvJ9ree5PluMfpIBxLEUgNh43lzo5rBZWX5446wdX5bJr3/ubuVluJrTbMo/AE7EM8e6bemIrcwzJEPQMuLQ==
+    properties :
+     x : 33
+     y : 249
+     width : 324
+     height : 30
+    type : 10
+    code_elements :
+     type_code : 17
+     p_codes : []
+  -
+    name : PROGBAR_TRACKS
+    identifier : 0x219cbec2119235c9
+    internal_properties : CAAAAAgAAADoP5MYnyj5e+CMhQUAcF09VzUMjtDBh5/jX9zC2JTlAe0k3bxH0gCSgE8vs/eifISKFxmOf8evegztxUHpeWBzIEzAd3Np6uMnLmZWq+E4KYaj57i7SggOuDDtcgllF3lnFPcNDrYkposQrdj6NT1sAwPsO8ev8RuFzbNMDnU0ldUT6IqDAFzhplHlRrEGrhms3ZiD6MlSNgeJdMRcRNNDkjRQ/lIUbFwOz0+xO+/osRntWbGksmKaFFkgupTg6Ry9zyzKJRP/GYSPZ/ejw3fWWCA4UylDvVZTWdz5XF16f+p1EoWrPxthFtGpx5vw+aG/lyqyKe4Fy77H8azjibHQRfttqry8JNe9PWF2utex9JzOLFVzVGpoGwDxprBEXY1T47gckbDmPiSZ2VWLLMf3FFb0sLjIEyOq7XMDU/HoqXrMAZbjrdMX5Yzsa1XCK4u/lW9XHxSLadPVYvQ5c71Y25xMCAAQWcQuFoyyL4ntSC29bT14RdI2X9PJx9QxH5STcnsoINYHUe+FDJKu4RxSm5nVEcL4zBa0LzTNJUbNQPnhHSjfqjKAoCmVvcyl6Mtf4vQ5SDhdDKriYswSKkohfy6h9xYdEkd4gB4YNrnB2Y5PS8mECC3KF3n3Rc89oZvtJBfex1IPERHoHYff2FeUUi3AnrEbZoDy9WBgJz3s/LGGfNh4t3VU/lY8yTBgwx1j1grHXr4kEmFPGeKy7b65BWTd2kV/RzuNNKPLhMznZA==
+    properties :
+     x : 33
+     y : 285
+     width : 324
+     height : 30
+    type : 10
+    code_elements :
+     type_code : 17
+     p_codes : []
+  -
+    name : STC_Static1
+    identifier : 0x219cbec2119335c9
+    internal_properties : CAAAAAgAAABDH1zXPzH5eD03JGgylAVg820qgaExO323/VisDg5eD05bnLVd6PIEa8UxXdiFT7aohmZQRxW0H9cRDaCkLN5yDCbvbmfNDZkiuEtXNRC6vugBKwrn1x31IapwRVf39v5Uq1cwxOCYBBr61yFzxZ/8D0oyeL0obpwVx3hbRwpSdYyIXeMz5R9bsusqibFLwu/22IY7DDrSjIYB1OqOcx0Zrp+qiv1Eq6EKovOlk5sfnGeMgULBmJmkZ4vYDXuXo2YU9pHgKnql61z7Q5UL0sFhIUCIbVf8Gse7096+vKO8Kx5IH8uzhaTh+gjuqS4Zia3ceX92Lk5jJyFZasEANYSJ2RB8OyqTrF1/4qa0RkdmsiqFFizTW962TcoFocDSrnD9g7GrlwdQ
+    properties :
+     x : 94
+     y : 6
+     width : 263
+     height : 93
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : LIST_InfoBurnOp
+    identifier : 0x219cbec2119435c9
+    internal_properties : CAAAAAgAAAC0N5G6JaCuiX2d3vhSmHY7CFUH4QVK5SZyqTlWLVNUd3v+LYMMg6OKPyV+ABywU4c+ici8lPb8WmiMZVXHroLn1bLp5B4OK7zEa1sU/+GG/LZ5Z02I1nELa/rEZ1t9k1/ZwyuCdIuQcTrj3RLIErxfUqT4CjjHRAVYOe+ltXGlK6eKVH4qpQbB9At+q8oKSd8o8/F+mHK/+2CicexrGLgTrvpp3fOBa3ivLZ7cOyu/1c2xFG3I0k1Il9fsALC1KLsp2AY3Wg02ua2lDAYdQ5ZWKeqXAfQUSyYzvqu27cCIfRZ8gRGNyf8wygmP/wSbqj9E4xZcYGAJ79DbQPcgPfNiMGOUvRD3EEtXKCH0wpuI9zA3U0HoRvSVccOqCevjPRwGrmMC4ewYdwdXOCOn58e1RVi/YGHMd92+4BfsB0bqz1rxmBfkcH6hEefONAeZLx6TpddnEaZcUPPezrg7bY0S9T8JqlITcOkI7/NBSFAMe369Ih8/Y2BJTuwYtXq3K117BPAH9RqbvfJC7VZLZJ/LEZGAJW983mwx59rRnyEpMihKuavgPAOVGl4MnSjdhQ8twuJ4qi1hQSIA0iPStAc2qIRp5/XEd7g4tCwH9RDY4gpoDcBD+IdW+KHOLDQJoiP5cdEMYVk7eoNn6cy75H9GaNPwR9HLNO0vJ+M7fjPA2b9C4opG/6hJtQcQY3cxuw==
+    properties :
+     x : 33
+     y : 107
+     width : 324
+     height : 107
+    type : 7
+    code_elements :
+     type_code : 7
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        code : |1+
+         // display the additional information
+         IF ListSelect(LIST_InfoBurnOp) <> -1 THEN LIST_InfoBurnOp..ToolTip = LIST_InfoBurnOp[ListSelect(LIST_InfoBurnOp)]
+        type : 33
+  -
+    name : IMG_info
+    identifier : 0x219cbec2119535c9
+    internal_properties : CAAAAAgAAADcwDVjNJCHT7pHyb1gqSLlH3uD6Y2lhCFSVoa4HoCQJQ769WrGcW24PED14cUxHcgfuj+S4ji6XhxExlDyW9keZvb4yyhBbJfwt6X/Xhy5AapMP6xsw+Cqkbaoh22tyCClBWOxZTTsvIBHmYku/BvlBa0NsnTC9+TQQK+T21/P33Sn8D2ib8wyXpmkoANgwMxYu+PVQni+gxlfskrjxvzdWpU3p1dFolaXtfjgtXglMNmX3wkfzMB9chCVupMhdjFl21OChvQPYo2SNtQA1zTyAy7adU9gdeHiis0JteB8IiL3sE1FmdgZG/kr+5WwyKKFKL+FToC2LEBjqX7TCCE7zNm/d61z6I8KMix9gomyPf8O2RpD8Aa++mIpXaCtbBu4KtmpEiav41/RTsBzb2OZyjqas7RUU7wnVNSSy6nmP7JK1bFgOD5SrdDAZ0raWca8gQCctXTw2OraGjrJx9PMqy0/B+bUdWdWWSftXZItA49WKMtmUAtvX5D1UqbkVKvYIAwmytn8P3vsdeKxM4Nf+uvzsIb0sxpHog5HZcjT9oW+PdmjDSaSIp1H0cYvu0g=
+    properties :
+     x : 332
+     y : -61
+     width : 16
+     height : 16
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_error
+    identifier : 0x219cbec2119635c9
+    internal_properties : CAAAAAgAAADewjUVXpKV4Sgve0/qryyv+WGtS+gvHjBYokzGZE4jwISnAEb6SN17t825X7cVz/2quHkXrZfDMQJGHw0EglLS+U6mLLO3XW/MIyOfitHWV5RZPjiy1r3rXM6zRsIQJGsw8E7lPNrPU6ESoGx2sMYs5GZVx6kxVYKTkGT8IaTk/uo6pMR9xUERhAlwB6EJCJL/uBhF07XcIG9oYm0ASvG5zol0nEJeHdvI/44tiEqxkm4TvCRNxHx+rgtDyQ2VgUQ0CoZWl95KrNSXlHrVz3EF65OBVAAd8t+kGAf7ZSToTX04vCn+S5p5MlDhvZRjk1taIT9mAz42GzcFoMyZpjI2RIAlUadKmDuM9FxtaGtrR4KD4UKfpbscaIlGzMx/ip0NCk0kyyyY6bsRNZVwNyHG6UGdofhOEu/XKaklJjkgT4y8wp06HNoAGQr9goBu2SyA3OW/gBWeCrhgbgkVZ7uzs2en3rBVF8I6Z7bcrMDy2N/QHqIPseeystkkFzVI2wQ3ILEyoyEIDV1f8gSyqkJJIHtyxvr0SUimifcdMzpt5FMMgwu1CwqmCrVT7doxuUo=
+    properties :
+     x : 368
+     y : -63
+     width : 16
+     height : 16
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_Caution
+    identifier : 0x219cbec2119735c9
+    internal_properties : CAAAAAgAAAC+9CZQ7JCep0yx0qepfgLTspy3npIvJpbC+olonHFhT7y3XxC4JQ7Ku8SRMRiom1TxraYlSODzQYEPKR1t1179/GKYDGI2IS+ecA8TFQO3YjnMwOUik8gDHyHyXTZLzHyaF3AtJuzHI1B5tnCE/MaXZggsajMeHYfo08SO9AAP4eb2mz4GIQACsRtzzKdezK15ulac++beJoFvI4cETHtcxvTqtoCGkH+MfH0yLQV5TgPYC+mGCV0mWMcj4bnH+g3uC1cXPrHtqzZtK4VPAOJLlN71xHllXFGX2guiboJIumOm8RPx54GooU+pJJL5zNZuqB9+MxqPgpQaAsFetlHZY09qhcMykyxAnDv5gn/OCBIdIdxvvI5TlVMTHXYmLXOsZ+OSPi7+YfP6fTo8xVRsKu9gJNIvq0gqCh13s1jKf9yq5WB2zyo5/5+i+H3U9+oYale3KbXKwQqHkE+aDsVQ1NcYSX/l20gt/uxOPfe0aixuo/Ub8CKsSvgdEw2p7tTpEVqilV6GiUh0J1R1Zl03swEv5XkUDn8KWinwRnWvlioq4zAM3UpoM1HAbTTPmFNHEFQVEQ==
+    properties :
+     x : 297
+     y : -63
+     width : 16
+     height : 16
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_Image5
+    identifier : 0x219cbec2118c35c9
+    internal_properties : CAAAAAgAAAD97uw23UstZqux8cfqx/ZW28hrODJN2dDfTyp2f5yj/JgqHFxY7V5e8Y4mRjjmrrQxCgOySmvrSK6+R0LqxSunRrGQkbWesgM5gmr8rgUAR5fxrLdtEfC1RUnZkTEtcyf6OMG0UFiJ7qg/GOTGwk5DCQPB6nW+WNK2k0Q5oZzZv+5WchMt8LdwQZbz72l5TrE3tyO4nxYx8TeFibf58oXCgYPRJsWYx5kGpY08Ag6pnwUsXbSV2xo1YLM6TSQQ+NAVRUs0rqDx77KoP/c+P7S2HvhhY1u7389NNar7XijhfPEH19J28HDK/b3skBvKMeELEh2efF3PxjFYhULIaFwQcd/JZ7esYBVpJA1f4zLY4I3oUS7hIEZeQABsNMWe6AmKo2eKEQAOyinusokVH5B00NTJwj5rCepzAFfqoKKtCDxW3ok0r5az/mqP+9NQ5j8KlrTWwB/tld5O/l5WOv0I2x+N1WOoSv13ObSYG3P19JG1OKDV/wi/wavQYCWx41FErrQM9u7HX3I1RgUq0F0UjmDUvRk483e6jjEWM5YNPsfUOSe8L3T8/yfOH17uCA==
+    properties :
+     y : 334
+     width : 397
+     height : 72
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_Image1
+    identifier : 0x219cbec2119835c9
+    internal_properties : CAAAAAgAAABHJOmFApkkLa0VQxQ6LIAbDrdwO4CmDo6GBM3aMasvLU3Kc3muJvJqoeob4VpJKhLipnZxgz1gYXn2FN4bCi9WpKwbr71gt0vFHdPEO6xsCUGbeuiC4dMOmB/oLQMZXJQ1AeW0p7lm5VqQpTUpwvjTvQZgqusNAeZl5+KV3qhJPHYna96N9CSJnw0/5Fzu1c4Jrb9+QcXM9EhAmNmHy8gBGCSuh4Vd0pngqJ/ei8s5ARqxvDA3DcRoUOANoBEmszIMbbdiZfYKlyxc5iMD0QJ3z9RD9tXLc3Dbr3cF2xcRJ1TxFBGUmxHf2xi+e1EEN0oMKdrYkiY6gmko8rIUhrEWUKnVacvryRXl32PZK407DGzaRahkmdEce3svvuSmJGxvRI7mvqtFJgekm/yhtvgDIDUp8TCis4JBTblCZw2+iMOfFXV/F3Pn1+7NgT13W9wYW3VqlQfUIZqoZJhelgbHsULwK8MHlTd4GehGEgYUAmiJHWOnNrYmFooBMdPCZiMP9Lnr8JeX6OMjmgE7cZjf6ujRTfCohYtbE+vNyGxwxqcdSj0=
+    properties :
+     x : 6
+     y : 16
+     width : 80
+     height : 80
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : STC_Static2
+    identifier : 0x219cbec2119935c9
+    internal_properties : CAAAAAgAAABaxgWrkMExfEdKgFu3TQN9KBJsH75sf6jxKcYhRcW2GhQR7UF23i8nLATBpnJ0rEMJMqBYOLQ1i6kNSvwUTMiVFcfmlbJuBJuOQZoO2x+DrSIHE6ye6JkZH+pN/uSmu+Pst8L/K+/zA8qWMa9/J5ZdjCODQeVTKawwbmL+MeeZeiW924iM1QSIZ+x4idfWSpJhdDzW1kKzBMDGwmbxZUANtlpjHmnJQK/u7vYuVDa6Xt6cAe83vRn7dzqbLd59t54JsLhCq6Q4IbVhMz6tWhqAP/4MBQ0XksAlUz+AEUFS9xe7rPl/5E8RmG9WbKBCLg6yayHE1o6qSx7vGZNjTknDPbDf7XYbyjENlcpnApQyNTyae6D2pit7e6zhTQU6eCtRmmYf
+    properties :
+     y : 329
+     width : 395
+     height : 5
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : STC_FileInfo
+    identifier : 0x219cbec2119a35c9
+    internal_properties : CAAAAAgAAADftTPbckEebMhtw+/zzYYBNU4Ze6oy+5ijed+9rq1AA0eTcBdJtye9+4xQsJcKik//ypw3aVI8D4kT3/BXgjGYd25em5sF24oXAUFsz74//ItR+ZsRS9sYbP/T0IKmqXJvUKs8ZT6nEYps+q37x3dWppuNfyn+XSDV3BflO9dBk9flWVbjRbI9GxzJkATo9N7zag60nq78IS74Q2t6Ps5pqYFyTi8oUXLrjcXIIT4W3gB0PyyimbxmRfLGsmmN3f3sb7gz36Maz6PDWQP3mBbwwoioqQQlf1lJX5sG/6le9mh4ow9e/bgv0TrdcRY8Y0lmdZGDeCw4ce5HtvdocDbrTBf00jB/4P5GPDoxX7N3k14s3pk=
+    properties :
+     x : 33
+     y : 220
+     width : 319
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+ menu :
+  name : _Menu
+  identifier : 0x241e65cf038483ff
+  internal_properties : CAAAAAgAAAAuLe83LMQP2peI8RH325QNzSIkAwj42KGSq32wdjQFbLfAR+GnZgaQNHgPLUfl/4CHLYlo8VLKWHhtPLj/uIIfka5SZAsRgyyaUAXS7Q4LadqqCjdSL2WtF+BDx4fAMjRr+ubgzzZ4+6e8xJQdDdcd59gPy8G/8GLQQ69RC1Xdxjgz/lWb1m/p344meXzXkBvuV8QPLzLIe186PxhzHtaWthVYpjg+pFL4saf3gkgSlTk2BUFbiF1LLmlGRwLJweKrMUNGrdI9Up3NrJHCp6pz0ot9uX0=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABbQyvyRSYGdwMqtgQiY0eyZHY8CJWi5kLsKzVzk/rU5dzDR6gcm6dQgvUW42CwXUaTQBc3ba8dLrmqxPAR/fNQmAkCoF1GDAZzrvmUB6CT228/CjjN6if+OifZj8fu
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACdV0jCCxWvQmW2Y/xIc/ZPzcdW4F47T19dfIcK7PEpMXf6qHxtFsUtNnVTKujWuyRtmPh4Bn5ThxNCCbprxUEhaNwFcGx9JWf1v6uhyU97B+ZMlZT1MM/uZU1GsbJW5s0sdEg2cbUj6e7AYTo=
+     code : |1-
+      Procedure WIN_Burn(gsPListFile is string, gnPCompileType is int)
+      GLOBAL
+      	//gbSimulateBurnProcess	is boolean = False	// Variable used to find out whether it is a simulation or not
+      	gsErrorMessage		is string			// Error message 
+      	
+      
+      	
+   -
+     code : |1+
+      // modify the format according to the selected compilation
+      SWITCH gnPCompileType
+      	CASE CompileAudio
+      		BurnerMediaType(mediaType_CDDA_CDROM)
+      	CASE CompileData
+      		BurnerMediaType(mediaType_Data)
+      	OTHER CASE
+      		
+      END
+      // add the files to burn (this action locks the application while the files are added)
+      HourGlass(True)
+      // Add files to the burn process
+      AddFileToBurnProcess(gsPListFile)
+      HourGlass(False)
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     code : |1+
+      // Returns the error message if it's the case
+      IF gsErrorMessage <> “” THEN
+      	MySelf..ReturnedValue = gsErrorMessage
+      ELSE
+      	MySelf..ReturnedValue = True
+      END
+      
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : BurnProgress
+     internal_properties : CAAAAAgAAAC+Phtbb1WRt2DjUD5P9PO4jdDbBdtn0H8+znJm7SF80eBgSGQfqK7qWN5/NKChoYvicymYFwPTZn3gTPMCkrguD3MsKWLNu8Mci9v7fbsRHaRX/EdHCt9sPlNevJ9Y2rt5uMdthgnVDgCTobZ/ZWZTfsTKvx3SdQrD8N+ryFTcEcwGMIz9nu9KNJGzBbjYrSf7/pcuEekHPyaFqwNgT7dJT+iA0EBZ
+     procedure_id : 1269098935504418249
+     type_code : 14
+     code : |1+
+      // Syntax:
+      //[ <Result> = ] BurnProgress (<nIDNotification> is int, <sMessage> is string, <nCustomParam> is int, <nParam1> is int, <nParam2> is int)
+      //
+      // Parameters:
+      //	nNotificationID (integer): Identifier of the burn notification
+      //	sMessage (string): Additional text message for the notification
+      //	nCustomParam (integer): Integer passed in parameter to BurnerSave (if an integer was specified)
+      //	nParam1 (integer): Integer, depends on the notification (and therefore on nIDNotification)
+      //	nParam2 (integer): Integer, depends on the notification (and therefore on nIDNotification)
+      
+      Procedure BurnProgress(nNotificationID is int, sMessage is string, nCustomParam is int, nParam1 is int, nParam2 is int)
+      
+      // This CallBack if generic and it can be passed in parameter to BurnerSave and BurnerErase (Reminder: you can also use different callbacks for each function)
+      // sMessage, nParam1 and nParam2 are not used for all the events. If a parameter is not used, it is initialized to "" or to 0.
+      
+      SWITCH  nNotificationID
+      	CASE burnerNotificationCancel:
+      		ListAdd(LIST_InfoBurnOp,gImage(IMG_error)+“ Canceling the burn process”)
+      		ListSelectPlus(LIST_InfoBurnOp,ListCount(LIST_InfoBurnOp))
+      		gsErrorMessage = “Canceling the burn process”
+      		WIN_Burn..ReturnedValue = False//canceling the burn process		
+      		RESULT True //canceling the burn process
+      		
+      	CASE burnerNotificationError:
+      		// nParam1: contain the user error code
+      		ListAdd(LIST_InfoBurnOp,gImage(IMG_error)+“ An error occurred during the burn process.”+nCustomParam+gLink(sMessage))
+      		ListSelectPlus(LIST_InfoBurnOp,ListCount(LIST_InfoBurnOp))
+      		gsErrorMessage = “An error occurred during the burn process.”+nCustomParam+CR+sMessage
+      		WIN_Burn..ReturnedValue=False	
+      		RESULT False	
+      			
+      	CASE burnerNotificationCloseCD:
+      		// nParam1: Estimated duration in seconds		
+      		ListAdd(LIST_InfoBurnOp,gImage(IMG_info)+“ Closing the disk. Estimated time = ” + nParam1 + “ seconds. ”)
+      		ListSelectPlus(LIST_InfoBurnOp,ListCount(LIST_InfoBurnOp))
+      		RESULT True
+      	
+      	CASE burnerNotificationEndErasing:
+      		// nParam1: Status of the burner. 0 if no error.
+      		IF nParam1=0 THEN
+      			WIN_Burn..ReturnedValue=True
+      			Close(WIN_Burn)
+      			RESULT True				
+      		ELSE
+      			gsErrorMessage=StringBuild(“The erase process did not end properly (%1): %2”,nParam1,sMessage)
+      			ListAdd(LIST_InfoBurnOp,gImage(IMG_error)+StringBuild(“ The erase process did not end properly (%1): %2”,nParam1,sMessage))
+      			ListSelectPlus(LIST_InfoBurnOp,ListCount(LIST_InfoBurnOp))
+      			WIN_Burn..ReturnedValue=False
+      			Close(WIN_Burn)
+      			RESULT False
+      		END
+      	
+      	CASE burnerNotificationEndBurning:
+      		// nParam1: Status of the burner. 0 if no error.
+      		IF nParam1=0 THEN	
+      			ListAdd(LIST_InfoBurnOp,gImage(IMG_info)+“ Notification of end of burn process”)	
+      			ListSelectPlus(LIST_InfoBurnOp,ListCount(LIST_InfoBurnOp))	
+      			WIN_Burn..ReturnedValue=True
+      			BTN_Burn..State =Active
+      			// Initialize the progress bars
+      			WIN_Burn.PROGBAR_BLOCKS			= nParam1
+      			WIN_Burn.PROGBAR_BLOCKS..Caption 	= “Block #: ”+nParam1+“ /”+nParam2
+      			WIN_Burn.PROGBAR_TRACKS			= nParam1
+      			WIN_Burn.PROGBAR_TRACKS..Caption = “Track #: ”+nParam1+“ /”+nParam2
+      			Close(WIN_Burn)
+      			RESULT True
+      		ELSE
+      			ListAdd(LIST_InfoBurnOp,gImage(IMG_error)+StringBuild(“ The burn process did not end properly (%1): %2”,nParam1,sMessage))
+      			ListSelectPlus(LIST_InfoBurnOp,ListCount(LIST_InfoBurnOp))
+      			WIN_Burn..ReturnedValue=False
+      			RESULT False
+      		END
+      		
+      	CASE burnerNotificationBurnBlock:
+      		// nParam1: Current block
+      		// nParam2: Total number of blocks
+      		IF WIN_Burn.PROGBAR_BLOCKS..MaxValue<>nParam2 THEN WIN_Burn.PROGBAR_BLOCKS..MaxValue=nParam2
+      		// Fill the progress bar and display the current block
+      		WIN_Burn.PROGBAR_BLOCKS			= nParam1
+      		WIN_Burn.PROGBAR_BLOCKS..Caption 	= “Block #: ”+nParam1+“ /”+nParam2
+      		IF NOT WIN_Burn.PROGBAR_BLOCKS..Visible=True THEN WIN_Burn.PROGBAR_BLOCKS..Visible=True
+      		RESULT True
+      		
+      	CASE burnerNotificationBurnTrack: // when burning an audio CD
+      		// nParam1: Current track
+      		// nParam2: Total number of tracks
+      		IF WIN_Burn.PROGBAR_TRACKS..MaxValue<>nParam2 THEN WIN_Burn.PROGBAR_TRACKS..MaxValue=nParam2
+      		// Fill the progress bar and display the current track
+      		WIN_Burn.PROGBAR_TRACKS			= nParam1
+      		WIN_Burn.PROGBAR_TRACKS..Caption = “Track #: ”+nParam1+“ /”+nParam2
+      		IF NOT WIN_Burn.PROGBAR_TRACKS..Visible=True THEN WIN_Burn.PROGBAR_TRACKS..Visible=True
+      		RESULT True
+      		
+      	CASE burnerNotificationPrepareBurning:
+      		// nParam1: Estimated duration in seconds	
+      		ListAdd(LIST_InfoBurnOp,gImage(IMG_info)+“ Preparing to burn. Estimated time = ” + nParam1 + “ seconds.”)
+      		ListSelectPlus(LIST_InfoBurnOp,ListCount(LIST_InfoBurnOp))
+      		RESULT True
+      		
+      	OTHER CASE:
+      		//just in case...
+      		ListAdd(LIST_InfoBurnOp,gImage(IMG_Caution)+“ Unknown status = ” + nNotificationID + “  (” + nParam1 +“ / ” + nParam2 + “)”+CR+ sMessage)	
+      		RESULT False
+      END
+     type : 458752
+   -
+     name : AddFileToBurnProcess
+     procedure_id : 1269098935504483785
+     type_code : 14
+     code : |1+
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      //AddFileToBurnProcess (<sPListOfFiles>)
+      //
+      // Parameters:
+      //	sPListOfFiles: list of files to add. The expected format is: <NameANdPathOfFile1>;<PathOnCD>CR<NameANdPathOfFile2>;<PathOnCD>
+      // Return value:
+      // 	None
+      //
+      Procedure AddFileToBurnProcess(sPListOfFiles)
+      
+      sfil 			is string			// Loop Variable
+      sFilPath 		is string			// Name and path of the file
+      sPathOnCDDVD is string			// Name and access path on the CD/DVD
+      nSnbFile 		is int			// Count the number of added files
+      
+      // Makes the information text visible
+      STC_FileInfo..Visible = True
+      // Display the information
+      ListAdd(LIST_InfoBurnOp,gImage(IMG_info)+“ ”+TimeToString(TimeSys(),“HH:MM:SS”)+“ Preparing the files to burn”)
+      // Give the control back to the system
+      Multitask(-1)
+      // gray the burn button as long as all the files have not been added
+      BTN_Burn..State = Grayed
+      FOR EACH string sfil of sPListOfFiles SEPAREE by CR
+      	// Path of the file to burn
+      	sFilPath 		= ExtractString(sfil,1,“;”)
+      	// Path on the CD/DVD
+      	sPathOnCDDVD 	= ExtractString(sfil,2,“;”)
+      	// Add to the list of files to burn
+      	IF NOT BurnerAddFile(sFilPath,sPathOnCDDVD) THEN
+      		Multitask()
+      		IF NoSpace(sFilPath) <>“” THEN
+      			ListAdd(LIST_InfoBurnOp,gImage(IMG_error)+“ ”+TimeToString(TimeSys(),“HH:MM:SS”)+“ The file ”+sFilPath+“ was not added”+gLink(ErrorInfo(errMessage)))
+      			ListSelectPlus(LIST_InfoBurnOp,ListCount(LIST_InfoBurnOp))
+      		END
+      	ELSE
+      		// count the added files
+      		nSnbFile ++
+      		STC_FileInfo = “Add the file: ”+fExtractPath(sFilPath,fFileName+fExtension)
+      	END
+      END
+      // Display the information
+      ListAdd(LIST_InfoBurnOp,gImage(IMG_info)+“ ”+TimeToString(TimeSys(),“HH:MM:SS”)+“ End of preparation”)
+      ListAdd(LIST_InfoBurnOp,gImage(IMG_info)+“ ”+TimeToString(TimeSys(),“HH:MM:SS”)+“ ”+nSnbFile+“ files have been added”)
+      ListSelectPlus(LIST_InfoBurnOp,ListCount(LIST_InfoBurnOp))
+      // Makes the information text invisible
+      STC_FileInfo..Visible = False
+      // Makes the burn button accessible
+      BTN_Burn..State = Active
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x141e65bb00513582
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

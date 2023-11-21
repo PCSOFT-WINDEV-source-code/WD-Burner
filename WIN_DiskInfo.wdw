@@ -1,0 +1,618 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_DiskInfo
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : Disk Information
+ subtype : 0
+window :
+ name : WIN_DiskInfo
+ identifier : 0x219cbec010fb307c
+ internal_properties : CAAAAAgAAAAlZ/UByPRxV/fbVrt6IDaH+/6uLgdFb5rDyVfCeuxhHEqUOgrL4+2QzjhhGPJkT36sLkPsRsruDy2idol7qY2iZvTWYUJ8CuZwr/yheYahEzdHCIJvv+WgZH9odHMbvxYb8T1QC95RspYwJfpjkU1P2ix4+HzbECrdD59hH4U0EuRAJ23wS0PtjM5Up3NX24sdw/nDrFik96YJBsuY76WfB6zGjnKI4S0qaLogfj24NOGIB9LkPnKyrrKK2iI392b+iKZFgUAOP1W1OPAEuFWMG+U9C5hg3z9oBVVYVSSvI4N9iTZTvPfLF7tIQO+AES040iBONg0hZYmFVS1n49HkWME28bTBIx8sYqjLXXYIktA3XZ6EEirGItT2Qe43sHxC/Vzh2Yj4B0M/hjFbWe4AIOFPEi17uhFhuM3Ei1IfY1sZDNx+A7AZDSLZX3vd7fMsdkwl45Uec2mxqkPrS3uzZH+1vIPkdAJ4w/236KICp+Hq1eKHzHfDb6zPUMMWRx34s5rWV8JorB6z6B/jM6zJTd2kO5kgxhbpvGu/zH1dHuzF9ntX4qYnt+JozyLy9M+YqVOc10WukLvi+ObifrlJ2zx01MMcoSmioZv5CkcgbJTa01UyHtvuiKHCpZCs1FjmXG1t0/HKRtCFSPEuBxf1etCzRPJAEbPKESr20E2zesAe4IU39XvO6FSmSy98UnvTZmyMmVMO7A4dBtIamXt80h8iqoyPFzcSRAYujnUFMxEX52YIw+aJ0BGC01c2TsRXjaUCsSSUQalgmcI=
+ properties :
+  width : 562
+  height : 368
+  widthClient : 560
+  heightClient : 336
+ controls :
+  -
+    name : IMG_Image1
+    identifier : 0x219cbec010fd307c
+    internal_properties : CAAAAAgAAABEJtUDwmhSKVAOVwcETkT65zOQkmH7TAULR1MmulvsS2UZsxn4EPWJZfsIiiD3T5387nYitzB3pdRrZThGmICQl4p/xSsJTDY62w74KaPxZlUu2H9D3bP94aU/IrsqO9Zg8bWCyq9rx8RkcsVPceuPFUlMKLmne2avE6h7xMrNNjKsGfCxTs5Kv3hVFABOUxp3/O752dLkK0ApJ8nWiQMVGCv/u5e6JjXJx/lIv12a2gZoZeq+dXDP0Gi7SjdR1Bj3mjFLomzbrPJOy0GoeH/hPxCI7Cu5tWYJXdHGOYFf6oc9K0C3/0URhOvjGh1aEa3zECh0vtYbDd1vwSIBw6+FKJktd86DzulVKFKw/NvukGf5OSqnZiZoiHFk24VXjIvl7HXSS4aQM/7P7+Iu3b/CPDpen855rTRUbceIP4DtIopavi7nJFDx0VWbIsElPosCqT4Njoa1rFGIjJsBTuCNW0XqCWCPmyjcCPphLnBRz/meMLkqu7eUky3lnfq42g19XjRSYt8OFasdCIX7AOnniQgsIhJJnXV3wr74dUmAY63CaASjtD5sMrCZpUwHlubmS8c=
+    properties :
+     x : 11
+     y : 8
+     width : 80
+     height : 80
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : STC_MediaType
+    identifier : 0x219cbec010fe307c
+    internal_properties : CAAAAAgAAACYg8PeS9R1BMtcWbiiJWwljYu3/jfL265TQZScK61TIXzwgfJrmDNelatWoHYgGms4d2DivaGwuUaPQzbcPkT/nXPHCwPYA9KhHMDoI7ow1tAQa3Wk7NHeGlBlpM6ZVujKjCMSePIrG0EJWDVpHZUgjMpDImZbotqmwZlyA3s9LsThEYg1CSieDbnPSIIz8bj8FU6Z4Bqa3wL7hu2KDvtahoPDGOMM/U51YKwMRVqP74PonJ66ceZQrUdJXoZFn5mQsETUk6dcIeuAZMV/6AUX82KD2wqPETMNuO6A9+FlCS0A1juMWiVzbrKQH22bdPd5+22En/5r6/43P6jC5hsQ6ppHgDmS4iigJdOwg8k4DgOeDhXFgJbx4kiVMo5PSY+AEsO3fVOJyRoy
+    properties :
+     x : 117
+     y : 8
+     width : 189
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : STC_Status
+    identifier : 0x219cbec010ff307c
+    internal_properties : CAAAAAgAAADCYX2/jVGEYWF0GY2E8ePsVYSuM5OvbzjgtBOeFlvBowIIMGQR2efk1ubZmGKOCw8ijCCk+PrL8A6xUJqLGKJIcdGFFIoH6elAQBWWyPFlW7CpaAoc8lQdraVURDafta0B8aM+JNnduVt8QQcmCxn99Z4Vt4M/sC+c4addEMPIHvgoYxIQyeJL6TwdQY+6DWKTkcrlPnc7jwRT89kbcAXG6IcX/GVkH/XeABCTnGsWMmBhwkF7qz+1tVjJovg477GZAKyEhLz51ABIEzQL3AEPNmUl6hKpY7JPe65e6FTFhGeOkR18DSS37IY5EZrWMb3y8G0CmZhGjmxrgSHAyTTF3XT7NwPtiq0IpsZfftWQLR0lPjRkN6WOJDKqV3hy8UKbFj1pi3R7odJjcu4HrOWMinKIo2PSNbK4YyCl0Q==
+    properties :
+     x : 117
+     y : 34
+     width : 189
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : BTN_Info
+    identifier : 0x219cbec01100307c
+    internal_properties : CAAAAAgAAACQFkoIZ2pt2fsorBQINUStmiAMl5LST6Hf7P6ugmcoikun3AIUGXzhGlS+RE9ujEAXIvW2ZOpjjI1RIVSXJp21wU9K2gwY8PDLF3uKS1gNm7n2UTebuy0JB7cnhBB0zwkcnP05AU1rUnH+XCas9in2vlRGQ4tmrYST5DO+vW9k8XMQfclPPzmpPmgb8itLwHBgLaZvTPKK1FThyUsBXUlBhowbLhGNX1ejcRq2cZfHqIJ9qHt8XBQYiB0b/nkFOASMGgPGxQSQy2mmo+HhCe+s0SQD3NvSEIUtI4RlfNW4HYvgJugS8Qzr1kUWjAvXt1R8mmtZpZLaTHOykei9wLr2StNBr35mmWQnJcE4oPBnwKGwNzW9jSCpR1I1/sfktHHbBaOyfh+mjpwjBlLwufByZ3v0fSTxK/YyNshbX2siZrkKtelfgoI0uNU8cwi1b7BJ89Fv1KIZG0cST6q3tuApI0lEIDHZPQH9PXXpDo8r7N3GzcGmuXoaVpWjZT6amhgZjf4GMV0A+dlPOep+g+/tDXRQwJ7PoHadEA51/VL2egziqpIOli1a/L9FISTpybC+/o8uuLhnLd2MCpL6tsG03q0Ybh9C1+YUJfM9WH+q6QWHioxKFR/RRxB8US4+PgpDmoeONz6Bmf9SSzXzoSeOnLC4RDJjT3ZEq+pDW+AYjySMTVW0Wpu70GZLc9eLbdcbALMFVkvKJHM2c21xBcgU+6rY46npq9zk3AuZ44Q=
+    properties :
+     x : -90
+     y : 278
+     width : 48
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAABf98cSFTS+c6O880jtGL7wR+Jy7uJZnRd1lZJ5Vyd7nFz1VviUWQ+R8yhiPKNL8+wYbxw8Tmo8DXJ++zW5jSjbls79b8AeuvapJ5r7tkeoOYDmD1PMubEZc9mR6/Rs75KxFuTDbriPtkwzCKZ0d5coigI/SZjcFIh9cBkDIldCeVtkle9MQsoXDtzOqfxrAA7L6+Ebv624vW3vOMngSAcERJ96et0qeYSUSdlGnG+LuKFz8TPPp0NJg9lCoV0AdNKT07go4qgIbnoFmKoj++42g4SonxAkCirW08aTzBUQ7tSVrB7u1iAZpSoQNHO584pd3OYQFwRzpvwvoOFx0sMhuDcpQGUnZF2/Ijf/waYTK3c9iGFIHYN+nTqr8nywwM8L9IxkGE+risAU3TSI6o8mOlzLlN/e3qcGrnJPn0AFgiiSeXEVjwUH5ThDwESRtYTHqh7PRiSL1ldv52d15Dq4Vvj+egUWNhb5WkEPiQFNj22xE5lWdizuqEdE194G4Ma7wOPecrSUmK+//e//xpcz9YBIMzj/8/je8lATldGHRZcjySviA0IEs6NT4bhS1O1EjSwB6jLr8mU3Ks/yEkrNVLo66/X/qddFJRVD3isqZHVI1A==
+        code : |1+
+         CdDVDInserted is boolean = False
+         
+         BurnerSelect(gsGBurnerName)
+         // Media used
+         SWITCH BurnerMediaInfo(mediaFormat)
+         	CASE mediaFormat_R
+         		STC_MediaType = <§$0004§>
+         		STC_Static1 = “CD-R”
+         		CdDVDInserted = True // The inserted CD is usable
+         	CASE mediaFormat_RW
+         		STC_MediaType = <§$0005§>
+         		STC_Static1 = “CD-RW”
+         		CdDVDInserted = True	// The inserted CD is usable
+         	CASE mediaFormat_Unusable
+         		STC_MediaType = <§$0006§>
+         		STC_Static1 = “Unusable”
+         		CdDVDInserted = False	// The inserted CD is unusable
+         	CASE mediaFormat_BD_R
+         		STC_MediaType = “Blu-Ray Media”
+         		STC_Static1 = “BD-R”
+         		CdDVDInserted = True
+         	CASE mediaFormat_BD_RE
+         		STC_MediaType = “Rewritable Blu-Ray Media”
+         		STC_Static1 = “BD-RE”
+         		CdDVDInserted = True
+         	CASE mediaFormat_BD_ROM
+         		STC_MediaType = “Blu-Ray Media”
+         		STC_Static1 = “Unwritable disk”
+         		CdDVDInserted = False	// The inserted BD is unusable
+         	CASE mediaFormat_DVDminusR
+         		STC_MediaType = “DVD-R Media”
+         		STC_Static1 = “DVD-R”
+         		CdDVDInserted = True	// The DVD is usable
+         	CASE mediaFormat_DVDminusRW
+         		STC_MediaType = “Rewritable DVD-R Media”
+         		STC_Static1 = “DVD-RW”
+         		CdDVDInserted = True	// The DVD is usable
+         	CASE mediaFormat_DVDminusR_DL
+         		STC_MediaType = “Double-Layer Rewritable DVD-R Media”
+         		STC_Static1 = “DVD-R”
+         		CdDVDInserted = True	// The DVD is usable
+         	CASE mediaFormat_DVDplusR
+         		STC_MediaType = “DVD+R Media”
+         		STC_Static1 = “DVD+R”
+         		CdDVDInserted = True	// The DVD is usable
+         	CASE mediaFormat_DVDplusRW
+         		STC_MediaType = “Rewritable DVD+R Media”
+         		STC_Static1 = “DVD+RW”
+         		CdDVDInserted = True	// The DVD is usable
+         	CASE mediaFormat_DVDplusRW_DL
+         		STC_MediaType = “Double-Layer Rewritable DVD+R Media”
+         		STC_Static1 = “DVD+RW DL”
+         		CdDVDInserted = True	// The DVD is usable
+         	CASE mediaFormat_DVDplusR_DL
+         		STC_MediaType = “Double-Layer DVD+R Media”
+         		STC_Static1 = “DVD+R DL”
+         		CdDVDInserted = True	// The DVD is usable
+         	CASE mediaFormat_DVD_RAM
+         		STC_MediaType = “DVD-RAM Media”
+         		STC_Static1 = “DVD-RAM”
+         		CdDVDInserted = True	// The DVD is usable
+         	CASE mediaFormat_DVD_RAM_HD
+         		STC_MediaType = “HD DVD-RAM Media”
+         		STC_Static1 = “DVD-RAM HD”
+         		CdDVDInserted = True	// The DVD is usable
+         	CASE mediaFormat_DVD_ROM
+         		STC_MediaType = “DVD Media”
+         		STC_Static1 = “Unwritable disk”
+         		CdDVDInserted = False	// The inserted DVD is unusable
+         	CASE mediaFormat_DVD_ROM_HD
+         		STC_MediaType = “HD DVD Media”
+         		STC_Static1 = “Unwritable disk”
+         		CdDVDInserted = False	// The inserted DVD is unusable
+         	CASE mediaFormat_DVD_R_HD
+         		STC_MediaType = “HD DVD Media”
+         		STC_Static1 = “DVD HD”
+         		CdDVDInserted = True	// The DVD is usable
+         END
+         
+         IF CdDVDInserted THEN
+         	// Checks whether the CD/DVD is blank
+         	IF BurnerMediaInfo(mediaBlank) THEN
+         		EDT_CD_DVD_Blank = “Yes”
+         	ELSE
+         		EDT_CD_DVD_Blank = “No”
+         	END
+         	
+         	// Checks the status of the burner
+         	SWITCH BurnerStatus()
+         		CASE burnerBurn 
+         			STC_Status = <§$0001§>
+         		// Burner disabled
+         		CASE burnerInactive 
+         			STC_Status =“No burner is used”
+         		CASE burnerPrepareErasing
+         			STC_Status = “Preparing to erase”
+         		CASE burnerPrepareBurning
+         			STC_Status = “Preparing to burn”
+         	END
+         
+         	// Type of CD
+         	SWITCH BurnerMediaInfo(mediaType)
+         		CASE mediaType_CDDA_CDROM //audio
+         			EDT_Type_of_Disk = “Audio”
+         			// make the information about disk capacity invisible
+         			GrpCapacity..Visible = False
+         			// Modify the size of the window (hides the chart control)
+         			WIN_DiskInfo..Width = 270
+         			WIN_DiskInfo..Height = 366
+         		CASE mediaType_CD_EXTRA // Data and audio
+         			EDT_Type_of_Disk = “data and audio”
+         		CASE mediaType_CD_I
+         			EDT_Type_of_Disk = “data, audio and video”
+         		CASE mediaType_CD_ROM_XA
+         			EDT_Type_of_Disk = “data”
+         			// make the information about disk capacity visible
+         			GrpCapacity..Visible = True
+         			WIN_DiskInfo..Width = WIN_DiskInfo..InitialWidth
+         			WIN_DiskInfo..Height = WIN_DiskInfo..InitialHeight
+         		CASE mediaType_Unknown
+         			EDT_Type_of_Disk = “Other type of CD/DVD”
+         		OTHER CASE
+         			
+         	END
+         	
+         	// Retrieve the data about the size of the CD/DVD
+         	EDT_Number_of_sessions = BurnerMediaInfo(mediaNumberSessions)
+         	EDT_Total_capacity     = (BurnerMediaInfo(mediaTotalSize)*0n2048)
+         	EDT_Free_space	   = (BurnerMediaInfo(mediaFreeSize)*0n2048)
+         	EDT_Space_Used	   = (BurnerMediaInfo(mediaSizeUsed)*0n2048)
+         	
+         	
+         	
+         	// Chart for viewing the disk space
+         	// Name of the chart
+         	sChartName is string = “MyChart”
+         	
+         	// Define the type of chart
+         	grCreate(sChartName, gr3DSPie)
+         	
+         	// Destination of the chart
+         	grDestinationControl(sChartName, IMG_Image2)
+         	
+         	// Font used for the chart title
+         	sMyFont1 is font
+         	sMyFont1 = FontCreate(“Arial”, 12, iBold+iUnderlined)
+         	grTitleFont(sChartName, sMyFont1)
+         	
+         	// Other texts
+         	sMyFont2 is font
+         	sMyFont2 = FontCreate(“Arial”, 8, iNormal)
+         	grAxisTitleFont(sChartName, sMyFont2)
+         	grLabelFont(sChartName, sMyFont2)
+         	grLegendFont(sChartName, sMyFont2)
+         	
+         	// Position of the legend
+         	grLegend(sChartName, grNone)
+         	
+         	// Display the values
+         	grLabel(sChartName, grShowValue, True)
+         	
+         	// Display the percentages
+         	grLabel(sChartName, grShowPercent, True)
+         	
+         	// Animation of the chart
+         	gr3DSParameter(sChartName, gr3DSPropAnimation, 14)
+         	
+         	// Start angle of the first section
+         	grPieStartAngle(sChartName, 0)
+         	
+         	// Subscript of the section to pull out (the smallest one)
+         	IF EDT_Space_Used < EDT_Free_space THEN
+         		grPiePullOut(sChartName, 2, 30)
+         	ELSE
+         		grPiePullOut(sChartName, 1, 30)
+         	END
+         
+         	
+         	// Legend
+         	grCategoryLabel(sChartName,1,“Free”)
+         	grCategoryLabel(sChartName,2,“used”)
+         	
+         	// change the color
+         	grSeriesColor(sChartName,1,iLightMagenta)
+         	grSeriesColor(sChartName,2,iLightBlue)
+         	
+         	// data displayed
+         	// display the percentage only if he size is not empty.
+         	IF ((BurnerMediaInfo(mediaFreeSize)*0n2)/0n1024) <> 0 THEN grAddData(sChartName, 1,1, (BurnerMediaInfo(mediaFreeSize)*0n2)/0n1024)
+         	IF ((BurnerMediaInfo(mediaSizeUsed)*0n2)/0n1024) <> 0 THEN grAddData(sChartName, 1,2, (BurnerMediaInfo(mediaSizeUsed)*0n2)/0n1024)
+         	
+         	
+         		
+         	// Draw the chart
+         	grDraw(sChartName)	
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_Static1
+    identifier : 0x219cbec01101307c
+    internal_properties : CAAAAAgAAAB0DFgc1SyOR8HjficNPxg7BiM5QlC1319JJkNfCHkpGh7LxfLZvwalmY81XHhYgSzaMlEIkB4T01VlarVGRNOHEls9pX+BtpHzTY4fNTq+uyNqceW5xlXeag9ggrkOJHL1CYPZyy6dOOGkMU+Xzm59obRC+L3I1rIC/nFl3L/AHrIxnS0bFe9VgmpDAV5CA9HVYKSLw0OmrQfK8JgDFWb6/cBpwG6PajwuFBzfJgFSsfbBxbA4++NB03YZTG8BWz4qLrBSAiefUbCzmDpXuIScEo6VWNqjni+DH4t3h4m6xvBfsbKBj0/YqznCTdTupW4kZQXVGHOaPCzgT71RzT6pOBHBTKt6t559Lvia7h2bY3smj2xp7Ng91TRboM0bVZNdxAutF77cOtXHqDM=
+    properties :
+     x : 6
+     y : 58
+     width : 92
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : IMG_Image2
+    identifier : 0x219cbec01102307c
+    internal_properties : CAAAAAgAAACeSYT9PJ4UTFR9oxrENuVL44DHRl9SiwbfiaTJfqlXfZfsrgDTKjOfI34DaBFzrnQSfizQo6nxwzC3Gg3Pa7g8xFpFVnY20E1uMISUiXORHA9GBPRu1379yeYZr8Lz6+8zEqGz6Tv31Wf0j4Erm+hJ2aTYGdB+QcAt3UxY9k20VFN5qDsDOyfLuC0Vm2BP5/5So8f6Fj5xwUJnt1DRM//Tw7c19w5IIwMrxmLcWEbUhITfRCtv8svoHP+4lgFC/4cNWBDXQA5NT6Oo4+SjnBbdb4yp3eKUCDhJ60bkhPa4GjxFsxtnDNjUmwvebDLOfXge42W7iZhJpMZgejNpscF1Ky0lA7OL4+BsqnuwHx7OzThuIzrnJxKQJFukZ4JYEt5JtYOvALWDo0rSGEl+Af5s3B65tkd0lBMTGnQo24b8uTuiIbSdvRCm8vZWaoFWfhV1ADZJomlpHE9Y2R6Gl6CwEtm+bVdFU0zJan4Dx7BNTPvb104qB/88Wi+cQzplAthziZU=
+    properties :
+     x : 266
+     y : 8
+     width : 288
+     height : 249
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : BTN_ok
+    identifier : 0x219cbec01103307c
+    internal_properties : CAAAAAgAAACGGOarkvYnX4I3gTLqpiIBHk3G2TQqPBDvCkUSsQG6bEtZKQ4rWum1djcdoZfkDlENFWMFLXzMff/x+BbATMgEAN/aZ9Jkk4ZXpO0dcSOycJCRwb0KveE3ZcmmSRQ3mc83bBSj7ixQS048rmBStIvYHVw324eHQ3Fsjh8jflvzrgNVf4+Sb3OJBWJZ8TkoQT1Rq+D7bD3oEuA4rsOZnSkbgnsTRavltpsBKlkoUNzxJ75c9wh9V1o1IKWUye8anFpOkBug+skVdZ+HS45WsOckRo3TZHNXwRlu0lxMbrlpaxFF7hQIDJPSlsoYmP/bUYqvyUeNFOgVPSjIEL6wfE6MObMtzzc2Yz6EQCgTwh/I8gNBVdonN/zh1KlZn6HVSbk8uliInmnKlc5vYNdxbc35SbjSDaMhE9N7AkX1cOym5KCaW72tTu5s7TwvTkDIBI42JzHKOd6F3zW9Lrgj9g2gEzwd+YOpTdBdGO1G6tJ3TDvkVkyFdqF0orVFr9EgVfbssYLjLxsckimW6VeSwhf4RL7vZ0d8AvgQNfqVp7yjEfZnpgzy/ee2enl3UrBtALC4cJGLmTO+MqgRHD1jaCjJ5Evd+sMFilhg/2A9mTCfy8OSdE7xL7r4mIWoISglacMoNw9sFnRfZuFALubU7Zr3GiCGAZyeo/beTIDAGil3PUtowvEi46sNSeITU/DNS43gsbHtMtbyvfyR4ZowaFEFq+DddPAw//L9QbxHUob//CcdBEF3i/dLnJOSOQ==
+    properties :
+     x : 216
+     y : 277
+     width : 54
+     height : 51
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         Close
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Eject
+    identifier : 0x219cbec01104307c
+    internal_properties : CAAAAAgAAACT4rMqw3+4u3hWH1o5Cfss1LNJNMLDMZoMYuMKcjWeKRuLtjFhT1nlKuTGmQUBPKcauhjSR9aXHmZMREz/ZiZhcdecG+uc7ZBLGF5xH5pJlVtVHVLphNp0HAYx+anw5X+Fdbl2vqp0mb8hoVM44LXWdNol5aXzGsjYWgDjEsuEgAIUhbMUUVSuJ8KL5hDu/14L6vPySOnSSycD0mYHl3uAIbcAZS0U0oJUaiEcVVLevXkO0BA/uRG8gH7QTBjR4wTXJS2tgGzJWNK2c2xVuvScjWUqa3d43Tomygv622pHDcQRU/gQEx8WzjMZPfV0Zxp/8q6LkVFIE5JWYSrhTt0kvqvRds15gqNOIGxnsxWO9IHzeuzsLOpRfBZMwuYfqeFEqDwPJmgsMDRTWwZPQGG5awfNYuO4SzyRKggiOPPOqPa3JETZz65zTzT4jSgxAM68BNq9sfPBvs/5j9epD81UcV12MrGEkzu5okBjVKmHqGUT5zMn279RdDn6yEET8Y7OHklKX8qKNfVgzqC8d3EirLG2ZKlfPgOGeYsQYw91Q9qOhWc6yvelpDlcGfJq8ORq6yJwF37A+5DbV7JjtzbX0Po2f//yPjFQxZUMx9OPj60hw6lnUibhDl6w20umQ+M1+DAJFoOdAae6RdVFKnAukLfAubXx/1jhQDvVRI52pov3EjLSGPvZ4jiE8ZJlTEquTEqREx6VXGEZH0b354vowxkZK7XDx3e+BOwblWcY6JQQOCn06/kjBeBavO/KikcoF0S/ZPgOupNyig==
+    properties :
+     x : 286
+     y : 280
+     width : 48
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         BurnerEject(True)
+         Close
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_Image3
+    identifier : 0x219cbec01105307c
+    internal_properties : CAAAAAgAAABRGKs8syL+N9J5fzTb497kOMgk/HAn/cIQ2knQWSgGbBt7T95qcCO8vtbm1yV+RswJAp7L7dijvu4SQUEEtIS7u/j63zs/5Ko1hEk8eHT9D/X0gSqbRY75536Hy3+c+MzSfw9fE8j489O7vO9WitCetjcZnJUw/DljWvYLiQS72iDl3ZBm3av9BUNenZ25ZfwJW83Jn80hvOMq5FDqZU5zt4O37OoxfoQCrOtD4BfuFYV1HVgI3TYNg9W3dYO6Ycf6GKaCTfc/V815BID68J/RnvPCBo7u0bZV1xwPio9KEjyEis9EvTIxejTzlk6FMxM9AfSVGWeboFx1GiPyGps4ZQwVWGQS8wJgZ79+M7Mo840ZvoH9ZOSYIu1fo/PNLpZWryKbes3F6oUfzNH+N92X36jsh0DVkdl+fz5rF6anEJU5oJNAYoTaWVMHBmnqenKoLMg+qzJxQHsZvh7tv5ogllp5sTMGmL2MbIPpXfmrFoXhXJOgYWLNquDkzEnCvFveqHYq45PtMaYC22C44RcjD51WSpyQ30uswK3M6lym
+    properties :
+     x : 19
+     y : 211
+     width : 15
+     height : 17
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_Image4
+    identifier : 0x219cbec01106307c
+    internal_properties : CAAAAAgAAACAexUmr6PuWZY480pLaQe9jFzWO+BrODApRRbbIHzDBobXTmhdf4dkg+wApEgxptYYIqlCkDBpNW5IeNZFunnU7ASw4bqrRRuxYSin5e6MAzXm3lJc5CaSukr303zGMVG/MXOK/a2uGk0G8eK8qw7Y02LrbF4bLYIfKXGd0x3hhyxcCm7Oaod24lg9zfNlQpgN+gi4xHwshirJJf9XK3QL4797ZfdxThAaRKEILiq90wsOMUVBKXZpYf3mT/vHM79KkTh3V/6K4KlXe1+dDTUK/DQvdCIDgQ680xWTMwDh5lDzZ9S8hSIxdPyMa0E3J8p7QeyLI8w+xR4CSU1JSC6Y/Jo/+L5/ZY+VuQ9ximveeSiNKXuLY5libbSuMEyoWMy2IW3xU1AIgrcfzqboFlkRRT31uOVRMBCyBKMzVL9m+/3xaojVwIrEkYPii37c4vDWiTCbcFALSiWe2vqzknSahBQOcCsnesv9dTJuEuQ/bqOtTED3peVqWiakifh+lAj+SvTQ88Oy8NL7pPl1gkFcZrzD443EEw==
+    properties :
+     x : 19
+     y : 238
+     width : 15
+     height : 14
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : EDT_CD_DVD_Blank
+    identifier : 0x219cbec01107307c
+    internal_properties : CAAAAAgAAAAOi/oDBfKPgJraJQSRXj8zVuqoQJ9pXsgRJA0ieSNG6xrXLqHUaradPd1dAA1DK2YSq3NRRIBlaEfDyc+gOwTrp+cXRknoRJFBtWq+QwZUcl1Qfjm4+D5jMaEemqurLyazubIupbiChaHhiUDnCZ8XcIDA1Zs3J5LtGj2jbeYesu9/Dwde8Hpjb71xJ8OLcOEaXI7dZ3TVA5wNe8BEaILP7S3Br0QhPHK6hYwbw4KNCVyTIloqTOb0657RvBCvnWJ5+E5mz2b5SSqwqBRfuRYCwEqBQ0TELlsHmkhs0W/LmkHwozy4kwYLaehPAGCe7qq7DoHVTsMuZLuk+oMqTbC3TCJ7GCw/9i8ln054iwefZNEYFoViEFgl1J24lWw5MlsC0hss5yuy7XyXmsAaaESJ3l0rIkRewCkmUX+8IhvR8nrXCJRaaCVcY5os40Nfiy2DIYl96OwGkW/0lQvdzyUIqalXbSWzKzIwadP13J2auTK9kx7fqrspYJlM+VKTH88F2iPUmwwSWgzzy65+xWkw/WuvKKgaSWJ0ysci1aoaR/jUGc9cW6hNFoqvWfkfm7a5SnaKg2+GowQJGqyJHYydYaoBf36+GN7OuhZ2zikbxb1ae4qCdDlebXqORpivpQnAjjniiKrrWHD72TznrzskpVxJrArJTcLeNDCuDJgKm1VD5duAlCVGJAG7Z5Qy+E9Lzpfd97ynrnjzP5FKx/GwsYNbTXuVqjufyMesUbb4AVPm0BVpFMB8LaCnTBkeqTINWWGYTrnBpieBFkMlPd3+2jSY0OEfBwY=
+    properties :
+     x : 19
+     y : 102
+     width : 229
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : EDT_Number_of_sessions
+    identifier : 0x219cbec01108307c
+    internal_properties : CAAAAAgAAAD8A0EHLVXbXj/9igJWtwAEvPk5bP/6tn9VgDi/0K0ZcULDYAisgHbJNB8SFk7PyLFh8VPe7AJOXuIV4KIp3ft4yvevNQvLYftm0APxqM32FiKAK1H4n8D2uA4POBDQG2HcOdOL4kU/1gMC3OxG5AQsDYqtfbNpJcg7UprzOHSidLqnUfTAaQFibKudr3VkrjBDbTeUdKH373zwZ5tJhkSzuRmGmxwhLYSHAX1y6vyEb2sJ57mty9JkoCEM+GbZqDSmnRBD2m4wPXTyvilFxEP4RtGad0d2yglli0f9+cWWAZ5cooejiDCmDopQ2CgvN6ofat7UQ75tHF5LyLYSEznGPgLQBQS7lIpTC/Y9nU/tkc4UboMGk7grPxy9m23MlYJEUfQyQNDmBFDuWfWFdreLs0jmJCoGUwyrvz1ZLSY0JcP83UISWHRg4guIKHOztyf6GZOX4t4ijIJGpIThlSapZECUaEAwuEwIvzTMVeI5VI6HPj46Flf2EOlLbbzL6qxzL2OEygaU26+7oJQOSqYfbP45qlWf4xjuuWvdm49fKj1UAJz4WsecpBjVL6mPjaxGP3sxWVnqtxwbzXIrZZCmrKqK16+2Xgdjj3yOnpUXjeg9eqjJxeM4m7Db53orgfpPXRVXsjohq7esJI/owsAK/76ivMIGKQ/2e+wFqGxV5AFQRnQAvu8+8KzQQOPD8D88z0kasvvH9qu8friaX8yqE83idqnI+Gn4I917Hi1CWO5NhZM8gT+I0tfIjNcMuF5Pjozuae0SHPMNdmBj9e1jQRDcuaYnVUGCij8ZLZpqCnfSgEYdZhr+Pc2OQ+RuNgPCiefBRovdbA==
+    properties :
+     x : 19
+     y : 130
+     width : 229
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : EDT_Type_of_Disk
+    identifier : 0x219cbec01109307c
+    internal_properties : CAAAAAgAAADe2Q1TogwD84FblnfGIYex3jRgfgHM1V2I0BLSwPU+cv0CVJLDjmVniP5jKk8GbvYxQ/PMUWYBz4KhJxEStNc1rJAPb5beOhrCZWsy41c8PVQaczcyNtCiWNNv1YEad57xk9QMPD1XCz2piRCEG1Wxzp0iLXWydOHRdBQrgSrYtfMGoIiOh1hH1aOdgMpWP4yKvg8VmahUwrlHiTl070zLAumW+mIN9QEpqg3VWwu/6y1KSYGC5UnOa/uFYnNmIB7R4C7Eyiz4kJzEe3+vKkVxp+7341qNbApoVXftwdq0diZED/8zJBJ7bKE09go9ArRqo18/LOF+ISgRCLoseera1bunKEkpILNwP94yXDGR49rn+wiEGXQ56Ckr0fuWeuQCGQ6slhWzH1PpvfRGHngc6diZIw3ZIOCQ9cHHDJfXUbEGrM2vr4+x87SU1oeNa4wSKJcwF3l69AmQe74dDTPpujobTI5u81VuPYvmqs2cIONWJ83ao52WpuVedmJRvfR8GYWTsukUPwip2cUGkyXFOrgRY59Hl7Ms5CN5PTj0OoMX/1oRksTMrEo9pjsvZVnKM+CNBhAA/u5tskE3IYwchscVmtuN2JneOHoXUgOv3FwRJfEZCes3MSgGS3R12VC/vUmxtxd/Oaq/x/1LhQPrHJubawXKIcUkMH6PcaOnL4/cKRL14zoorUMjatqrhjld4BA71aC5M+j8ZMV+xurjTedegb+2SjHKjiF+HQGNI11IdS8nn5akyRBPYl/yHfyBjMrKUQouwtnJgMkRJ58X1jrRog==
+    properties :
+     x : 19
+     y : 153
+     width : 229
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : EDT_Total_capacity
+    identifier : 0x219cbec0110a307c
+    internal_properties : CAAAAAgAAADAZHG/GfCWqMDadsxheNViRlH8IXWN3K8QZw8Vpg4p/ipWpRTql0l218NpseuhiCm3c1WGM/kefjzT/I8SOtjplWAw2KbJRwZ1i1Ld+k1IUTIQ3bETuc/IpfwIDC6hu59ehAst46vHLGdJjVfV3CpPx3GbfWePjMVKqHM0jBQlAOHqkfV7vAEd9zjSYluAOiUXXFD2drxcyHg2xOOUCdjOCYj1eJL7mYjAU3Yo/7aAfYeEJEBlMsplriXTL+4bj1unn7FPOC+2J6VRYCo54EW58Ptk1VBoY7KmiifFwVVqaS5nseQpYlm8qIsuGvOLxYiV3ktBdTBL9WpAwmKs9i9CVCaPT3D0Z7iZUfYrfh3StAQ0DsYRgq4OZpsrCyYe3/0I5pE7wLLHFimA2yyG3swAZeaduV201jNcDXpPR0zyvUZZdbJ7dFMeJiwbeITPPKgdwFh//tGGr2bsFNT3WIVj6UclolVB3d2Rc3cjnFDS1/4/8Kk8fYhNRFlguT6k3hYQNbv3pEFXJMvNLcBu8/ftdXDGSVfJBa8ItHtayO8j0ZRGl58H/ACFPi7K0GFw7kfzjSs4eJi/dHzgGRYhREk/do8BVxGu8WyfY6LO5WoXw5+Fjr5EXRnCTlSFksS1g8pQYA77rxZ5IJBuLrSgTOTmt40NyMnqo2dwt4d08fYxRqn6Ngjjxq4abdZKVc7xj37J6m6ATVMz498cDAOZ+PnxEmGb2rgOIxvykHqFwQiOlj2tcjQcxLhEl7Gz+t7CPq64zpENZh+hZ2z7uJ9RoHB5ZRpmdQHqu34k2VHiX1LsYe+wRsaaOp7her7iwbfIycMpE99cawMH50Rwl3IxsUz/RO8j
+    properties :
+     x : 19
+     y : 181
+     width : 229
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : EDT_Free_space
+    identifier : 0x219cbec0110b307c
+    internal_properties : CAAAAAgAAACFrppCMoI3NP/63MzxjPpB6Belcx6UgfDIAb8B10dGRWcNYPS/LqA6HcRqC3i4X3PBz9EzH4R0WY+1ywqYvJgbKv39qtDKLa76iueylp7ngohWBYklY0BiIjiRobKkTbd2vBKCmRQnhpPUqwiUieQ0fOajhdqhhYsoUR9LsZtJ7P0pjviJN6eI4puuoSWh3/vhoHDyZ+rI5h3jUxJyscESGKUu4XRjL8x4svcSdvTbqI+YvUXhuZgJWoe1kpFa/Tu3xO/H1cvzqgT4Y2B44/bjsktmnZ98w2YAF34ghANGOsFLftSomyW5LDCxT+orATcYg+FvJhNVjlFbwMx36AZn9tA1W4koUpIWaSFqAufadDFfaqWPjakZQK2+YvymiCZZ5mGY9sEbwNXc2ZgCGsRwD7e0xeK5vUzo4nA5jtQmg5bOi32DKtlT/R4cJdadgghRL4JSGuHqIB0g/atlLpPnkYTJS80BMfAy2YY+Ajg2yx48MBIK4YD0gbHrvLTyfKBeUFGEVPsp1dInjM3it49rX43e4v9JUXg35sg1UGFVt5fXHuxkHRuvJtQST4/oG+rgFfoY8oEkjtwL1lODcLzNANogQHAaPgufNY6u7egxW3NgelxFvjUthk8iu5jq1lVA8AQ9XHtGuPfbbLVQbXOzURe7J8kwqO0SCSggx3i9nSd/hg4ocjc+Q1oLabETKTi00A9C1Ig6i02fmMWep3y1wvDWJGdJVIO3jQjhA4xoEOa5QtHp68ti20FwYPJZvEbG43LU2UxqWQTuF1deIokeMImR75QmcDrreTnObV6jsCO58EmhAdUiomrvXwHO53kGIorMqjheEeGH5nhEdvbV3YZ0FiI=
+    properties :
+     x : 37
+     y : 209
+     width : 211
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : EDT_Space_Used
+    identifier : 0x219cbec0110c307c
+    internal_properties : CAAAAAgAAACFpPLvuG308a9ksge1qS3PwzSrNKbXLT1Eiem7oh3pk20Xw2FYQ9bjaYMKmpPx2YBO+9LkblYiQKm7lU/EUMIrxvx3q7Lbbm3JCzt6RZeU8pcKALnli4BeyyJJmWCsWR8rSgoka1LALn5WvU1dof4hsq5bDDBct6VWq29WGmaEmDs+jW9U1VUpUwblGJHPd/f2puqZq/KwH6HVnBTV0AwWizETYhNcQZ5QMyz03dsqVkbMKJoli8xxTWC8d20YGg6SHIRgk3aRB0Fa5addN2XsOqvdqfvHQOrBrtpv156WPNVf/cTG4eWb93oyrdl9f6OkOcnOBCwnK/FPegTE/jb5ImN/LxCDCeHiGFF1iH+fTveAjL9pDYEA8cSMQQS00qQz3K+TgLmrrghQUYDSCfBqtLSuiXS99JWwQIkNymHluHN69Y7tF+G/wJDBHE5GO1KDlwNb77dCn6CYLeHwJfTRxPZZtDzIOz4AV7enkt679+sRHJmBvg4+VWTUSUjeo2QK6cM3R7Jm6B6kGZRXtdTpwNkWE/Ta++E82iopT3D5gPTdYos4kFa22NAgdL++NJYbQIuWljbz+gr86tiVgtM50dT0V4H5MRb7xqH0JNtQZ+CzcQU7RxI10vAhO3EUazZX+qGnwQ+a3QoQb0y8xUJUPxEEy9I0e6c3+yVAha6VW1XIkVb9C3UmIHsCrEUoChoM6lVYIIvBI4wnWE30b5at+1xCG26kWsKG1cQCktgDJ4gBLfUIWKz4KvABWEBp8z8szifG0kmdv8Z6XdmFTU7QtXyszMIeSs49llG825iKacjgA3G8gYqedt2oSqB781D8Ui1wcgjTL2lnBv3WpFrqfw==
+    properties :
+     x : 37
+     y : 235
+     width : 211
+     height : 22
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : IMG_Image5
+    identifier : 0x219cbec010fc307c
+    internal_properties : CAAAAAgAAABFhhSOxfOFrnPpOR9SX26+8xDD4EpFoUi398I1bfK59kpsvhoSx2R8m+C0xLZsHC4bLLWAdH0R/kCQPZgAOxm5CAeuRxUeMvP5UjqsbrUQZ7fR7KctAcAV9Uk5saFNU5fKaBF04BhJPmhvyPRGsh4DaSMB2rUOqBLmE8SZ0RyZjz6GYjN9kFdgIaaDnwmpHnHXF+OIn4YhEefladdJsoVS0TPhhnW4x6mGVb1M4h4ZHyWMXaRVKwoVkLN6rXTweOClNVsUHsCRH1IYb8der4QW/piBk3vL7xdFrWKDNjCphGnvD1rO2HgS9bWEOLOS2alDOjUG9KUXTskQ3SrAcCRYqYdhz2/0iH1B3KXHe/qAyGXQCbaZSG6mWJiE3D0GEBEiK7+SKaiWEmGm6lEN57hcKLwhStYTsVKrOC/SWOo1kNTeVnFs176bVkLHA8t47gfC3kyeOGc1vTaG9qauAgXws2cF3XuwcoWPUWzYSy9VcG2l6KA5s7jzNUN4uCWF+83ALjSMigrfe0Zdfs3CbA0AilCcFbGgW9/Slsm+mz7lFj9MoU+EZ6y0p5+2d/ZGsA==
+    properties :
+     x : -1
+     y : 273
+     width : 565
+     height : 61
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : STC_Static2
+    identifier : 0x219cbec0110d307c
+    internal_properties : CAAAAAgAAACBHX3LMCkxPz4//Ml2tenf4hRv1Fn+hQXErOL55x2/ctFwxFhY5EI+oxKXMBOMEfafTP0NhgC8+rQ6LeFeuflMBVJVUerDUyjMWfXcdQWiiiuBSEJR70gx4mm1ElxS4iPQckA620lsjC1i3p1VpnxSyUkcehVvctXUib005VukYsjH+QZ/HPXoLb46G7bG0AIVl17lmA1cqOlOYh/IWyNh5YXqzLyunA+obcAOv6+pqr32pTjcxnMS3xOMPAdvKa/582qTOQ5QTb5QTdkyz+3RXIueWp/3zWKnrB6Q/WIMuajFZk/yWvhkkp4mqDq9R+KKb4qWv9gSGaIX7CmDYtaWi7BZ/X5JVFglvnUodsuee033R6Up5Vp7Fry+8CoM6TrEMut1PqG/RM5KjPgY
+    properties :
+     y : 270
+     width : 564
+     height : 5
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+ menu :
+  name : _Menu
+  identifier : 0x2404a9a721805799
+  internal_properties : CAAAAAgAAAAuLe83LMQP2peI8RH325QNzSIkAwj42KGSq32wdjQFbLfAR+GnZgaQNHgPLUfl/4CHLYlo8VLKWHhtPLj/uIIfka5SZAsRgyyaUAXS7Q4LadqqCjdSL2WtF+BDx4fAMjRr+ubgzzZ4+6e8xJQdDdcd59gPy8G/8GLQQ69RC1Xdxjgz/lWb1m/p344meXzXkBvuV8QPLzLIe186PxhzHtaWthVYpjg+pFL4saf3gkgSlTk2BUFbiF1LLmlGRwLJweKrMUNGrdI9Up3NrJHCp6pz0ot9uX0=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAhWdm4H+zQLVnQLG642c3I6vTC/h+sAKiOzX/pIixYxgTTu1xI02PkOoUWd+wAPTTNwqFB1xGHoLvc/lbzd9xRlUcQiu/cpqD5JG8eiS4NUeW18MI3QHFIcO0fQbEU
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAACP5IhMlWOOGV5P2Z1aq5gcnC4BGa5+XmDy1zhsEW8LOPJHPh0VM2nQ+sUjUB7+P1l50tfUSrMFM5Sgj5Tg25Kv9YA+4Owy0+z6zsogs1uvkHYTXCjDxtlfRcayBHq/KaywA+H6bmHWXBllgYZIQfHF3Mn22ImQSB5pkopv/Js=
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      Procedure WIN_DiskInfo(gsGBurnerName is string = BurnerList(False))
+      
+   -
+     internal_properties : CAAAAAgAAABt1qmqaP9/JHMmlTwc8Za9wKmSYybc/wJ+98h+UyheoaWyI4Fshy2jeUSC7BuKqUJb257CaI4BkYbQ2AjxI+KWapHu4PS5zQMCh6ghd922hhhzMLwz3o9SNF1zX1ik94rOveEaO8a0JMd/
+     code : |1-
+      //Run the hidden button
+      ExecuteProcess(BTN_Info,trtClick)
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : ActivVISTA_0_D_10_43_07__02_11_2005
+resources :
+ string_res :
+  identifier : 0x1404a98d0d60f13e
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Burn process in progress
+     index : 1
+   -
+     text : {}
+     index : 2
+   -
+     text :
+      en-GB : The burner is inactive
+     index : 3
+   -
+     text :
+      en-GB : CD-R Media
+     index : 4
+   -
+     text :
+      en-GB : CD-RW Media
+     index : 5
+   -
+     text :
+      en-GB : Unusable Media
+     index : 6
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

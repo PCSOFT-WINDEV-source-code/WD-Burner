@@ -1,0 +1,404 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Menu
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Menu
+ identifier : 0x219cbec4126a3e61
+ internal_properties : CAAAAAgAAAAmNXLncbd5Ca7kzs8Xy2D+cP4t3eNKqwye2NUkrTYCU+4NnchfFFWuGK47u9zBpwKTQ3f5GwlCMIoOJxQc19pr6WvSHWz8JziQ5QxeN8zGf/6WT2zj/zju/4yi7Q3L0zEmeJngUW1mTeQnfuYIKFy3foL/xgc3F8XjIvRkGF8y64psk/3uK3LJ2/51pDLpVOyRl+lRxZ3/lqbZBYO2hjlOQ+yLEjh6w3ALdD432MiXXcEpxNr0wvtvNLEBBCmnGn1ClGM1Y8b88GIzoTzZuN/o4L9wP2GqZWQu85YU2xEPbiMxFYs6xDekRpNdDhk3e5qorbdIR85CE1MnC6nvVwSmHyBMykJUJWnIAL6/s0fZ3lf0ROZQ82mt4kZPvc3ghoc7ShFzUY1XFXktcx8eggY2o78gRteorYjsYiq4TRVhiPDkY0jWZCSQ5xbNayQZeQYaHuy7LysbeMRgEuEgySbheyrRPHJCEb2Dh8Oy0E3RGtP1JN6aKl5WZVGunKR0KJobOPIWSHGziae+vPD5xBOvtEAiSMZJ9+Kq82z7ceOPRdwy3hgAbzZb7xaZds3ww3PsydR8Foe+/y/ULBD7wB94THnZS7SgXZWtHgtenQo=
+ properties :
+  width : 460
+  height : 160
+ controls :
+  -
+    name : OPTION1
+    identifier : 0x219cbec4126c3e61
+    internal_properties : CAAAAAgAAABhkz/iSzJ5xVzM6/dYLqq1igJu6VJrLxi47EqGOaF/gfaEnjgcBjQO1fmkI9lFUG2MPGJMt7H1h2v9l3Jjfx6YnD6E9hWnWSKhSIebr42QE0/DmSt41nQcuOMhklxBjZD/ZEeUQ2IxytIiYgKLEVZMcELZi6d1y9yDB46cMoLswXxKMZSyM8p6lUCKdXm+fte0fqhmHf4SoJBD1A1eFvgfLSUDhv9JTW/3w6DILfBKKDiWtJiYlqnfA6YayuIOgx+7EkP1t22y71TNP9UV7nwOzVDhYkU3X0dLNDYV1xrNagNokFiTr1Sk7pmw6exLUni23OutBuSxtWAGhcrOH8I8205eCN6pjl9+wNCBOFH+jsFG/r88pU8DknVG5/q3nkAMiy71+JglVK2Fb27TdttN6Sr5ADRAGv58MGLBgY8MkBv3wwr+Yv/mwvG76MUUKu/8j69405R2rL0J3OnU1JW9pRO56WtN4ZTw85FPJnFgFd164AJDr1EYyx4Sjsm8QuP+teUTBfG5ndLtQmq0Rvgl1oB8SPCAhnVWmEr2lrcnhtouCHJOhzBBGQYuDsXkZiqj7n0/5HP3SQWiGOTtGSElM7mzN9JwSIF0tyLgI0ZwWIul4YXOjuzkA37eTKaiRzAVhzBfrubsNvSJnwzGNG8sniU58c90t/evVGniXzelAdd3i28Spj7n/I+cIvkAXDteFQbmJPz3zlppyc7dxvJxgdXzYXcp37XNPJ6b/r8zONY12xr5+mZR/mML5AawpytvpS7VLrKzqTCi/BjFS6LoJwbCe4NPPUzrZH/zYlV29gQZ8RgBx2Ln
+    properties :
+     x : 15
+     y : 17
+     width : 128
+     height : 128
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         IF OPTION1..State <> Grayed THEN
+         	gsChoice = “data”
+         	WIN_Menu..Visible = False
+         	Close()
+         END
+        type : 18
+      -
+        code : |1+
+         
+         IF OPTION1..State <> Grayed THEN FishEyeEffect()
+        type : 66048
+  -
+    name : OPTION2
+    identifier : 0x219cbec4126d3e61
+    internal_properties : CAAAAAgAAAA6DGNoSvvUZcwh+D0PyFKjj1vqZZzykncCX9fVHKGXR0/XnLBOPl9cehhnexy4IiPIcUptlRgJQ581pokBTHSHXfApguneXRkXMR5WnEUqYx9taBLnHpuGHXY7EXgIvKB5AqiyLIuzSrYkeB3OCBWOSpjQ5rZGB/dZu+a3jIR5jQAxO5H60s8k6lyzKEwdDS4tFbbu5Rv2Z2mY+26Sf35767k16+ZwD8/9NPoe5SOe0WnThxJheAUKHFqlYzPKUVF3yyvwT7moH4SBz/9G57+E1UifosZydVylyGiFY32kgWJEgENQnAOJZdWa4yR57AEe36/tkMYU15WSch0VQES2R9tteEjy394Trz/SdCLfK74YG7PbqFnvMSo17xpk7qNURi0iZI6scaWwx3b1SKr9JWcLk5AV+gJzlE0HuIvGE6sAUhblX/nvuLwrZvhnMOFZB1fm5zADQJlH5Vs7bUqoZ2ab/yxo9ClDSTkm7rBeSa1I853MwzVim9uR8G2iCwav/Rszcb6N6tatLE9ODY8gznPkzosQUPxS887a5pg57ltzYRIMVRhgMfp+yIrc0phg8TP/UTeEViOkU4zbwuQlyHZK8iJUF2KW5EWw47EoRFiD3r/7IncRqs7PQtg2vByYaqPu+N15nQTvgWBFwx9ny2cbdPtCj8IDnNcgCI8py+9urCB/DOZl0U/ZyAXSJJ9PBHG2f3HEeJtTixJMly0=
+    properties :
+     x : 166
+     y : 16
+     width : 128
+     height : 128
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         IF OPTION2..State <> Grayed THEN
+         	gsChoice = “audio”
+         	WIN_Menu..Visible = False
+         	Close()
+         END
+        type : 18
+      -
+        code : |1+
+         
+         IF OPTION2..State <> Grayed THEN FishEyeEffect()
+        type : 66048
+  -
+    name : Image1
+    identifier : 0x219cbec4126b3e61
+    internal_properties : CAAAAAgAAADhBJ+EtlPDWX7qIItl5ns3xzxX+iqeVck3ZTpTCq4zuq1Ak1mle8kVSNwKmJI8DJnHWjhT7oPPEYDTJ5q3n85/TrE26vpWUN3HisUjeUXJ6D5w2kKNpnBiWGD9W7wd9BcqCbn1oTuAYkXPX1Zk3TC4H5dgeQAB0EfRvwWsw4N4/DzpHyA2KTMyA7sGwF0ld0WhHueWuHIGXNFOtLp0r2nIocI4JOuglnxU6Uo9E+y26xmtN4eMELWsPHMcPg1et2UDT4kMDYtAXtq/gBnOB3s5hTOomabUUySd3vXzUzzcKXKmYt99PtvJZTKI63KcT+hkOEtgQOp3mznieJy1L7UN+PaOMvdj35aQXfmGXmWl7LnJORdxijYtvxWYlmiTbsKv2eE9lQ5aqCAQ4TaLMrsh3T9vSCqnAFjVslZ6EVeERfQlRc+42oEKsbVmaebZds2JuBl1jv5+ofV2uCPT7TgqzHqGx6oytKJ9fg6USMFNxE+3e2uEgryLAYIsOWh9BWUoxlo=
+    properties :
+     width : 460
+     height : 160
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : Image2
+    identifier : 0x219cbec4126e3e61
+    internal_properties : CAAAAAgAAAArNbCNtWr4tp0sDx80KIuoH3EwO2QWqnNSR8E7l8xMOvYREQWNIZMxatnFJgHKVWl970oqbBkD2ODNuIer/UV2VAjkJ32Ib4FpofhNVWeFTJ0MiLrPqmZO0aJDgImZadQt1Q6jC/0KV6gu2yN1t+U5dpCzxz29pXqs/RrHQEYcpJlGBWvoUTNOzABe3nba0XasSfktNtqAg5kRddM/6JAs3ColqIPXQowyb9iBy1jpGZfANrOhdGYStanO/WYa933iY9k8APU2m+W/ervnpjFlblM4+CV8FdyiW3fq7UCAfCnhWjHSL8wkaDQqpfxS9Q9Mxv5lgkwHOQ7+F1ij5UgbXBVBZo3SXrQ1ilIbnCvC3pjn4kmTAchLA0RJqed14uAjlnS1qogzS5tUuPyrFCHW0MYhCZ9zQf/SMCM5V5qw+ONxeTnHTNEH6iycw1RyoIo1YF9PCQEO++Me1xDyPt+lsyLIi/E4P6+6UGF7bT5xtBHhmAmeadn3sXkXMcX0MDM0+ywHAHEzHqb6bKCs7adf0uzwnWKImabJ90mh/woBgR89xLG58coDDvhaZiXuOkAYdRqiBpDCo/F4K/3R0VhaPjo=
+    properties :
+     x : 25
+     y : 166
+     width : 460
+     height : 160
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : OPTION3
+    identifier : 0x219cbec4126f3e61
+    internal_properties : CAAAAAgAAAAzfLZD5de6f1mJAD1LZ2ECx2MtxTm1KOlLetaGQVAh/J5bnarYy0gH18sq2Dgw0QovRnY5rN3/M2biHOYmJVePiDOeZje8T++apwi6nWMrhzx6hXIT93kWK1TroHSTjr1cCqriRsjhc5UbctsucOPct4UQh7IbZK1gRfAhZl2KDZypSp1GOdzGgAmyBKjbbeSW3IURAcfOKFfSfmPzdFGGSjl/4mxvg5IrAKRtv3flrpPp7jUQKDhuvOSyvp5bHXtsLPtf/KVHRvILeEG2EBFRAvNFehKjqpRN5me1510oV23VJufI++MdWQLTqcKthZyw5FS1ekXKHL8/Nx/i3SCyppvUkp97ejhDZRTm1s+4kK9NnsrIz9aHnH/DuXr0i3N61F6Ji2keWE8fBs7LqLrqORlC3uqv4Whp4pVoFRr0sroFw2DDOJNWA3zpoqlh9dauF5XhB+Syrty1WTCr4p6Z7i9V+e+XiTeZ+eNPKxAXuhZxXb+BkufKLonEjtvm6nQtJVcPGV8O2GhP/auPv2JCaJd6yRINyxGwX8ptdi2Aq34xgry/NZ+VH5Zd3yzertSRQfHfbIbDgKbZwTYD5MfhgtKo32R/ZRlJbkdSbHME/LvkfsvM1w==
+    properties :
+     x : 317
+     y : 16
+     width : 128
+     height : 128
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         EndProgram()
+        type : 18
+      -
+        code : |1+
+         
+         FishEyeEffect()
+        type : 66048
+ menu :
+  name : _Menu
+  identifier : 0x275d70ca078d7e8b
+  internal_properties : CAAAAAgAAAAoagsXE0xucBO2e0ia94vQrRWSYO17FDggaUaeRKNmgp14OlvHidYQADmCe7JzSJ/iKr5/Bl/WV71r91Q/sDYDdLqwsTKTRz9u6D0iJop7i+W+LJQFAWVumkmWJDkEpFSI/3Isl72sizXgIGa6ceDcVwxLKYotV/mMqpwrFnyD72otbjY33rrJB0BU1QDpjXP/hy2K72XPUh586oOx/dcjilW8iumXoyb12Pn4c9m1zBiqwt5h1BaxnU3jtI9jdwvFT4lDQEH//KnAMHelnxzoooufws/wvKpA
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAACj21OKvU4+j+sCXhzKi1+6fD40EH2G2agiYVOhc9EuGs6DO9wIU6NkOkUWd2wA/RQt4gGh9zFnQBt8njYjEabxKp2uAB2KNC7bRgGMP5ib4xdnIhDlks8mEk/xty+W
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACHTkaGq4HSEVkGU2HKeiJbHtDebHFJGvl/bCLo5HMXv3yBlS3q+T87dAt8IROmFQ6DZw1LRu/s/wLni6gpPRtuAGzaUM8kQnDYGVcKep4RCCbL7lZYZOINQMl4oITq9e/4JAN3eTzQD73HKUIfPmhcl9be8nSZGg4neOxRdyEICw==
+     code : |1-
+      gsChoice is string
+      // Number of options
+      NUMBER_OPTIONS is int = 3
+      
+      // Centers the window at the top of the screen
+      MyWindow..X = WIN_Main..X + ((WIN_Main..Width - MyWindow..Width) / 2)
+      MyWindow..Y = WIN_Main..Y + WIN_Main..Height - 300
+      
+      // Displays the window background
+      ApplyBackground()
+      
+      // Reinitializes the "fisheye" effect
+      CancelFishEyeEffectAll()
+   -
+     code : |1-
+      
+      Timer(CursorPosition, 5)
+      
+      // No burner
+      IF BurnerList() = “” THEN
+      	OPTION2..State = Grayed; dModifySaturation(OPTION2, -100); OPTION2..ToolTip = “No burner found”
+      	OPTION1..State = Grayed; dModifySaturation(OPTION1, -100); OPTION1..ToolTip = “No burner found”
+      	gsChoice = “”
+      END
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     internal_properties : CAAAAAgAAAAfNt7Jc7GCr2GGw8kqssQXRE7Q1qFcqZExgmQa5ln/iQgFTVVsK4Hf6rHa6zUEqURr3ylnXOUabyCZvQaP93fkXbGlTfwr5evhGuZLhaNKAfugMVsF4+UM7SbzDSsz4nRZleJgUlNPfuKV4pk8AStD3o0LzY+OH3saTykML5mQkw==
+     code : |1-
+      SWITCH gsChoice
+      	CASE “audio”
+      		MDIOpen(WIN_Compile,“CompileAudio”,“New CD - Audio1”,“Audio1”,CompileAudio)
+      	CASE “data”
+      		MDIOpen(WIN_Compile,“CompileData”,“New CD/DVD - Compilation1”,“Compile1”,CompileData)
+      	OTHER CASE
+      		
+      END
+      Close(WIN_Menu)
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     code : |1-
+      
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+   -
+     internal_properties : CAAAAAgAAABkYxCOAWHWSEcmS47+Q4zr76DFeUhRJGaNs29bIcM+i9P48K1hoWenUlLTUcG+n+jT4Jtjp2sXjnWCcDud5gVpkt1ArZhMBRqjw7AWM4YjS6jH+jMDU88Vva+NPKIVwCdEi8l9zIuOl9Q91Q==
+     code : |1-
+      
+      // Reinitializes the "fisheye" effect
+      CancelFishEyeEffectAll()
+      
+      IF WinStatus(WIN_Bubble) <> NotFound THEN
+      	Close(WIN_Bubble)
+      END	
+     type : 66048
+   -
+     code : |1-
+      
+     type : 66049
+   -
+     type : 65543
+   -
+     code : |1-
+      
+     type : 65544
+  procedures :
+   -
+     name : CancelFishEyeEffect
+     internal_properties : CAAAAAgAAABz6rHa+HDqL0ZLlMHAnyoj+J7uCpJmczSkDYfDi0Xawv1IuAySToGOC7Z5cQ3r+tMLkBtMg0cFDfEaVKflatg2jsBeUhsyj0pQge1MvmrF6+WiM52fYyzl7ylf5rYBZByIPZjD52DhL3McKkIcEksXaH5UTBePFw7tGvPL/mkXtKqOnI1uafbGPnx0Otq1HN8=
+     procedure_id : 1269098944095010401
+     type_code : 14
+     code : |1+
+      // Syntaxe :
+      //CancelFishEyeEffect (<Button>)
+      //
+      // Paramètres :
+      //	Button : Button control whose fisheye effect must be canceled
+      
+      Procedure CancelFishEyeEffect(Button)
+      
+      // Variables
+      x is int
+      nX is int = Button..X
+      
+      //
+      // Reduces the size and the dimensions of the button
+      //
+      IF Button..Width <> 80 THEN
+      
+      	FOR x = 80 _TO_ 128 step 2
+      		Button..X += 1
+      		Button..Y += 1
+      		Button..Width -= 2
+      		Button..Height -= 2
+      	END
+      	
+      	Button..Width = 80
+      	Button..Height = 80	
+      
+      END
+      
+     type : 458752
+   -
+     name : CancelFishEyeEffectAll
+     internal_properties : CAAAAAgAAABouuwGvXStK2UWmm5pLjHdoiKxUCCDqW+3ZvQ1mYeGIg4bMzS07/lZJXukWrOaiFrn9Nql4VbF1XgI5wh3rJy+fYGPXbJ7DC8b7j31HTCAgmKK6ftY9/3JOCkmi+jT0Mo5Rc0BS7QhDaYdBZVc+oY2/hF+fW7j61W7tI3SzQco3Pn+v2dTXloEG0xYwyJcs49VGdj1TQ==
+     procedure_id : 1269098944095075937
+     type_code : 14
+     code : |1+
+      // Syntax:
+      //CancelFishEyeEffectAll ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      //	Except (default value=""): Optional, name of the button control whose fisheye effect must not be canceled
+      Procedure CancelFishEyeEffectAll()
+      
+      	i is int
+      
+      	FOR i=1 _TO_ NUMBER_OPTIONS
+      		IF MySelf..Name <> “OPTION” + i THEN
+      			CancelFishEyeEffect({“OPTION” + i, indControl})
+      		END
+      	END
+      
+      
+     type : 458752
+   -
+     name : FishEyeEffect
+     internal_properties : CAAAAAgAAAA0j3DGSbDakcbmS2Wq6svu88CUvMJ/ea70/mAVVaAiv5IHgZypFrQ1zOSG5ZbUIZo+DgYbHqQxg74a8Wbs+gy9dQZwJJAsm64kTK7dpXL5YheEZDIWOwCfbQLdbcgVjSjUA5QIPZ5inZHsuoFojN2EIQcD1izBpLu0Obhi4VXrWjLsrhZTYsGcQJUHBbj4IaMlfplUz8Q=
+     procedure_id : 1269098944095141473
+     type_code : 14
+     code : |1+
+      // Syntax:
+      //FishEyeEffect ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      Procedure FishEyeEffect()
+      
+      // Reinitializes the fisheye effect
+      CancelFishEyeEffectAll()
+      
+      x is int
+      nx is int = MySelf..X
+      
+      
+      //
+      // Increases the size and the dimensions of the button
+      //
+      IF MySelf..Width <> 128 THEN
+      	IF WinStatus(WIN_Bubble) <> NotFound THEN
+      		Close(WIN_Bubble)
+      	END	
+      
+      	FOR x = 80 TO 128 STEP 2
+      		MySelf..X -= 1
+      		MySelf..Y -= 1
+      		MySelf..Width += 2
+      		MySelf..Height += 2
+      	END
+      	
+      	MySelf..Width = 128
+      	MySelf..Height = 128
+      
+      	OpenChild(“WIN_Bubble”+NoFocus, MyWindow..X + MySelf..X, MyWindow..Y + MySelf..Y + MySelf..Height + 10, MySelf..Width, MySelf..Note)
+      END
+      
+      
+     type : 458752
+   -
+     name : CursorPosition
+     internal_properties : CAAAAAgAAAA9jOiGOUyIkP2HXkASKwLHpO5s3v5IzNqWkoN31o0SnPIpV+77H8vm6SPylu52CzTwWvgqic0Eo7ef2A2pDxEvalEQoWP4p4nvYdsIiUKN9/CZ02DnyFziB4YFCmNILZtI1EyamCOimjMa0kZjwbnrNdClWp1cYjRag+RbePo/LxOxbsUpUw5FmAo3vDikSzygaux0FDKnpgIm8xc6MYWGjdjaEOUNzSeQOA/WuOL98pVglm7a
+     procedure_id : 1269098944095207009
+     type_code : 14
+     code : |1-
+      // Syntax:
+      //CursorPosition ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      Procedure CursorPosition()
+      
+      	EndTimer()
+      
+      	nX, nY are int
+      	nX = LoWord(CursorPos(cpScreen))
+      	nY = HiWord(CursorPos(cpScreen))
+      	
+      	// If the window is not hovered by the mouse cursor
+      	IF (MyWindow..X < nX < MyWindow..X + MyWindow..Width) = False OR ...
+      	   (MyWindow..Y < nY < MyWindow..Y + MyWindow..Height) = False THEN
+      	   
+      		i is int
+      	
+      		// Reinitializes the fisheye effect for all
+      		FOR i=1 _TO_ NUMBER_OPTIONS
+      			CancelFishEyeEffect({“OPTION” + i, indControl})
+      		END	   
+      		
+      		// Closes the tooltip
+      		IF WinStatus(WIN_Bubble) <> NotFound THEN
+      			Close(WIN_Bubble)
+      		END			
+      	   
+      	END
+      	
+      	Timer(CursorPosition, 5)
+     type : 458752
+   -
+     name : ApplyBackground
+     procedure_id : 1269098944095272545
+     type_code : 14
+     code : |1-
+      // Syntax:
+      //ApplyBackground ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      Procedure ApplyBackground()
+      
+      dCopyBlt(copyScreen,Image1,copySrcCopy,MyWindow..X,MyWindow..Y,MyWindow..Height,MyWindow..Width)
+      dCopyBlt(Image2,Image1,copyImage)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : fnMenu
+resources :
+ string_res :
+  identifier : 0x141fbdf500f79090
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

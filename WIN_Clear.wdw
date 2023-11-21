@@ -1,0 +1,358 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Clear
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : Window for erasing the disk
+ subtype : 0
+window :
+ name : WIN_Clear
+ identifier : 0x219cbec1114332fc
+ internal_properties : CAAAAAgAAABylXhESjeZrbg8kB0G4zmURTaqObprma+OCC9eZJtYT/n02xJvgXzQkf87E7f4KbaZ6i7IzuwD3w+Jy6KqKrmN2skCD8jq7/CvW7dtDuz4Q9Hewzg9kJCyA9uTBbW1h7Aq4eqGddoP/0EZ0y7hIoFJbZmXx5X9kpmOIO1l3CM+i+PwQI1TuJVLgTZQzORrACy0p4WKVGrTtBwGOnPXFwgHjXquiNR5CGTUAuq/2TcREU6Z33h33l0z1BKY3Q518wX49o3Z9I0x5StTHDvpgPetLqQgmOpdvPRrO9gBKj3IyS8hOBo+Fke/fpbCyF63osgz29QL6cbwgJWC6yi4PqSPayabXkfNdY3IDOzj6PEOGrGQNkgthGz3r0p6mHBZKaN3vYxVNaVArdyZsJIEsB46stQ/g6J4sgSrchTRy/ejO1AKyXpxCxrRjqZaVOaauvplwpJ2m94BN15LigEUO9UW+UN7EyuW+cTQk4oZ1i+HdAizBYA+k75cvou9ajAoRzmjw3uYQmTd1H57qukwUTuAbLcqjDF/ZxCByUC1BGEligG77k73JS1ZyNoGxnKqgeyLEWJ4l2ZfKpeIh9qPszL1bibJys+pMXVykrQtn776hdWVCSr0PF9sp9cIfUyPsNvH9dzWxWBgrPt+M59mASxXzcHY03eOyc9ysQig+LehRd1YUWFOgebM3z9gqlE991/XjQSu7cSjbs2ZP4gPqFfD/1NhKiIj7LBVMAXUYJMtVdLetpcW6Xr8DfMi3XA4ClWYyzcbPyTn9slnf+HlVSl59BTJ95dt0KMbJhzHVnEZHXtVzOca56g1hLzit/bZh77QZkU/K24xBfEyMZDllLv/qPJg1hgPaj9bms/xqliXve2UrtzpOUFr8CB7iOuqa3KH6Pxir46MkKu9mXt4AAQ06J4aeSsNJSLPzBWf9m7gT6vGvteI05imtCiL+lp9Qe/QCg7UU7p/Le+T7aB3DBl0UGVCfjk0a8MpL2eK53WD
+ properties :
+  x : 5
+  y : 5
+  width : 426
+  height : 384
+  widthClient : 424
+  heightClient : 352
+ controls :
+  -
+    name : BTN_Erase
+    identifier : 0x219cbec1114532fc
+    internal_properties : CAAAAAgAAADB4gzs93ui2AcYwDR7c1dEVuf1qLf9yEcc1tjNh8mAzVaCsVtL+vdPrX3Z+GtnPhAWmJFUpy8pZcgimEQ9vfPX3hsETE5zwYTH78HMBjaBDRzidiYgRFaOlQcMw5Om939v5buwzhLnYcBBGVnEOorhZDv9RlghiWCQmuq5Xjnavw13Y/BY0SBHJq+sBs3/h0kImkINfn4ztnqwO+PdxIlhIcxYaDDR3mtBps7zz26l4ghjYELQ19eI6f3QPv5LnklAiT8gW8Ax/s9ukNgaLZ0K3ivnJAS+1U5AgzR3XeRfHti0d74vTmA/Y8IWNfEiUYfAHhOYfA3P/MmYrjwDJ+2PFnPYiCvuD3/n19h41OXTwM1vuX8ckqyMtLm0IIIQuXAO+is0Syuh7891nAvIzEiPb7HqFKfsHg3GMv99h5Np3Ji1VWgng9nSpuLn5i0d+XL6ErUbuUeQpWYBFMJQl8Im+TkxAksSehbMeBeGi58Ofm3tWAO1Nabke82b8xDnXras1ER4p4SxTEz289cHX96w/MnRsP9rzVxf+fzdPDXYua6o2AlO0KY+ndl5tGHWtZBYlcWmE8JzOE0RnoG+b8P/mvyH2QOMZyzfn35rOnHwwanhmnc/ZsXMjXDbpLAiYmcfPhk5fMV8TFKQzrIWgDO0IZjw/K5U8IK1S0Njp6Q+dqIgIbIqQ4NNzuwpRwVPuzYIjUEQJI3wslNxeytCSNuf4sk8M0lrwRPkTdJVgsXBZny1yC4SajzJxc0sWDJoCuNdxNYxHFubzOdWMO7CyjQ=
+    properties :
+     x : 154
+     y : 294
+     width : 50
+     height : 52
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAAAjQdhuZa8VFaJ6n5oeZP1x9dhU2KdAHDZIGQ5trazjjXFHCLYp5nDDtZbkQIVLGWo5vozTOg2AvHlkssz6JjgHk5SMxWyjmmsgypaffz27jhHJ8pKcbl54SJRWKk0nldQP8PNY9C6IGiLTw4LZ+FV6rEO7iTVeesnYYljBvd5auJIh4eP5m2760YiRk2EotVa2sg==
+        code : |1+
+         nEject is int
+         
+         IF CBOX_Eject THEN
+         	nEject = burnerAutoEject
+         ELSE
+         	nEject = burnerNoEject
+         END
+         STC_EraseInProgress..Visible  = True
+         IMG_BURNER..Visible	    = True
+         BTN_Erase..State 			= Grayed
+         CBOX_Eject..State 			= Grayed
+         COMBO_EraseMode..State  = Grayed
+         
+         IF 	COMBO_EraseMode[ListSelect(COMBO_EraseMode)] = burnerFastErasing THEN
+         	// fast erase
+         	IF NOT BurnerErase(burnerFastErasing+nEject,ProcCDErase) THEN
+         		// Display the error 
+         		Error(“Failure erasing rewritable CD/DVD.”,ErrorInfo()) 
+         		Close(“”,False)
+         	END
+         ELSE
+         	// full erase
+         	IF NOT BurnerErase(burnerFullErasing+nEject,ProcCDErase) THEN
+         		// Display the error 
+         		Error(“Failure erasing rewritable CD/DVD.”,ErrorInfo()) 
+         		Close(“”,False)
+         	END
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Cancel
+    identifier : 0x219cbec1114632fc
+    internal_properties : CAAAAAgAAACZZvDH2MN90T7JBh7II4lnJ0mTzrjEEB4Mtt4uhIIFEN4PfCHojAntcxAinimwyJZ9YOKZWuRsJ1/AvDaaXFJI+HD2WeL7IQSK2F/1LIt42Ha2QwCA3Qq8LHOSIxsNgFXGRTVdfR459ORO/q/GCEVvRBxUAbRG2zuWMtTB0dA1+Bp7e2VJdP6Z7JHHgW0rZDV0JhBMXqoLFsSoFsiz4xiGxtNfzQRDGBuS2uBy5uWW1A8Tkfu6oy57HAtixOpBmboIRunn2KnZkvRKt7+h/EkqdJD5DYmmbPwfm6lKiBlw078t+bIEsAA4/uITkEGH0ZJjvRYgRJekccR7UntGpG7QY7gZOW34+4ZmVXGzOWv/PS85Th0+ehYRGNFyzEyudx3VEW2ZOCBLZN3+AB/Q+rxy3Wy61YXbfHHfKauLpqwYVuy2gcgO+SHNM3teh/0bChtuY1k9ciasH2DDSBfsJqtw3zs9S4OCDHh7OAwKnOsIgPE2sRPIG+Gow9Yq8q4uK2IXw/1VXqKUjMJtSGYb58erqKpFv1B+s7n79AikeHQxVX7rw5cR3NwGXAePQ4uc3cD4yWlfIh0s8yCPngCgDt3vA/tEWYm46DIucEXXK6F6sEn22uuvOb2OuYVlb1C4ympHXF2f/7Ur+/yAoI2jobZlXZO+tpBfnjMG2WtdAP5b9qNyJmDy0WvvVqtg5XIMBFBibBNuiYN/VwYAkHhmqKGydMXmzw3NPY0D/XcVXUmQkniPnE5gGVNrl6s7uw1UGaGhR+dHdkLCr9jCh83VTsov5X5SLumatQwz6w==
+    properties :
+     x : 222
+     y : 298
+     width : 48
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         IF YesNo(No,“Do you want to cancel the erase operation?”) THEN
+         	// call the method for canceling the burn process of IMAPI
+         	BurnerCancel()	
+         	Close(WIN_Clear)
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : COMBO_EraseMode
+    identifier : 0x219cbec1114732fc
+    internal_properties : CAAAAAgAAAD0XH0VUwkuDdIvha3lc06eFVXG2qXkW/ypBMqn+urxgSluwnrzKZOTAF2mZf3+aX4Kv1M95ex7gvIrloZqET4uLlNo8Icj5JXaKwT2vAA8Mt+X5aYZwgi+gb2fQzACK385Kp4PFL+zLD6zmheRn28nIHepzJf0FD+OQCTCyrwRzFlHaEPb772Tm1SyNj6r+vsdYEcT3yMboTME7Y9P6l7CTm1h/CDSnOqUUNeAP5bfMr3/un3WMQiq3t/KuFLby1cptZMfAbkLi3BRfSqCvFp3qwyBayTJpMuIqEWdAjhRNTPPesXKefdnW6+pJ/ieMVXu2XK++4s3QiPWmDykKeGkrjnHvjawcE0lKM9BUHkfbu07IxXNw2PEPZemJHlkp0mpworcP3uwmvXGmSx14LY9yFsi8dS98uBfyNjQrHgnLVaoB0AFbsiODokOriS9LbrvT+xXSiejkuiWfDdD7pTnZOLfMrb2FivB6wq9FZ2gz9PBhjx3nsG36zK5TiDO6ltt1eX3HMx+shh/8HTdpN4Fu3UJE8N73sqHQh7gr5zDRFtFKo7f3WslxqDCX14tLe4mb5u5TXnW0q+5wTfyno4EOk+BOizFJ5g47MYZKA0j5n5D5Rk9WABnWCIBgHlgHQXkclzUGTPrd8/D8LElkO5QS5+yPts+EKpCPOqwEqpMMdo2VtwGWmQfUxefuba87lp0uNgPItuMEQINlAje7Vd1CL88qS1I7/YhDkR/PU6G0CWUN83K4qB+JEHdNNvcHasjIKUujgPXG5lPTFWIjybeh+t7GQ+mDbuoI7jHBRsAIHyK9p39ZpcJXkd7pWqQedr1RhT0T2HVuZFUS+Dv2J3YKlNQNiMwwPNocdyQvkJyo3nkBNNGIUU4f1V9NZ3uKkFF2BTA23xAdb7HxgxwtwaxJ5hqHUBheVJwFKDcLnt++qMF/HVvB/Sv1hRXPOmLRAyv+nM14VhRKGOC5HK+6bIG9s8koy75ptYo0eYdU9znA5tILPclV3YeTtXYKckXPKF4wQNd7GerGvGGONj8yqn1qrbng7A6KoXUcC4XJyzSyxzNgrEc64z9N1BaEVp+P9rpO/ArBaR07cJJMRsmIdLT+UFV8Hs2VHgk6T2bGdLqAWq2OhFShyB+ggb2UodiziWqZkC33ptP+E6BEZ9a7sk854JvHj4aiblviDVhuG4vlbgc9LfdamlWLuSaoXd+aldqoOmyRGhwtjwh035kKeNVdUzV+qrl61pGSw4yG5k5qUCnJJ443Us06QuY2n2pFpaKGkRk/baJRCmVvz2DEzda2YxHqc+9ytlZZlSM+3jVfM/O8QtLzaLEfc06q9Yk7Sg61OC4H5h1krfi85aVfjrz664b3Rm+IF9ZlYBApJYGSQy5B9p0r/fwBsbhwF7UrDjmDYi87XTe03GBD4SkM31rn9WElSYbgSZY4q0VffYC
+    properties :
+     x : 10
+     y : 10
+     width : 404
+     height : 38
+    dropdown :
+     internal_properties : CAAAAAgAAAA0aTgKq1mP/zqWB+ON4B/U1FLNkNUixUhsGmnCQNdOUt6llYRB2I1JpSociF7FgYDFxcp/kdZNOaNgse0RrRCHSzlPPfijn7cA3IiBOEpqYhMikrVn+zENPTAu++vuiOsk5sGuZ6/vD7GU/NuQyiSuym0t0Jo+YN3b0uLWBK9AZVthCAbZeW7+o8AVKU1/EvivtoBgT5TaWZCRn0taqW5syLEx8GgztNAhC01IlirYDoZIlXW56REF3GCzA985rcADX8wMAfEnpvk2Z0wZ3ovhiI98dlh848UiUTD1JdP0N88gSBXMxCMzSrQxF0RDdghvWjo8H1Bez9l/xnizsSqpw9LcAPYuiLi8670cYkZAXf4lIUfuHBkueJN+prYVkc39NvaLmLtdGV5raOoN4cPgi1abdlIMTA4L2aDOfRJlQ3xfBk6c60deTvpEFa1S5/br0B0eQHHo1PxKxKRERCLh24eFX9PrIXVV2Anvi7wj9M8bp4Zxl8EjEQVohthmywhOkpcT7qztmevJYd307u2vhGnhYZbiXHf2Xg==
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1-
+         ListAdd(MySelf,“Fast Erase”+gLink(burnerFastErasing))
+         ListAdd(MySelf,“Full erasing”+gLink(burnerFullErasing))
+         ListSelectPlus(MySelf,1)
+         ExecuteProcess(COMBO_EraseMode,trtSelection)
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        code : |1+
+         IF ListSelect(MySelf) = 1 THEN
+         	STC_Clear = [
+         	Fast erase: the files are not entirely deleted from the CD/DVD. Only the references to the CD/DVD content are deleted. 
+         	This method is faster. However, the erased files can be restored by a specific software. 
+         	This method is not recommended if the files found on the CD/DVD contain confidential information.
+         	]
+         ELSE
+         	STC_Clear = [
+         	Full erase: the files are actually deleted from the CD/DVD. This method can take quite a long time but the deleted files cannot be restored.
+         	]
+         	
+         END
+        type : 33
+      -
+        type : 17
+        enabled : false
+  -
+    name : STC_Clear
+    identifier : 0x219cbec1114832fc
+    internal_properties : CAAAAAgAAAB3Wgta31j2UTfawwPArEXbRjrcgWMS3SJADHyjwITxpC5fqf77zAIaBZKhciZ7v9EUiQxHUF9zecMzeAdKe8K8tUMxOnPb5zHhTmoDo4FiGJH3Okq/N+mpXQYu8BmxLg+6FVAEfxkgm8C2u7Wz4QF/GXxSgOvoYYjeOC0o38th8EtRa411o4g0pR+ybA6uu5DPksGqD1/9U7MfwmnWQnEPHXkfZNKvKBj8DE7iT7BTGE52CCrdtLXqqNMrohM70jPOPdudJHwZQYZYAjexJkFeIFqRdUNkWsnu5vJkDyE7rHCEUn+hqGORq02vNMtRqUIX1h+lSt/tR4a7Q2x4psHuTdl1ed02dSncmyLqvx34ew==
+    properties :
+     x : 12
+     y : 54
+     width : 398
+     height : 104
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : CBOX_Eject
+    identifier : 0x219cbec1114932fc
+    internal_properties : CAAAAAgAAADH+yARawbr3vVloFzE4Jx9GE5EA75MiQYALog/Udh6ayTRkNpajgB2vklqDhk1Ozm8aM+0gg/FJz5maxJvJZPqBpAETNDTT0fxnXC44rUNWpjgUcreQpJImq/kj1CY07ab+6xCOfa/gWdWZnIuJrE/Co95eel7ZVjFkVPHs3fD2+636n2Q6E19FozJXTFnsaXwywBmXhR1vJn2bpezQs2EAd4sI0fi3vB3zKIRfQv/wFGJ7pwOn+gRsmO6r8nLx7yHTv6j5dOLQgiuBhHY/OnC8mF5n4BLPLKOuGJuz4R76iSEWunTQx8wFRO+piR5jwnd9s7QcYcEod/zSLpeHbTcWaulYr3fsXcK2R99/Szx80lUSKKxuDhSq5nHISiZf1Nfl8oycpfh8aQBFsUFuu+N4pDpDY6wOgRaECsM4xT0joaQV/Y7ZP1QT/UGJIfPUgr7H4dYA8GOe8P2WWbzAI2Nt4fw32LwVRL+U/JFfofW1iVrzFQcr13FaxPkr3qMcZ2ot4h2h8ndZvYu6ua/HPxoZqL6FMEGuIhfnu9hNro0+keegB3AY595gJ96a3CA4whvj1LJNG8DGsS6AIiTjAhGFDQm4DvJw0RGtRFMBlz0vYbIOpbC2u4wUGglnfgEG9Q01oqj405oDxfNVoWDrXSx0lYygu+O36xasVk0MWBL8iM=
+    properties :
+     x : 6
+     y : 164
+     width : 412
+     height : 26
+    options :
+     -
+       internal_properties : CAAAAAgAAAD3GjEOyiqAc1N/GluTb07w17VgmKKy6zs5QEZmoHSMgxnhcUfxcAYYiJyHuS+daYGI6oIv90yWesmLfF/dWEepTfsC52Z4xBDj8+/TEZpFZDYXU1Q96PjE4JR23KC2chX4aFkr8Cc9fMDDd0x5MIk2wPum+lRBLMpNH7Ec/6TZ7DRHZLxtZ9Iqphjl4Vsn+qzeaeo+cA9eAk+hBo3r
+    type : 5
+    controls : []
+    code_elements :
+     type_code : 5
+     p_codes : []
+  -
+    name : IMG_BURNER
+    identifier : 0x219cbec1114b32fc
+    internal_properties : CAAAAAgAAADLP9c+sRDXXE1d2Jjy1ALsoMwr2zZ4YiZwkF6AFtDvr9CziUHfaF4WVGvfxlsci9qkuDHdIg6POJd0teSBbJt1S9xY4zzrFwBl2ne3c9c87mOfC7uhEkpKcX5xjPq7pYHKw65tmnDoPn36T8QoFzPe2ldFIrz9Mvkm9w2M21CRGK9rcCTsqaO83qjBzG4DJchWzgV8ivrD8yMJ7FmETv3B/tMeV9E3FClG0acXOLSlGUN6YU9dBNmDBH7MYjcBPrdaGMy9TMgrBB+EPHFwmyswbjDvevh0GSc/NOSksFXCuwPwaZOHQJX+QDKESl52pZmC5M+0h2HquHg5LMrCw0kA6mBc1aSMCFKlM3FVkL+K5gD2Kp/ETY2P2dkTT2uZqlRVsdHPB3sHhWV4q2an/4wXiLDEoro6zrdVghX+Tj0njVpfuzE+0VkO1SZG+uFNhjILg3Au0yVTHfG9vD5jBkXLFeRhW/NQpmq4dOJKauOWBmYeDc5FcqxjKKeprn3+SBznOgwLmTODmnSKIpFy0zI5yu89lfprjUm6/pEiMSHvxkc=
+    properties :
+     x : 271
+     y : 233
+     width : 60
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : STC_EraseInProgress
+    identifier : 0x219cbec1114c32fc
+    internal_properties : CAAAAAgAAADSPxGfbx15lyMGeN5n5YlOM2huxEUqUk1rMbP7cQEsS/gm2w22Yl8sAUcTKcS/kK8g35gzJJJNxTeDUmzXfI4HvEddBN/5Sn/46zKWEmHVK2Za0e9s9rnDrjjLsGnAQ6ZgwqD22xVKnBtu/NdTS1VweUxIuumJy+suxm8EDEJtO39H8sAUSdwclTs814Kbqy4Vtkt+JqMoVZ6QthzEPLqwLeqxi2h0TvVi7nZd0erwEFDQiQYknDr3bPShM0JAw3v0fmvNDAuwKNMOshliOu/ejUGXYj6chLHtnATrL08SSr7A/81c3taOxZu7shXxc4XKrhS67cScjR7tUg+dB/vxu5LVHcbbvUkI0XA4rP/E1IMikooBPdAtjQMIH3xn6spgaZZDJ9gXXfOw5axE+9qsPXuNpnNo2HFHDmizpQOiMo17TPRj+KTfatVR
+    properties :
+     x : 94
+     y : 238
+     width : 171
+     height : 21
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : IMG_Image5
+    identifier : 0x219cbec1114432fc
+    internal_properties : CAAAAAgAAADQPpqingpcEfh+Frn/q8WHdh6o+s655N8asiG/hZcVCQAPnhQTBb408MkEPM2jZ5mUvgIIPTD7Oqy8nHRTYv0EUfcayEBlYqyaq/HRIXXjQM5czOEv/f2TrzzxKoPtTCCyjKX+gLG2d6BX4gXwv0MCoT10Z3nHNsgCEvuVnXCYhGc9aembc6H9K2956zcVCMlFenqgAfqvtbeeF0ahVbc3SZsx5EgABLckOl4BzQjVCxQjdRTNXa1GcbCXAfsmt952+hxj+kJhuMy/EdGlmpLf5xWwL41NDVy2WIrTiyX9zqkQJw6eUoCCedXMIG+rDwhu0D8a3r/E7s/Tx+ivqGaaCsV+K9QSdQi2Zx6Qx6XoFx6bWx6LfpyFGjM3wpEvIgkiUfr74bmTVGkfji3pSP0QUAuERYJLYA8VtWA8HSJxvjrVfKjCIfr81KsODJKlutcy+9M3rGl3e+SwkVGSWsDMJCFWvnzlkZnCmOWfz1MYrFERLvC8Femxrv37+urotvPXyf9DZu+tUofEn84DC6FsGfcts/tw4uXEs7BhjT1tMrY+EnsbzFRT7nT/u5jX0DdLHK5L7w==
+    properties :
+     x : -2
+     y : 291
+     width : 429
+     height : 61
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : STC_Static2
+    identifier : 0x219cbec1114d32fc
+    internal_properties : CAAAAAgAAAB32w62rTbI+36Ty5Je9JrkgXtlFqt5VpfIBmGAJKTVOXXyyphffw4GQzYyQXH5htYSz2WTQS2Y7gy4D/EVfSWqbI7VHsVxPYBDxI/z4MBw6oVmNoWhu3LO5KEmSKv5BQ3uPbwTTwOfU2RA/U0xJZSTLrmFHa0bdTha6O4s7ykvWCfDVXwctXhgAf50v92UhPRnbkvxCwVqtbHP0QlS/NWgJdHiIS68T7SzkwndOVHrbXHPzP5ABFT0TH9eTNuw5Kk0e7MpXGsROFzMLj9i1SX9upFbmp4Wjz8ElpJJfuwNfJoee6bge9SMFwJRaWVNJQcNDpwZQ4islcTJSKxEbaicFI8+Dld6K5Cs9KlA26slKjORYklfPcSSQuOohn6xgzBUpXkM
+    properties :
+     y : 286
+     width : 427
+     height : 5
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+ menu :
+  name : _Menu
+  identifier : 0x2418534726eddb1d
+  internal_properties : CAAAAAgAAAAuLe83LMQP2peI8RH325QNzSIkAwj42KGSq32wdjQFbLfAR+GnZgaQNHgPLUfl/4CHLYlo8VLKWHhtPLj/uIIfka5SZAsRgyyaUAXS7Q4LadqqCjdSL2WtF+BDx4fAMjRr+ubgzzZ4+6e8xJQdDdcd59gPy8G/8GLQQ69RC1Xdxjgz/lWb1m/p344meXzXkBvuV8QPLzLIe186PxhzHtaWthVYpjg+pFL4saf3gkgSlTk2BUFbiF1LLmlGRwLJweKrMUNGrdI9Up3NrJHCp6pz0ot9uX0=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAACv128ukXIik+8WYijej0O+YHI4fJlQR6Dg72lP9F4z7fdLv7jqE8e4WsXkvd6EjRfAPdRKXqjWMa7/F6VGfTMv492ONGlS/DZ3ou2YA6SX3xNbLgTxjsMaBnOVyzua
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      Procedure WIN_Clear(gBurnerName = BurnerList(False))
+      
+   -
+     internal_properties : CAAAAAgAAABMi0hWVUkmSJdWe+b+M8SrjzgtgaAxzL4lG8d7iSsOw+t4UF1h+ddXwuLzCYFeN5izCIMLX+ebGvlOTGfB0gndbtlMWaQI2XaXDwwyh0KnDyTj9v8PnwNRMZsZiPahRJvghzXZOIdm73yVvQ==
+     code : |1-
+      IF NOT BurnerSelect(gBurnerName) THEN
+      	Error(“No burner selected”)
+      	Close(“”,False)
+      END
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+  orphans :
+   -
+     name : Menu
+     identifier : 0x3ab63da60906c91f
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         type : 32
+         enabled : false
+  procedures :
+   -
+     name : ProcCDErase
+     internal_properties : CAAAAAgAAADLgdSFA98sPJDvwTtPjO+FpVMTgVHvhXL0IIbeuziqwcp+Cr1Fv7xttR9Uj8/t6WcgGzfI0pRRXB3nq0km/tKNL0giVKIh+6qNF9xarxw/QyGeMO945/B56XhQqDEmQBwWPoteDyV/t3Ep6AiwTadoIbB3jUTbUKxzJghp9+WVVHSXv4o1YixJI7FnX6tQ6Q5us5z1+i3JyZg/9GIdjdgdJdOyeInRuPrjD7UXYaA2OSgTX74hdPbU9Ht5VDNwA1u4DTj3uEj7bTsyFGlkZo2prsXHWcYFsrG7Nli6DHFZxXjhBQZJiZPtvvXbeuQapeGBZhOrHAZhcSCKxRrLYcNG
+     procedure_id : 1269098931209188092
+     type_code : 14
+     code : |1+
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      //[ <Result> = ] ProcCDErase (<EraseStatus>, <EraseMessage>, <pPointer>, <nParam1>)
+      //
+      // Parameters:
+      //	EraseStatus: <specify the role of EraseStatus>
+      //	EraseMessage: <spsecify the role of EraseMessage>
+      //	pPointer: <specify the role of Param1>
+      //	nParam1: <specify the orle of nParam1>
+      // Return value:
+      // 	boolean:       // 	None
+      //
+      
+      Procedure ProcCDErase(EraseStatus, EraseMessage, pPointer, nParam1)
+      
+      // Event that occurred?
+      SWITCH EraseStatus
+      	// The erase process was canceled
+      	CASE burnerNotificationCancel
+      		IF YesNo(“Do you want to cancel the erase process?”) THEN
+      			RESULT True
+      		END
+      		RESULT False
+      		
+      	// Error detected
+      	CASE burnerNotificationError
+      		Error(“An error was detected”,“Error Code: ”+nParam1, EraseMessage)
+      		RESULT False
+      	
+      	// Erase operation completed
+      	CASE burnerNotificationEndErasing
+      		IF nParam1 = 0 THEN
+      			STC_EraseInProgress = “CD/DVD successfully erased”
+      			Close(WIN_Clear,True)
+      			RESULT True
+      		ELSE
+      			Error(“Error during the erase process”,“Error Code: ”+nParam1, EraseMessage)
+      			Close(WIN_Clear,False)
+      			RESULT False
+      		END	
+      	OTHER CASE
+      		RESULT False
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : ActivOSX_0_D_15_03_29__25_11_2005
+resources :
+ string_res :
+  identifier : 0x14185317002d20c6
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

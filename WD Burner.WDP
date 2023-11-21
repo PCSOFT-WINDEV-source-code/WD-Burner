@@ -1,0 +1,184 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Burner
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : WD Burner Example.WDP
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : WD Burner
+    internal_properties : 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
+    configuration_id : 10511713955068731591
+    type : 1
+    generation_name : WD Burner.exe
+    version :
+     version : VI200041K
+     internal_generation_version : 1
+     autoincrement_version : false
+    icon_filename : .\description.ico
+    language : 2
+    new_features_help :
+     name : ""
+     internal_properties : CAAAAAgAAADFXeIQ27RFqW3pyPvTIwEShUtIwoBBTygfA9XT5pcOuiKnuvW2mkle76g3PUpTk3vZJf8WVhTyBBjGQg==
+ elements :
+  identifier : 0x4ac60047001fff89
+  elements :
+   -
+     name : WinDevMessageBox
+     identifier : 0x4e7a08ff0243fb3e
+     internal_properties : CAAAAAgAAABcOrTg34SsvwZp6sykhiML4Lcf125274KtB9Q0QN42yjq0oGLpINwOU8/JN//xiX9JyQ==
+     physical_name : .\WinDevMessageBox.WDW
+     type : 2
+   -
+     name : WIN_Compile
+     identifier : 0x4406ab990001b8d4
+     internal_properties : CAAAAAgAAACD//svnMlhetMm+/21+OIqH77WXmsh+y62ta3GQMTOAjLCkHLYMesfoJwG8rIuyj6Gjg==
+     physical_name : .\WIN_Compile.wdw
+     type : 2
+   -
+     name : WIN_DiskInfo
+     identifier : 0x4406aac200007300
+     internal_properties : CAAAAAgAAAACeHquHUri/VCnfHIqTgVZJlkFFa7ahl5bZGUEbpaGsk7sRN5jrm6gIR2HcTGvS70HDw==
+     physical_name : .\WIN_DiskInfo.wdw
+     type : 2
+   -
+     name : WIN_Clear
+     identifier : 0x441854010003b392
+     internal_properties : CAAAAAgAAAByyKr+TTpyrYAXbELan1UpGr/pSYwMyvWu8yY1UbPhDy3Bkw8znl6Q0U23AYF/e21X3w==
+     physical_name : .\WIN_Clear.wdw
+     type : 2
+   -
+     name : WIN_Main
+     identifier : 0x4404863c000133df
+     internal_properties : CAAAAAgAAAC8mpSAP2RMX2aJCmwEqpPjoOf/p5wI+IZNrmkkQqLyHtZozEYJwHyuM+/p11+RaV+pqQ==
+     physical_name : .\WIN_Main.wdw
+     type : 2
+   -
+     name : WIN_BurnerInfos
+     identifier : 0x441fae0b0000677a
+     internal_properties : CAAAAAgAAACno4+TEE3lhq/ypzlhiL4G+5oi+kcemSVCznZ3COwu2hIicCIs5adb7CiSbjaqVkqysg==
+     physical_name : .\WIN_BurnerInfos.wdw
+     type : 2
+   -
+     name : WIN_Menu
+     identifier : 0x441fbecf0001e50b
+     internal_properties : CAAAAAgAAAAOFGa6iTZ+sbTrYEYuR1mt7tNdXXA3jDdyYpFsIRN5X6UJC/dfqmKU1UG7BY1DP7EbGw==
+     physical_name : .\WIN_Menu.wdw
+     type : 2
+   -
+     name : WIN_Bubble
+     identifier : 0x441fbef9000285bf
+     internal_properties : CAAAAAgAAAA5FWGlAn83OJ3kVUvTnbCkmeZMbGNiE1CnJso07yVpT7ETBxs6l1WJ3lpEvES8RLQcJA==
+     physical_name : .\WIN_Bubble.wdw
+     type : 2
+   -
+     name : WinDevDialogBox
+     identifier : 0x4e7a08ff0245fc38
+     internal_properties : CAAAAAgAAAAGDG6ycS6GqYwTWN5W4dWR5rfdhU62VWGp5DGf+QUPETMzAZG3Esp8zUmzDZVLN6kTEw==
+     physical_name : .\WinDevDialogBox.WDW
+     type : 2
+   -
+     name : WIN_Burn
+     identifier : 0x441e663200000669
+     internal_properties : CAAAAAgAAAA/GxcLuOXN3ucaX1HJdWKil8Bi4sX7iQVOz9ZPz0VRj71DE/9EjU+DxHBqVt4S7uIqKg==
+     physical_name : .\WIN_Burn.wdw
+     type : 2
+   -
+     name : Procedures of burn operation
+     identifier : 0x441d7d8b00013406
+     internal_properties : CAAAAAgAAABHw6/zMG1FZk/SBxkBvprau+66EqvILppSijJLwnKgWORoykgMxYe7DAjyzlaKdmpS0g==
+     physical_name : .\Procedures of burn operation.wdg
+     type : 7
+  other_elements :
+   -
+     physical_name : .\OPEN1-16-5.bmp
+  analysis : .\WD Burner.ana\WD Burner.wda
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - en-GB
+ code_elements :
+  internal_properties : CAAAAAgAAACjxClwaX+FYIxzs0aaaEIXFM2HQRP0pQmpAWZcm9n7RmORQyUoadcRd2tDlWtxxafX3D5mebmubw9vU8nhrZIlvP4gGexZHc13uO1KUg7dpqBMffAqZiHh0KfTxmwPkKM=
+  type_code : 0
+  p_codes :
+   -
+     code : |1-
+      EXTERN “KeyConst.wl”
+      
+      CONSTANT	
+      	CompileData = mediaType_Data
+      	CompileAudio   = mediaType_CDDA_CDROM
+      END
+      
+      GLOBAL
+      	SubscriptCompile is int = 1
+     type : 196608
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD Burner
+     identifier : 0x4ac60047002c0006
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+ children :
+  -
+    explorer_type : windows
+    children :
+     -
+       name : Burning
+       explorer_type : custom_folder
+       children :
+        -
+          name : Procedures of burn operation
+          explorer_type : element
+          type : 7
+        -
+          name : WIN_Burn
+          explorer_type : element
+          type : 2
+        -
+          name : WIN_Clear
+          explorer_type : element
+          type : 2
+     -
+       name : Info
+       explorer_type : custom_folder
+       children :
+        -
+          name : WIN_DiskInfo
+          explorer_type : element
+          type : 2
+        -
+          name : WIN_BurnerInfos
+          explorer_type : element
+          type : 2
+  -
+    name : Windows Store Apps API
+    explorer_type : custom_folder
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

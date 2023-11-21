@@ -1,0 +1,485 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WinDevMessageBox
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WinDevMessageBox
+ identifier : 0x2e7a08ff4b29fb3e
+ internal_properties : CAAAAAgAAAAnyQcrPyMAEHIQmzAr0i3KC+Nkrx73Ap3OQtw5dKeOnXL9J/0GJgWsTkyuZzHIPorrdP3YXGylBMAWmdiUJv9M4BLfpYk/AO1IGJllY75ftO3cHI1+SnJQeyGBLYoH1O1Z22E1fqXEUqKJYpKsPvLiSUMSSWbM3dwRmS5kaXHUlqUg17uzKW+ObAn1DkiavkDU8frKR3jmZV/cXVlYSJovRA7Gqirbf7a045vVJqLvhkbdVFlQwoCikP2LjC25TQ8oszdFfNwS6LhWAIWH2UXc/0VqbG5irQzVu1fiCRKEKuUOIwAAN0qbgRrQSgRzzvNBrQARVVn8RWihBUJ3/pkdC0gN7yBuWMbNR3qXl3StDEY+sw4Jhqr5W+8YwQiakQSkA+8HIZsh6s3tXJXUHnQ1RmKv6Jua0hDLRkdaK6e2W/oge6bbsL/6/8MqFj189eZE96YDNH0RwlwaAaHl00zVQZs60PGi4wOkAE3ToMtOLpywHeVAZ2OZ0bWgnssce35+/D5jXP6gRXGX86HT22KnAaC2V2wRNLOAV6JR7fjzd1DgNWbuQDya7cnokfpiNZA3qv3yzhh4aZdzp0ti6oEpIpn+B6v4fPLXKo8FMl6Fw8Xvmy/2Xckre92EiWFyYGeJWJfvOCe3DkrEU3wKgHvG3KLo5WDsZc91bQqUCU8kopXVGQUedUufReywmv8NwIxD8Erupux5XQc=
+ properties :
+  width : 355
+  height : 216
+  widthClient : 353
+  heightClient : 184
+ controls :
+  -
+    name : BTN_OK
+    identifier : 0x2e7a08ff4b2afb3e
+    internal_properties : CAAAAAgAAACTBkLLtuEfcjqcLJOc4MYP5Y2HOTERMr0WxOg3KxtlbbMYH0fj2X/vn7bP7teWvqZ4jk7al+Di1fwOWh75rbDqaBn8Al1okXEYzW1wU4LnHZxYZFCsYJT7TF0ST+CyBKjcR7u92mJdNs4nK6zyDF+WB38uHvhDHVskfIfuyrvcOsCVahSPSSrDC/iZyCje/o6WLNwF5fS+E3BOuAvrciEWBZVd69GYYmALO3zH1GWt/M/020y0jSmUG3Vm7wW1zRWP6o3UXT253Z2OCg7uJ/sM+rFV+KDYd+oKQzR2eHyS3vFZv8iC6vYUGbkhGWophRQjjW2TQmjM4hlq4+bNrC1mU7/VkAGcndeneskYwTne1uPw/Ksc0AdxytbAv5BfqvwhOOPXg0HddVYe44FTVb6DtUDV1qUJ6UlKZVhO+HpauTvRxqw7rl1uZIxcHsDNbUvRjfSZ/ErJ+Vakre5ZrvY9x18FY+lUcHEC04Ra/RA3Dj4IV9vtatWoyeIAmrMW3G03YBWlFBzaHwHIZ+fETS4nditJPhVlartotGMApouHmAI2jo/0LC8F2AeZh4jJP1nFrOz3I+8C070s16Hl5GI3k32EQp3Ka5lrRhrXtn1u2YFOjgc2LH1KSC1ebw3tp674MwA+2rcA
+    properties :
+     x : 6
+     y : 154
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // closes the window and returns IDOK (unused value)
+         Close(“”, IDOK)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_INFO
+    identifier : 0x2e7a08ff4b2bfb3e
+    internal_properties : CAAAAAgAAABnGodt81VcW72KjSnDZWl2V0mSaFJCCH8AKWihWLK4nwQ0DxtJpk2oswPmVuAJjmtYNQG0dOhOwPSnRAkcXbQts2irjWex9/y9Hk1QHT7g/ZblxVB6MJhL53mX0kHchsitmYXJXD66cULN+aoTRCdbnkDMS8AFlaR7DENSQRbqAdOVAuizwQpd+p4jKNpfhi34QvhInBCzBEmIycbx0E07r5GQLwZQib5jmqZRk4dzZhiugJA0pcJgE8kua5ZngY4R4FIRsR3FlSSVtAUVfGpiOM73l9VKLOUO1bRZBR811cTEnKCgeGvUn4vwjfs391LYOqG4HEcEvl8GEzjXGKO57/lPr6DdPOogG6Dd+vroI0skxPw4
+    properties :
+     x : 74
+     y : 6
+     width : 271
+     height : 142
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : BTN_YES
+    identifier : 0x2e7a08ff4b2cfb3e
+    internal_properties : CAAAAAgAAAAlLE6KDcjCWppeLy5Hp9NgV0ZGEX60HiJpgWlZDxBpAMVKNyODwkAOwi51/jR4KEDm1ZD3DMozrWfWcKoee9IeB/9NwVi4QgJ6y8UHXNE7cU4xfUiFaW6kh+7YsfQ4DMXfc8f2GYlCnMks3FIkpkKDapqKtzaI+wtcosRuZu0nGw1WHouZnsBfLew43zdbs3uOfTGwZURJn7VMTM7pDwiZXi39nh3T/566juij52RtwOAqgvfhLpo9eQ0Ic8Or79NAySeyVuYuhMGBLCLdSA7PXzgG9c9lc5J7BwQ8sNegS9dMofH3QWpRyNPzUjYxyOECSbq8sEYB7aDONiBJHsLeQaVUI+QCdrjgBtYMt2FFbk1aJyRNhkJ0pRwvc1KrT+CDRFQW6r3iog8iavNji0mzJ7zWm1LX7GDZ119oFA6dETn5b438hojP0S5ZjCBduOeHwS8CRQ5ixEG4JGyBxkXzv0+E0gj4eYLXAxM+10bO2kQe/AxWQB5Fpia//qVMS0H5hK6qkar5pJ58UHcqO6M/OHeYV54dhV5LyEKeZgGQtoJKYfQBzAzu/cNq97mWwjTJPaNe9RfZFYzV93lKW3Ze8hiYwyzEMiBWE4+l/Ir/HDIvMvU5aIjBwpkZSBzkiW8KT1w41yKBNLsmIg==
+    properties :
+     x : 92
+     y : 154
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         // if everything is OK ( OKCancel)
+         IF nType=5 THEN
+         	// closes the window and returns "IDOK"
+         	Close(“”, IDOK)	
+         END
+         
+         // closes the window and returns "IDYES"
+         Close(“”, IDYES)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_NO
+    identifier : 0x2e7a08ff4b2dfb3e
+    internal_properties : CAAAAAgAAACtIumpiFWGSo9Nbga8wI6A2xXffMWUb0jqjjJldqgxp/s+lj8P1oZ1F66Ref7dgE0sCtbPtg7FuhgB80y5nkNEbVUfqxvp1m6ww4H4PCuIqAiwSOuwnkS0qEbdySvNJ63omvVy65pX3N2x1OMkyZsQyAYtjirRmZF/biCuiwLilTAqn23A58S6k/70Iv1ukSh05l30Wg8NLnQsL4jDPahSXRORnQGb5szZCIpwqIOjhF2wrsgrIaQg4eQk38eUPQ++vq2vCLZuqiHzcoucx5ptBLkcXQp2HXZauRr90MngBrb/3BFr+SiJpvTmtmGMpEire+CZAGljbieIKKnjF1cD95+cuP55lNGDkgCxXyzExbvoD3m7x07rOlTzzLjo/DlXtuR1/hz2f3I4elpZIGZsj1oWDNCchMuSDQk9/J2AVCcj2XjAr/z41F4xsVxysRDHywdtixES9cQytvVPf1bQC9NqbQKFMZsebZGlA9ExwaBS8teo1XyKDebr1z0NLMpjxgoRiaFFW2d+WlQIuMCUbEHIVoBgFRHYWC6NwHgPebSgKwMjc/q/+N93zoIsoKTQmHomWMlUxwT4nklVy9owDX0VMWtUlcx8knATV5aX/mkEZ7d4ypNt2vgkIVrN6YMMw0U935mv4G/H
+    properties :
+     x : 178
+     y : 154
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // closes the window and returns "IDNO"
+         Close(“”, IDNO)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_CANCEL
+    identifier : 0x2e7a08ff4b2efb3e
+    internal_properties : CAAAAAgAAADE3SCyuOt7MTpHEf4PS9zw3pjCwFwO3mrSGncc1pcMUKXHaIlkqrJwRdtmcWn/B8hhYjGqHGe8AfM/elNDftcHUjncC8qKEQv3axrYqEuTHrm+F9B92u983Km24sWLSkOx52tRWMsSr5bDj+wjl2tFeLTh+DETT040C4SqKIlU9b9G33BEOah+W/NSi4VDaDIpPi5nrbdmbBeQWyquN9SM3NT622Jl8ZeUt8VZSM3/9qfRmHn8tFlmHFKdciFNOeEatzEiP5HgtPCGBUeZNxxlihX7uvbacs3MOtBGDbf498EPLcA7pDw056w5byU3IHaiQa0jtw1OwIfMoa2K8p3OXw1fqZjKqyHpePuxuH04hhdaklphBl2NCtjeXjmxhtz94BeOMPWb7Tpyu5zQW/JNC8K7u/zjpS1K1w4j+xTIZ72x2rs0+HUotpRALcWXa185Uw7qy24ns/Cgreu81PQ1+z8RMhb2yGVi3/wHfMo/9mqIy2I2rBko1YCq5SiAVqGv+kuEhRjmKbP0Z0zTh2L3WkV329AN7iVywi05XU2jssi+Wmj7bk8ngnsyd6SY9T22RQPB+oQVqmOcR59oKnzq0BX0XL2fp0ZeBjzrx2dSDJLYgSCEc86xLjkqHxteMuF2kxfKSVj4IwLQS48dyTM=
+    properties :
+     x : 267
+     y : 154
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // closes the window and returns "IDCANCEL"
+         Close(“”, IDCANCEL )
+         
+         
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : ICON_INFORMATION
+    identifier : 0x2e7a08ff4b2ffb3e
+    internal_properties : CAAAAAgAAAA2/S2j/UanomGfL8gwTpLn4fRbN+Jf2r6CTNxHfmwSv7sdXLOHSorw/Vd24FZBMq5TIgdH4CgRbOLWx+QoDRyVkDqL777uF1KSvz3dQmS7r8cUAeDPv5cpKItlHCCST4XpQ3EZRp000EbLpSdBwQhYzRHdTy/J6KLnnf/EjgWFtTO0R+r8hNlGGU89YRbeFTMeTfP0YY9/3YV/oPrjIa33pLxB64y5rHUYxFvfhbinz8kuARJ9w40L+HfUOeKKOVoD86piMKGeBfFqpbUqr9FA1WlndaIoR6NfKJXTyMKqSGVFazVzXwPR6AqPUoxH0m+DZssRY+NPtQQkMu4vmE1iVyHSLDpu1zWzCiDV5wUuY5qhLVS10F1ETRAtZ0KWQ4Uj41irTBeLjlwXzTE9abwJ9mv7z1JawtJuf3kVc827gsto5Wj6ajwirlAiBX9APfcp3vxUun6XJHXS2yv//0cIUb62sghko/lGmKq0Hm+12a5taSswoXKIN/6p0bIbqLetAY4wSI3SBTQsEPhSC1olWjFMtcaQHU597LD84qR5IXXzeqQqwj2l7lo=
+    properties :
+     x : 6
+     y : 6
+     width : 48
+     height : 48
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : ICON_QUESTION
+    identifier : 0x2e7a08ff4b30fb3e
+    internal_properties : CAAAAAgAAAB0kmB+iSD8+66ywre5eEbHcU/RPW+OrXP45UIWXR9f1cyZ+pEJ6dNxH2N/4tgXOSAO+Ot9lMv5J3PZN8/uzl3o98w7YdtlINshmeQ4/LpGkNsYYnbWt+FhLEjJdHgCcFRQPOw8pNgwN1cc6075ka2kabl8m2j8gqKGF6Un6yt8yxQ5Uo7EHESCqLtrOBNdwqu18EqHwpYuhVAs4et5epjbEpKRSCN/Ce2zKPOkHoIeI7J0dEvrbLRUGE4AUU7DwrVYEtK/A2yVbDcq31ARlGHYdIx1xNqUGwmopbY7i0mvWTXVzdJIFRcZ3p1BScmdokpkaCPu0LF+LaY7aJb5hjuJrHwmVlbn3+Q0mDPJONK9yqKvsEHpfoncmvTS8X1cutemp7SDpl6c7v9XqYwT/yFDYwZHeVDvO5dqdrN/rxqyYyEwzGl7fsLiuOX821XSKU0YYlBOMq5BTZ7LNQHo1W86oioNk4VeCKK4+1vnZxEkapbeIT038ydeo0Bma9nZz1ZIFBvVeiRes5ybmQIgi37mAPZkxGq5aeZiyvESfQYk6Z+noZ7s3WIOrQtOinn8LWBlNgrvSw==
+    properties :
+     x : 6
+     y : 56
+     width : 48
+     height : 48
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : ICON_ERROR
+    identifier : 0x2e7a08ff4b31fb3e
+    internal_properties : CAAAAAgAAACHm2IsrjEaGA9ifKDl/t3Y+TLT3SjZCUKhFCqgg6TDYDgydXnw7JUY28QqmZJvXRdKNfGnz1hoqkbAOSlQdgkZVRGDKYbEoBKWSm45zmbiPUGZ9rLdmG8W6WVxtVI8NLVcB+xszfWEsLQ9l4lV02EPDU4yjT+3VDF3Vm/c70VeNu70stTH5iY6thwEFqA5WRC0gmCWfVAJ3C7JRtlXghi09MNER+vKWLxfQ8+FC7VFxbVdFwMfwzVPrIOG0KVNObIn6n3EEAZzIMIEYn1ErOmomzlQXpGKn+oJxbdXrPuqg0JjGqNmKNm2YGPfL2pzQMzBcljjXkjwlWtFFoLwTjvXYx2aVNI4NFXYcBgpm2hYw6KuonHUbIvtEy6l1pqqF+o4ABkG9Q266T+NNc8aEEUThjeOSLiOgCXxT4UZ0M/jOjVIVcrr0cp520TRZlgNRF/zvzZic8bEJhKy5FYA2BHI9WwFAmkeeLmG6SZYwPhXMlZPNx2HbhnoIR68pBDMYds1zhrqZxH0lqwPljpIvLW6ifp15lP16GxeXm6IZhGP7NmWz3fpRzKeMGMzLBH4cIM=
+    properties :
+     x : 6
+     y : 106
+     width : 48
+     height : 48
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : BTN_Copy_hidden
+    identifier : 0x2e7a08ff4b32fb3e
+    internal_properties : CAAAAAgAAABo7+s/WIGrb9O8ydf24M/DgrhIm9YebJb0VjfmaK4426QasYOfyR+lmJNM8gdN95koe20HD0eX0OrCHOtT4SjRH30Q4OTT/BQfSRlq2Tv6ucWH3IBPLTcCjWv0W77o5i9WOj3o3NhzRlp0mu5OqzoMPP1I1gbt9aYD8S7HjT+5Dw9w/BLVQd6VhwdKC7Uhd+EuiusdQlCg+Sgb+38yN16fHI0Tm3K+2TMR9vDgDnbMTtolBHHNbg/FNcLY4yAey5BXo9p0JyxYurW4fyOdoh2TLe90P9U6D6Wt3eBsRmQHIJ5h0WQp4zIONUoFVmMEPzBCrh+puOxgyszlIF+F3FNZd6YPvYAI66qL75JJx0H+QSHR8NgHEi3sBv8VVPYVELvZRSX8dncTTjzdpuTx8TyEofnBQTKxd+Celt3bOuLWvAX6so9IkPWvlKvnyXj9d5x5gALir1BFKtbHNNHbjqLak+BR3iLa3GDMfqu9o7rvzaThe65Kmg0pi4kDoa0qGLAr89OAdTxC6uOzVj6er0yKcNKtubJrYriqpdBpPiVNpQ4kc8seb43j+aLw7EF9F5IYsA25t2amt73H1eplNsM20zzgxm35GP1QR1DphcGEILGrw4HIiXY7mAMg5tMxsUFoKJGQh+ywm2+u1CENHzl3NbqPsI8E
+    properties :
+     x : 6
+     y : -52
+     width : 127
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // the title and caption of the message box are copied into the clipboard
+         sSEP is string = “---------------------------” 
+         ToClipboard( sSEP + CR + MyWindow..Title + CR + sSEP + CR + STC_INFO )
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x3dbd830053412f85
+  internal_properties : CAAAAAgAAAD5gPGcQ0NcUf7AMYGSjH3SKonY1aajmHiCylebi1O+vnN+S50LvYGcaeoWjnMgQ5jz4Ib9YIctreSaq8B2nCq8hSNvnNUGk4PU6mjZTVra+ztp0/uuuq7ZXWc9V42DlHnf1NpiH/fT9ENuIAPeUBMFaA8loINATdTF5tlL1bms0rSsvkMFETC8MED3i+fm6j9fvqcI93+PiyTAcZ+w1g2bhOPDn3eY34Yf5VlAbG/rGOihIqGsnStzVXZsmZCqaCdVJmz7ppaLAKKqNI5Cm/ssb1iT1MuTie0/Jwcq9rvGZQ==
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABom/DeINZuT52vt6g7tMEcR97ToAW+dmODPlj3DLt/pACdQfxGqNQUgfGawrBh6yluKyXv8dHdBZn/mYzkqYxC1mSahgk0vJnKQs6qpDxmbeQVoPJmqk0yZhTtkKvcS9g=
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      Procedure WinDevMessageBox( szTitle=“Test”, szCaption=“Test Message”, nType=1, nButtonNum=1)
+      // Alternative window to the standard Windows MessageBox.
+      // This window is added to the project if 
+      // "[] apply the theme of skin template to the system windows" is checked.
+      // It is used by the following functions:
+      // -Info()
+      // -Error()
+      // -YesNo()
+      // -Confirm()
+      //  -Warning()
+      // -OKCancel()
+      // Parameters:
+      //  szTitle:  Title that will be given to the window
+      //  szCaption: Message that will be displayed in the window
+      //  nType: Dialog to emulate: 0 = Info, 1 = Error, 2 = YesNo, 3 = Confirm, 4 = Warning, 5 = OKCancel.
+      //  nButtonNumber:  number of the button to select (for YesNo and Confirm)
+      //
+      // Last code review: PAD 03/24/2004
+      
+      GLOBAL
+      	// Width for the dialog buttons
+      	// (Calculated according to the type of dialog)
+      	nBtnWidth is int = 0
+      // margin in addition to the buttons for MinWidth
+      CONSTANT MARGINBORDERS  = 20
+      // margin between the buttons
+      CONSTANT MARGINBETWEENBTN  = 6
+      
+      // constants for MessageBeep
+      CONSTANT MB_OK              = 0x00000000
+      CONSTANT MB_ICONHAND     	= 0x00000010
+      CONSTANT MB_ICONQUESTION    = 0x00000020
+      CONSTANT MB_ICONEXCLAMATION = 0x00000030
+      CONSTANT MB_ICONASTERISK    = 0x00000040
+      
+      // constants returned by MessageBox
+      CONSTANT IDOK     =           1
+      CONSTANT IDCANCEL =  	      2
+      CONSTANT IDABORT  =           3
+      CONSTANT IDRETRY  =           4
+      CONSTANT IDIGNORE =           5
+      CONSTANT IDYES    =           6
+      CONSTANT IDNO     =           7
+      
+      
+      
+      // implement the message
+      STC_INFO = szCaption
+      // implement the title
+      MySelf..Title = szTitle
+      
+      // implement the buttons
+      SWITCH nType
+      	CASE 0 : // Info
+      		// make the [OK] button and the "I" icon visible
+      		BTN_OK..Visible = True	
+      		ICON_INFORMATION..Visible = True	
+      		// the width is the one of a button
+      		nBtnWidth = BTN_OK..Width 
+      		// Value returned when the cross is clicked: OK
+      		MySelf..ReturnedValue = IDOK
+      	CASE 1 : // Error
+      		// make the [OK] button and the "x" icon visible
+      		BTN_OK..Visible = True
+      		ICON_ERROR..Visible = True
+      		// the width is the one of a button
+      		nBtnWidth =  BTN_OK..Width 
+      		// Value returned when the cross is clicked: OK
+      		MySelf..ReturnedValue = IDOK		
+      	CASE 2 : // YesNo
+      		// make the [YES] and [NO] buttons and the "?" icon visible
+      		BTN_YES..Visible = True		
+      		BTN_NO..Visible = True		
+      		ICON_QUESTION..Visible = True	
+      		// the width is the one of 2  buttons + the margin 
+      		nBtnWidth = BTN_YES..Width *2 + MARGINBETWEENBTN
+      		// to select [NO] as default button
+      		IF nButtonNum=2 THEN ScreenFirst(BTN_NO)
+      		// Value returned when the cross is clicked: NO
+      		MySelf..ReturnedValue = IDNO			
+      	CASE 3 : // Confirm
+      		// make the [YES], [NO] and [CANCEL] buttons and the "?" icon visible
+      		BTN_YES..Visible = True		
+      		BTN_NO..Visible = True		
+      		BTN_CANCEL..Visible = True	
+      		ICON_QUESTION..Visible = True	
+      		// the width is the one of 3 buttons + the margin 
+      		nBtnWidth =  BTN_YES..Width *3 + MARGINBETWEENBTN*2
+      		// to select [NO] as default button
+      		IF nButtonNum=2 THEN ScreenFirst(BTN_NO)
+      		// to select [Cancel] as default button
+      		IF nButtonNum=3 THEN ScreenFirst(BTN_CANCEL)
+      		// Value returned when the cross is clicked: CANCEL
+      		MySelf..ReturnedValue = IDCANCEL	
+      	CASE 4 : // Warning
+      		// make the [OK] button and the "!" icon visible
+      		BTN_OK..Visible = True	
+      		ICON_INFORMATION..Visible = True	
+      		// the width is the one of a button
+      		nBtnWidth = BTN_OK..Width 
+      		// Value returned when the cross is clicked: OK
+      		MySelf..ReturnedValue = IDOK	
+      	CASE 5 : // YesNo
+      		// make the [YES] and [NO] buttons and the "I" icon visible
+      		BTN_YES..Visible = True		
+      		BTN_NO..Visible = True		
+      		ICON_QUESTION..Visible = True	
+      		// Assign "OK" to [YES] and "Cancel" to [NO]
+      		BTN_YES..Caption = BTN_OK..Caption
+      		BTN_NO..Caption = BTN_CANCEL..Caption
+      		// the width is the one of 2  buttons + the margin 
+      		nBtnWidth = BTN_YES..Width *2 + MARGINBETWEENBTN
+      		// to select [Cancel] as default button
+      		IF nButtonNum=2 THEN ScreenFirst(BTN_NO)
+      		// Value returned when the cross is clicked: NO
+      		MySelf..ReturnedValue = IDNO								
+      END
+      
+      // calculates the width and height of the dialog box
+      ResizeDialog()
+      
+      // centers the buttons 
+      CenterTheButtons()
+      
+      // emit a beep (like the system)
+      WarningSound()
+      
+      
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+   -
+     type : 66052
+  procedures :
+   -
+     name : ResizeDialog
+     procedure_id : 2196077659735915342
+     type_code : 14
+     code : |1+
+      Procedure ResizeDialog()
+      // Update the size of the window according to the caption
+      
+      // min width: 
+      // the one of buttons + a margin on the sides
+      nMinWidth is int = nBtnWidth +  MARGINBORDERS
+      // max width of the caption
+      nMaxCaptionWidth is int = 600
+      
+      
+      // dimensions required to draw the caption
+      //@@+10: Additional margin
+      nTextWidth is int = TextWidth(STC_INFO, szCaption) + 10
+      // the caption is not allowed if it is too wide
+      IF nTextWidth > nMaxCaptionWidth THEN
+      	nTextWidth = nMaxCaptionWidth	
+      END
+      // force the width of the caption in order for the calculation of the height to be correct
+      STC_INFO..Width = nTextWidth
+      nTextHeight is int = TextHeight(STC_INFO, szCaption, tMultiline)
+      // height not less than the height of the icon on the left
+      IF nTextHeight< ICON_INFORMATION..Height THEN nTextHeight =  ICON_INFORMATION..Height
+      // center the caption in height
+      STC_INFO..VerticalAlignment = vaMiddle
+      
+      // Width of the window
+      nWinWidth is int = nTextWidth +  MyWindow..Width - STC_INFO..InitialWidth
+      // the width must not be less than MIN width.
+      IF nWinWidth < nMinWidth THEN 
+      	nWinWidth = nMinWidth
+      END
+      
+      
+      // Height of the window
+      nWinHeight is int = MyWindow..Height + nTextHeight - STC_INFO..InitialHeight
+      
+      // center the window in width and in height
+      MyWindow..X -= ( nWinWidth - MyWindow..Width  )/2
+      MyWindow..Y -= ( nWinHeight - MyWindow..Height  )/2
+      
+      // Update the size of the window
+      WinSize(“”, nWinWidth, nWinHeight)
+      
+      // Update the size of the caption
+      STC_INFO..Width = nTextWidth
+      STC_INFO..Height = nTextHeight
+      STC_INFO = szCaption
+      
+     type : 458752
+   -
+     name : CenterTheButtons
+     procedure_id : 2196077659735980878
+     type_code : 14
+     code : |1+
+      Procedure CenterTheButtons()
+      // center the dialog buttons
+      
+      // start position
+      xStart is int =  (WinInWidth() - nBtnWidth) / 2
+      
+      // For Info/Error/Warning
+      BTN_OK..X = xStart
+      
+      // For YesNo/OKCancel
+      BTN_YES..X = xStart
+      BTN_NO..X = xStart + BTN_YES..Width + MARGINBETWEENBTN
+      
+      // For Confirm
+      BTN_CANCEL..X = BTN_NO..X + BTN_NO..Width + MARGINBETWEENBTN
+      
+      
+      // center the buttons in height
+      // (they are all stacked but a single one is visible)
+      ICON_INFORMATION..Y = STC_INFO..Y + (STC_INFO..Height - ICON_INFORMATION..Height) / 2
+      ICON_QUESTION..Y = ICON_INFORMATION..Y 
+      ICON_ERROR..Y =   ICON_INFORMATION..Y 
+      
+     type : 458752
+   -
+     name : WarningSound
+     procedure_id : 2196077659736046414
+     type_code : 14
+     code : |1+
+      Procedure WarningSound()
+      // Emits a beep like the system
+      
+      
+      
+      <if ExecutionTarget=ApplicationWindows>
+      	SWITCH nType
+      		CASE 0 : // Info
+      			CallDLL32(“USER32”,“MessageBeep”, MB_ICONASTERISK )
+      		CASE 1 : // Error
+      			CallDLL32(“USER32”,“MessageBeep”, MB_ICONHAND )
+      		CASE 2 : // YesNo
+      			CallDLL32(“USER32”,“MessageBeep”, MB_ICONQUESTION )
+      		CASE 3 : // Confirm
+      			CallDLL32(“USER32”,“MessageBeep”, MB_ICONQUESTION )
+      		CASE 4 : // Warning
+      			CallDLL32(“USER32”,“MessageBeep”, MB_ICONASTERISK )
+      		CASE 5 : // OKCancel
+      			CallDLL32(“USER32”,“MessageBeep”, MB_ICONQUESTION )				
+      	END
+      	
+      <else if ExecutionTarget=Java>
+      	
+      	Beep()
+      	
+      <end>
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+resources :
+ string_res :
+  identifier : 0x1e7a08ff07b4fb3e
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

@@ -1,0 +1,509 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Main
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : Managing the burn process
+ subtype : 0
+window :
+ name : WIN_Main
+ identifier : 0x219cbec312183bb2
+ internal_properties : CAAAAAgAAABZZhKWj69y/Qt+L+ymCelFihjbpGk9+nLYnfa6tbChS5nHjpF3ByVB32mIk0RGPWfvVyhE2BiM8Lra8dKorC4gLmfou8TRDpIdMQha+xiRHDEzWupPl0klg6z/lVRhqdC/MbsKAATmrPE55+MzJwakvsnMzwn8m6xdK9zhCIsrkEJylyw2oZ0PhuCj8Z/iZdCG3yvBTvdqava/7e2ckrDngAayBdEX+HR4G8OI/ujqO26fVnC+9DHw7M8HSJ6/wztTGwDrKp8Bvxomypltf1Kn8ZCO6mC/5AGtfDpaRx5So8Wa79Mv5jIRT2PelSZbHF6OE8Jc7JVrUHErPA8NxC6qQS2EADcCyufKoawW5riAvl5Qd60c2O7NEQV1ltXvlMyCTBKnWKFH+S4ntSPHXO/Mn89UTuZH3jakKcs/3vCsiJCl6pCAIKHTI0vejRKR8Mc9haaJJdPNu95JQ4vQPgF/FPavX2xZ6Bg4fydd95MeQobXAk9YH1sF4ejvDXks//G+ekw0SCkiRe2U0WJWGUcK6MeKxSgztnjfbkS0rKWyUPISaH2P58OZhn3qu/vTG1nt+9X0Y3uhL0bGY5fFcmYgx6RTKDBc1OepLQr0zsfv4k4IA13dd/IapuBt1Z40LwSE7qgJVLWJ45o1jESuM/6UTkfnLlo2PXDb4OMp56315Ldc6sfHsQOSr5XKkx410sn98jqCJYNOxB3QiyJAzlJf7M/+MGuKVoimnPn8uKHJjuODCZ4mZoRPxTFNDabxDLAfkh9+/256e2St/CSNDLYGILyl8fKOUxX9xOtmQvB08pgVYa3F3x1YZtOspkHg00UAKRQFSjbJOj5rfRIsMLlXmUvMpNC6DEhrmKU/kkjnjgIRAWSk2YyRLEoSOVm/XXO9oiy+FPpZupKWghBHEVZ+/+Oflkkva7mjTe6aGglAh42DSFaZDB3vX5rwYFByZofcaZwQyPTgFlLGKAzZMitiL4Uz5fx5wkxX7wKD++CQ+43wDP5JNhjKmlW0AxBFhJf63nmwhe2J/4xj4A+vpGKUBMdDjEh4JRN1YHICmnyt8o2OOPf2Rj6V8XfUJb9kjdnch9sLfnxY6I3Vbczcii7ymKCHR7QyYOKY6YdhTzr3QS9UHVfnKfGLJndHRPuuwhBkaIXrjIhiLOWD07mR0k8GcWX5dUcb65Je8kvM8kGG7NRbLRjXH9CsuGUzfrIXr9lTNTUWIZpvVAnbyBQTLRTgiyiZ0Ebh964TMDz7fHULePVlgYIuBl7NmtXoMt2KL9K9iHu5WQbpOfUVhg6lE6h3nka7HcZRjSWk02qE5/+XIxVlSPxsI4GqQfrSaDbU4M7MJtl4vwy+B6BfrNSDLpst6oXo6UYd
+ properties :
+  width : 778
+  height : 561
+  widthClient : 776
+  heightClient : 507
+ controls :
+  -
+    name : TBAR_HandTools
+    identifier : 0x219cbec3121f3bb2
+    internal_properties : CAAAAAgAAAAAqpuKPTk31RUg5jgnq3SsP0/VkjKRWE2mZWvrgv+H/lrYo+fJqXZA0guthavoBxZlhRXOXydrIJ4aQQ5GxCAV1FCSCXSWh20tU+WwrH/zoswNiX9MLdkgYLNhsi90coktUe+mwtFq2cnLuPinoOT4LNttBOFrbHXiPzy/TZJXWC0ZMOMahdbi1oSAk1d5P0mDN4yqJEDhCAHP4fdLrrjwcjmQtYqbLBZNhLZhWqEo/PugNhZHwSAk5GZkM3n4fLSGwS8+nxGVSSqw34+9ebIOpDzJAF9uNEXrBa1r9dOQV7+wO3M10psleQazcXtyxNpwGdJWWKmRmx0XGrvB4rT9OI2pEJ7Qyd+yp7kkhTISSN7zJTccCmW9qGXoDolE+u2q6meEpykpwRbaJmu48gNe4wJo9ovFBxaYyW4AygoU4D3ixj6g+mH3itUUvw==
+    properties :
+     x : 1
+     width : 775
+     height : 71
+    controls :
+     -
+       name : BTN_NewCompile
+       identifier : 0x219cbec312203bb2
+       internal_properties : CAAAAAgAAABrlV/1oxDGaUV9vf6BQlZXOFCDt/elrvbe7gIbodz/L0NvxLLlw5I+2ookdncpqyvWaIh9y8EE2KwEQ9f6bZnljHMXeS5lHQLYX17mRBgeyaWiQKgLjLbD3fnFQLWDplMU5A/b4aBgBSxcZdrRk3nDnKioBcKagcaTq0l5hKXlm5lOtW4bz79uoyRWWo2vFjLaVkqZEQQ+VZlB+1vXDIXyMoQyv6qtvDNK1RCgS7WmmiV8ZNTX0ofxYFHmjyto/6PaLZ+ytr/GlRVqPP+SlomJMB9SNdqYLsmYOjFIsM8jEvpQJlAqbAJL7KN+FaF5EIGxTsgTLKWnALkxpuY5W5PInXtAFzbRLXijeGX/0oxasYEZINXal4bOvAsRM23P1o9ibQ9l5JuausnWyoCmSbv2dDbaxPu15bthvSkyFqaTFz+8p9/Dt4OntsTveUWrU/AyhkLUP2J3aKjvJY72O95CVvg3VVsbiusA4bNeqwDI1SZ3Ej7wSp5VnT3LakGAtrVY08LuOT6cdVduKv5RzE6t0kKAuVyOYU9W3sADV1Rst1Ljv2kJb7EHDpr5DFsGzHmaGd0Hdg2tid10tJHXxY1H0eRQMvtPVfX9Op9nQLCN3pZ8W+vKDmqQc12Lf8XU7haPLVdQiDiLsXM1yRfob0Pe1Ylf6sr/uYyM8PB40nPIcGk86s5GQexroi1ZG+/eN3kq3+nsantjUawHyJsbhaGDOuhLe2DGhoRQ4GO6Mtbn87EWVONzuqq4fPoHkg7py/UFOhQC9+zpNQthpqCbP7FQAgGVXnSnOorushtEt8xGWn76
+       properties :
+        x : 10
+        y : 3
+        width : 64
+        height : 64
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAADTpYrxNZv39o8MP/rkr9Dpo71svCgNQ1tPcpOAqLVv77G8Tlgz0HGNWEMjtCgGfV43mtrw4BTiNE6t2M2gMN50vUHEywXsWMgUnvLsFhI4Sls5iKP6K8Y3sBi9FNcBtySlRTfh4gSeGtz+L3Q=
+           code : |1+
+            BTN_NewCompile..State = Grayed
+            // Open a data CD/DVD by default
+            MDIOpen(WIN_Compile,“Compile1”,“Compilation1 - Data CD/DVD”,“Compile1”,CompileData)
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : SHA_Shape1
+       identifier : 0x219cbec312223bb2
+       internal_properties : CAAAAAgAAADLetdpLjmhaCox6sejaTNdLbOhPxQmJqnbfnH94sfUy/66BzMKydNfPbAhDOQJARIZ9Qtx9B5fpTqOzgbRwG+ScwCoOD6Qh7BBrZvutxCyLVSMyDnznNrbqJbH7oycb9YSGgdGPzOpeuwD98hIYuy3UWXmBcywZOXg48v3mMElVTxt/S9LP8sJrjZB387Uvr1OexbWqFHsQSOno4wgSjMu11CKW7ibLHq6YT0j1hIDe+j+mASWtEHZdc7nMeAtEretyRZWI/ejBP4KlXk0EKYMl0Lt1lC73rJRL8kYoXuRZXyfqlp04io7
+       properties :
+        x : 88
+        y : 3
+        width : 8
+        height : 64
+       type : 20
+       code_elements :
+        type_code : 32
+        p_codes : []
+     -
+       name : BTN_NewChoice
+       identifier : 0x219cbec312213bb2
+       internal_properties : CAAAAAgAAAAzxZo/IW5aRHj4Vd27x3NlkHPk5IC5po4JBlasQtaaS6Of0jMgZXjtZKV9BnITaWb82QU0kK24ln/UsakVffulIyexX3KHNkUdkY7KbSBzIIM+Irf475b9YrkQJC8vMBfyFuJ/fKJwGzYmi3te/AoKs/MzJRm8na/uZTBJwlH+vh2bGcLMDbWdTC2Qg7JHEAueJ9qU03EsuyORYAQ9L98H9vz0fGHDaASfXcuXXCpOt4JO8ZXtRj4BwgWDiqSTzGoMSYgaPv/ff4dGBxkSb66AU6HsFFM0OVArUy/13uzzI6slnaAuU3n9upG8rHoP50o49ufbnFScJfyhwvsT5CVn8NCsHvGqccv2w1qQhUXKmBeh61hmh0HKEI7/FL3H5KEpUcBqXB0hLak2RzKfNeF4G8DhV0ANxZkr3nInRtpVXMdG/SxDfxXxceFV90GvMAGRbyvo4C3IezF/gAt8ZjO0RavBU37Ne0byPYUpxywa7SaHk5A+thmO6FJVRmH+MSU01Ccdd6NkihTFjaB2Z8G2ef+QmwvCjDLbRrMyVYDkB0s2xH/fr7aIrua1dnQhzMxS9dveIsApHQnvJkdJUnA4yndDEU6Xr33TCQgNCRXF67J8+2IN1HB+bTAvkIVscxDzEd9mDcXZo0im5eEcNsUy1PxLBiEbzbz8KOSGVf2wmyo2VyltxcDSXPATTNf8d9WIYtbvnI8bA5HnvtkTUPo2ij0oV54VXBqq3WlQsXULHn4wS4yGVadT/JiDo/XlvZet1h1n5cnLChiUcDc+IE9GV0EaYMfimWvz9vqQG+1uUeR+RYnuwKDUrZlhLNN0T3Wo21l1V2kd0fs=
+       properties :
+        x : 75
+        y : 3
+        width : 12
+        height : 64
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAAAS3fZWd1YdCDfWS26uA0wb70CVKRhhlJbNcz/rgXOOywPIUE3hgUdHwoITMXF+/7jzgGuz10P/9v1KeBOFHk3BWkUYRfCkjSJrCxiOW54LI7BPckv7a/c9Jbc1tKoNyL/ME6FVrcdSaQLrAw==
+           code : |1+
+            // Open the popup menu below the New button
+            OpenPopupMenu(MENU_NewCD,BTN_NewCompile..XInitial,BTN_NewCompile..YInitial+BTN_NewCompile..Height)
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : BTN_Burn
+       identifier : 0x219cbec312233bb2
+       internal_properties : CAAAAAgAAACZsHlGQLH63luSPKBjrAuApV0XSOMsz6A6B7NUqK4i5/qXtbr+fXfU+YLFVChzcmtHK0Djp4buEozK8xhpkz4Z8CVWeQeGREN4P+0uUhHgq6KkXn6rPTtBNp2ZcuQvlOTiK2s0tn/a1MEGcnqpEQRQzbXgmAN0RNHamKUlVohsVdROpGqprKyEkYpgIRPXupe0MLQmpyMIEF7OHOCSvgeHIGuDGHxCUUo2wEWWtlVPxzbYCHBg8jUOwB2c+3GlMlePVmLmU0bqSXvvt91QrDg/e/EbqX5W0UUTKivz/MjVMV3xYpk5uv27Akh3JfHqEtQtw9DO3Vel42HGrY17A2hLVl0jqsrnw0YzUcI8Y/jGom2+Ek7WJXVCJ668sKJbHe7/oChwhdsgWttf+0AOsbbIDXJ1qIStnholFgVem8jNzDDBmPPFFVPOlLm3LTJPasdOFoouTyovgYrP7lM/Bh3q9nT6k/+y4gBNT82hlqjMiccW0jzHne4w0aBVvGpoxVlxpejLEKYNIm/HSajnt+PojmRFVYDzXdbZnly7ofHnNrvo7iL/OzZtmDs0M5KK43kCTcsjbM4vOqPCg2QlXb2R1NWxLr5xWUxPfOWkN36crHTg/2vLovZppLNURfWnlKHHZRvPS88hRFTnQNT1kPsstLANnzkyzaHg/hwaWKqTudjWxXmxy88lzewR7FDzyQjvGvzJaLgaONWd0EeKWR5gV/WXp7poJZDj6mdqilNa6fUGH+eEmF08PyD97oNQJPxiKnBdfKRM/s3kW6PZnA2RXW6mZNMKHbLYMlMHXSWsyCrNIuoe
+       properties :
+        x : 97
+        y : 3
+        width : 64
+        height : 64
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAABt1qmqaP9/JHMmlTwc8Za9wKmSYybc/wJ+98h+UyheoaWyI4Fshy2jeUSC7BuKqUJb257CaI4BkYbQ2AjxI+KWapHu4PS5zQMCh6ghd922hhhzMLwz3o9SNF1zX1ik94rOveEaO8a0JMd/
+           code : |1-
+            //Retrieves the name of the compilation for the burn process
+            scListFil   is string //List of files to burn
+            sTreePath is string
+            i			 is int
+            
+            // According to the type of compilation
+            SWITCH WIN_Compile.gnCompileType
+            	CASE CompileData // Data CD/DVD
+            		// Transforms the list of files into character string
+            		HReadFirst(BurnerFile,BurnerFileID)
+            		WHILE NOT HOut()
+            			IF NOT BurnerFile.AlreadyBurned THEN
+            				// Replace the Root word by \
+            				IF BurnerFile.TreeViewPath = “Root” THEN
+            					sTreePath = “\”
+            				ELSE
+            					sTreePath = Replace(BurnerFile.TreeViewPath,“Root”,“”)	
+            				END
+            				
+            				// Replace the TAB characters by \
+            				sTreePath	= Replace(sTreePath,TAB,“\”)
+            				// Add the name of the file with its extension
+            				sTreePath	= CompleteDir(sTreePath)+fExtractPath(BurnerFile.FullPath,fFileName)+fExtractPath(BurnerFile.FullPath,fExtension)
+            				scListFil += BurnerFile.FullPath+“;”+sTreePath+CR
+            			END
+            			HReadNext(BurnerFile,BurnerFileID)
+            		END
+            	CASE CompileAudio
+            		FOR i = 1 _TO_ WIN_Compile.TABLE_Audio..Occurrence
+            			scListFil += WIN_Compile.TABLE_Audio.COL_Access_Path[i]+“;”+“”+CR
+            		END
+            	OTHER CASE
+            		
+            END
+            
+            // Start the window for burning (run the burner test, add files, burn)
+            IF NOT BurnThe_files(scListFil,WIN_Compile.gnCompileType,WIN_Compile.EDT_Name_of_CD_DVD) THEN
+            	Info(“The burn process was not performed”)
+            END
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : BTN_Erase
+       identifier : 0x219cbec312243bb2
+       internal_properties : CAAAAAgAAADYKHTaEiSiQtmVLqPVhj0ityMOkreWXRy9RnbCtvTM8D0hlf0GQPvaNNWapbZpfapgX+0aAUGMseKdJCz/rzgkm7yaRc9HvKFE0HqKKhJtKwP9Ekq/zrm2I5l750qrpBZSL5lLcwHlBMk/PuPSdksEqCOFUtt2YpeaGp65Xa5F09g2cBtlL2BkMBsGdZPRvotk2q0HeDSXyAP0WNeUpgTl9CJBtzt79AX4ZC+ljWjhnRUivIgek/dKmwkxWSrLCCuFQRhb5qyKO1PitBsFcxP7xHDyeuyahwDsqtfG5WtOG+qAXfoxNc2ueDPEabPWediCh17rjLtB4xmHEAvYHyobIMlXtXXP/GLxNR6fdiUjpCHQUEcxwCG8gJ3tVJjLxn/HLOLnE3J8SfkmaX8dcrlP9O2P3sbr9JK8vPVHaAfDlwJXTGkv609e3JfBKhiauNu1oUusM567qID46VXZ9Y4YnsbEr0ctHlYCQNiCkPSjT5B9k6QnJY0wJvs1BaJfElgpA2oSBzyIbyLW7sNNG7Po+n6kwzGqS9ELNnc+/1G4kvt7Uul7PBiVBkcgUQMXhA3iZsHH3+eLwkMtL34po+M4967SARlvbCEfV4c85EuVy5M0GNT2rDkRPKN7nAZLYkAktRXTy9XNCRmKswCstpwMExLW6e+QzDaGoHKyEoOvCw80KPHlbD6+6CuzL5mf+8G3x35NZw22kWpFN2PJrfaHRJbgSQeeJXUHuV4zySxVhBbQFPo5tI015HkifbN5kluIQnAE9irq8iZJJ4j4qAgjGWeIX9l8ff1j/ZgQwgnyepy3XMwxKg7SSDMEnw==
+       properties :
+        x : 162
+        y : 3
+        width : 64
+        height : 64
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1+
+            // Erase the CD/DVD-RW
+            // open the window for erase options.
+            BurnerName is string = BurnerList(False)
+            Open(WIN_Clear,BurnerName)
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : BTN_Info
+       identifier : 0x219cbec312253bb2
+       internal_properties : CAAAAAgAAAAa/iERkQESTbr0XDId4mKVz9tYZ+80SgsIvjYiadjyl4yl+UxgBt+55ecI55L8tTRX51gxV9FL/LwHiuFJMnkrO4oRlig+r9QjVp2imfkTxCK4rXEdR4Uagcrw+LDdsYTr3lzvWKvh7dtyQl+0aawTp++I++jt7/WSJMoNXgVXDJ9/vG5+Ggve7O8NyIUNWgwAF16kgiNYPVjWEfdaH7P/FfGdi1g4kVwIaWc6qhj7tbL0h2BBZkL+q6nnlmjULbJuK8K/7MOe2R7biz3JY2pKoc+0h6yMQ4w0awTrgpCldrXgJC91ZEhdNuc5xz/7/yVOjiKDJ0Xzguu4ymdhWBRLrzA/GlNhgfxPKx+ISeSUqYmLQ/hlh5jQMb6p6UPoBM3q/bdaEeRf8zqAr8e9Zp2yX3vGVBlCSJjrzTipc6AEXyb0rEzUybL0gVf3RdXYccwQ+um2CDThS8b9Sdl0BQpnhX4mMgLL+EGOsEkICKVn6oaRiJoTfBhpyyHokoClknMRyHXT/E83PCiRfnzLS1HzxSsnfdc49Houbr8xUyriaw9io9FzKjyti6KlFqO7de6TerKW7sWWwAbf4PsGYI8eHyCSugW/2P9J4xYcPHwg0w32pxKc64tO/tdKuJI/+94ICDkHzd7xaoKIg6pgOitu/9UrzD48hdJfAFj2FqaR/qSLvh81rUib0Oy+Nd2qhUBbPenDCA8fqXcyW+dqP5SLnK0JzFfFU8QxBVw8B00LekhbPFDnLzKWzI3Lsz0v8Lb/q4IeGoUQxYX3wgE/7FkdJdYPdql+F2U1azm1Sag7nDyYGnS2hMzqgWU1F38=
+       properties :
+        x : 227
+        y : 3
+        width : 64
+        height : 64
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1-
+            Open(WIN_DiskInfo)
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : BTN_BurnerInfos
+       identifier : 0x219cbec312263bb2
+       internal_properties : CAAAAAgAAACsxrNU3lCZXG8bxZ1U1k1f9Yev6GhwCKUrbYeev5qQzJ+aYD4j2Effq02wjKLc42+k91abzXwx/zq5IJJ3fFWR6FkGccpW94vxOSt+7uBGsr8TjTJPAPnklINIpV+5vLcx2oeRIAIcmOi4Q9mdO+wTfbd9oGXeg/jqSBiuKzA2W75/B18Jbe0zDwVqwpXF9egv9EYDROXZVEOKJSvEIScj/DxWY7keLR3WT5QK/A7PsgBOPxvomfb7dlN/l+uHVu7o5IQGFG+6XEm4UgDNXVK+Kw1VKMxcat8XM6jbUTAzFzE4tMjfDKE8vExjJmDI8cMTiQUJMRyX00YV3nRBJ3B1Z5skNuwGVc6w6tb6UZ/J7G/2GUQ3wvj5/3u+AmMXuv+TP3ANEO8gfGsaAOW2hJQOSR0BOcc2ZNHuI8hqrLl0YYtBt0KxHM9SBnoqn3qpg4Php4admUZEjAmWIzykojHQ1s2Piu37juaAge4H4R9Z1/8iam53yj94+tlIkHH69g9XX0rsB3yMigQeZMJIkxPCozy1UWdP2POym8z6iseX7U4pI/ArOwnTLUVwJr1/lJShlAsernwx5H2+ndwDRNB/jvDfrkOrmE7t0Y2dzuedbNZ8rQTI1jE0QIyJBYJanA2uLei+Ke1VtWNpNOG5McuWRyebLEt6BntOImwlQhcgDI2Uk8wTusyxTKFx2xK85LfY5MWQGeGqb743TTSo1aH6SpO462dmk4jDwPs1+JrAzj78AS1zH38m1oyz87ZKvXCyUkJmoLsqMBdkNMjbJ/XaDgaj1LoPLIc0YX4G83jzNU5+PDMVqQgBwItYcy2pVY9aI5I7mu41
+       properties :
+        x : 292
+        y : 3
+        width : 64
+        height : 64
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1+
+            Open(WIN_BurnerInfos,WIN_Compile.COMBO_BurnersList[ListSelect(WIN_Compile.COMBO_BurnersList)])
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : BTN_CloseDraw
+       identifier : 0x219cbec312293bb2
+       internal_properties : CAAAAAgAAADFDNH6hxVkC6H1wdRcIlEnNGAgHLgJ+6I21TXXDb1rz0H+8vGe0Gsa0h4JRpMIjm+IPao5ddN98oTwDb/lfsA+4INIiU47DQxNeuMuLKGGyjfscNaz6G1u+tSLlFUeg5xHC1qa5eX2ge385q3nI0pHDtOhRxYpyCOUCP1Ja/pAVIv4Ms1llaE/RksQ3odMwyKX+tnktKHKvQ/SSvWhrZQ4Q+q1weC6kINT2Sz57FbUbOF2236bt4mtx91zaw2yCN4O5CTgqahHc3DTLJQoUssqdcpSixz9XFto1bXTdXjFxzns+rqU8HPP9PJJkIzU6vyg4LJCvEJYmZKiGVIbA4Wlrnwq+Qa0ivLfFY9Cn2g0NkG5Ldgy0xtcanJsYi4NNB2i5WgNhXkxOqMhwoXUBV8MQIxBCbm+cipHNNvWEoDvon8LtJ4GpSi8dTbM6eeWGeUvA+0bmGd6VzSRA0acDO9UeiJ7eqAmAGu52LMt4ElGnMZFGr8CY9nYBrHMgwOhs2AUwkjlYvDCfCUnSpgbw62nG6m73DZlvOJjCC3NhNHkN6dsjkMF3lyMPnpglQ3WN9HXWezK5m0h7aclqx30g4ivrATp2cGarnyDy3yRyZDdSyijWsn5Qj70nTWYAskbiZRy9RaKcA8iyWEe31PrzjEMctOrqUaWtmh8VybBg5jRQsj5/v6/W0yGfUdc9hHXMxD9ujX29weZwFA1LPLNywjXGFJMI0ZV4zK7UYEjjIwlVQ6A5r/0xZPFGEXSeF51in2gz3QBdf++IW74PBvrGCuTgk1eXto=
+       properties :
+        x : 431
+        y : 3
+        width : 64
+        height : 64
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1-
+            BurnerEject(False)
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : BTN_Eject
+       identifier : 0x219cbec312283bb2
+       internal_properties : CAAAAAgAAADjEMZ8EFHb2+h0m15p+rxxucrCgNwZaMKwiUByq723GKcOPozxd9UtZ48pGu2MrAwyrBKFfse81TEfMdjmZgrP7F399OC6tskDaJAp6sddR52FHXxnVGL/bwm4tDK3q0f/Vndek03wMCgq3jAcvMvDiU/w/EVpR5RseFG0rcjG9iIsSScMRQFm2Rg5ysSpAIA3nIXmoPePPAR3CcJufjOb1bLUKJSr0kmL8lpgUINJTPhU9J4NqnBeJH5j4Co/FLhB04b1/5rpHH4YDjr+6lbeluzHp+QGcwIXNDirs08ddsYEpqfh8/tEgAb8SUp47W83j2DTAKiXFH/9lMwbau/ySvRkD0nLa3H6qnYg8oPgh8bXOtfN4DI6scwZ2k9h52v4rDJPm60ugoLAbBibvA6JWGn5Yz4cOxdY+8+I5oto97/t+/Um6gqEkYJXa0skA3LDhWOb7EDEc3f3pEwqf9pV/ITxNqSn6oDvKoqjKDfCf0ITTW7Wp7R1EVht6TYkxy81dtN1W5N4/iduRiIwlVrHJdn3toL2wqksNRZbebV24xKdXmmQI7RW9dzZxYJEL/kxGPWKFZPJI2y+cUOXYU73Vqc6eBEWfUbwbAiUAqSGIy6Rs2J5yfwBKLoGPhbuKFfYqNwYQRmYZx0eBsZPpCXdFWSqa2pO67YSDfETj53CLFx6qdUzt7O9StM5HAUjgaObdohOj8So5Ot75ve7NkxqhcACViF+Im5PtNEAXYitMSq94iBxpWvsjsEvyB7/y77aUL8d+1N/d+1mzdVHj9Rn
+       properties :
+        x : 366
+        y : 3
+        width : 64
+        height : 64
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1-
+            BurnerEject(True)
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : SHA_Shape2
+       identifier : 0x219cbec312273bb2
+       internal_properties : CAAAAAgAAADvh8lWmmS0QbvVikMWo9gXriaa+dVE6MoLPCXAkEOjSIF3Az6zVArapL/s1Y0k+oHoNWxmWsFePsGmLu0UecTZ44u8S9P33hQri8gk40rkizFVvNQnZ3GUSK/JxFRsE8VHyELqiL4pmIe65i496uOd9OVTToQJ11upewuf9xwydAT6irKATSTN0o7+CkECGsOA8BfD3yI380f/83GwGgXVNvZ+NtNwre13J13iMjxZ3l74jxLw0l6p/+geG04WqR/YDNYza5VcAwVCxXuC6PxWscEEcpD5yOuRL5KLt/0AtLq+
+       properties :
+        x : 357
+        y : 3
+        width : 8
+        height : 64
+       type : 20
+       code_elements :
+        type_code : 32
+        p_codes : []
+    type : 22
+    code_elements :
+     type_code : 35
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x219cbec312303bb2
+  internal_properties : CAAAAAgAAAAd3gQGgnjlK9iUCimA1ohEnxXFchpCek27GV52mac/B48jXwZe6kHVyrQqhNWidHh7slAVPCFvUo6vUKgBa/pVjxVa7PTz+b3sX0j1A77RdEbRnYuHuqCfwCl4DuXljQNDSdB/H+wCju1Oh0gCNJ1Cd92zkf5NRawnlNt53g+0byvt543g+g3LBdLwdM4JkJFGk8PA34slRg4HDmBZ2DzlqEZh80O/2CPUiSvJ2QI1FbEEXg47lliD87mf/yEEpR5wwdoMrrAwiWi+j2sB/uxo3JEdGdrx
+  options :
+   -
+     name : File
+     identifier : 0x219cbec312313bb2
+     internal_properties : CAAAAAgAAADLb63sTY8ujN/7Kx1t/AD+cUFrANlTKeYwULiLpeluoRpcQGQDFeL4YRGHRWfUGYFJgSasHxuPNOgTJMkQYwBMtHlVhDA8G0Wn3a7e06sxdeFvUMO6/ycfYOa3gMH8DIYMAVPT0qVN2c3wi6PbR/1mo3r10lgvjl62Jb2ot9G7LzmiPzJra/oMZLQaUf7dy2h5OK4E+cMyVo6FCvooapHzYmZ0T2r0nsvyQfDUzF/7NjAk4W3UAfLhm2PnU1ove94GcaTnkwCIcM2MJTFsazi3ONsTRs2cHeuBkTqpEFGe9WkRM/TkBkue99gHYxAzBIEpgGopXZZDrVc=
+     options :
+      -
+        name : Exit
+        identifier : 0x219cbec312323bb2
+        internal_properties : CAAAAAgAAACrfVncKjSNQekJNipWZ3eHOJgK4JXkJBQK6w2NPZQFJvDa+tsOuR7mtcv70GjNXvHD+e9ZnFuCjDIz6m049A8iZg88GDJo417hQne71NZkUQdtZf1pLcK6h/HIPuFSF2ZpT9r24y4ZgbctkWv1ETzj7UEaXYouj3e5gchisMK/xODpWlOEWbI1KFVog8XADkN0E6LRODUWsocfL3ZYzLpfs4eF5LWdXMxGTK5HEr5PyuX27v0rku/XwYxfUMEkPEOOj3lz/EN0BxB7Oqpp0cVOCm41m2fTmCHYb3WuB0UHPo1bxVMVkNNCuce48u2c2g==
+        code_elements :
+         type_code : 26
+         p_codes :
+          -
+            code : |1+
+             Close()
+            type : 32
+     code_elements :
+      type_code : 26
+      p_codes : []
+  code_elements :
+   type_code : 26
+   p_codes : []
+ popup_menus :
+  -
+    name : MENU_NewCD
+    identifier : 0x219cbec312333bb2
+    internal_properties : CAAAAAgAAAD3aIaaHOEg8rxs46m6aLho3Z+7J1vzvNMcMyFlM5PQg1H3cxh1ttEVYDCw6JY1zFOotMil6LxXuzlUgeDm9GevasnoctF0Hz8//hl++vivv30w8WbJ//gcAs6rmI4hd42N8oiKxUSNhVx3dc5PkY/diQ9yoBj4q5WMuVKERuA7s3Pa6+9FpDOoKBVITBXI6rs1nG/lXyh5Y8MTiGNXePZQYuZZ43+ZKA4AyV49w1sYUlxLh05LLECnfQcYR3QI73dpVqRWhm8GMcyI0EYx1iM8WhG7FeWcX41CFX3S0ahKGyLQiTjP5RTzqUjXcVmfBPdVe9xY05nO05NFfTvXtt7N+TKw5o9g2mrF+Ra1xcvKfdKw0NYMi9S614iPA4w7
+    options :
+     -
+       name : CD_Audio
+       identifier : 0x219cbec312343bb2
+       internal_properties : CAAAAAgAAADoLqlzDuUKCyzvHGjRlOPw75F5z3xe2gCIzc7/7WM8Gi/MJn/t6tRrQxny98MS8UniDH07goHOfPDosHn+9Hs7Kv+kqiH9qLWh1LAx3F++iMjMJc4XagFSQ1bGqlx0JcKk+p3lkXLbpby/v/mTLsHvqUduZGwpG4Wb74gD91YAv/jkhYnPJg1yrcxNI04TRX6T/lbtLivHNtJ1ABulnpzSNvi0o22/V9MXxHw+YWYZ5YrU7kcKJ7wlyekS5OmyiKG+4WZ5U8+mTC1Mfnur2Vm3qFmYXVMx0ORNXuat4DYu89b8G7xVj5YCwMdbJLH0XT3Wtz2xPVq43ZifLNAmZSBX5p1ns1RSz+4PGxYLjKyVtRIAUuC/2QrkLdNBXzL6KtU0nr13KA7us5MMPBN7pLzs9mmiXGpUYyp3YPfQpLjGSmDq9OSWojrt+pnffimtCaJcEfjLEbBRmNBp1I8=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAAA+OfrEJ/plmENe884SV6x/ewABvTSlpO4Zo/fDle92T5eofDmtbTfP7pqbmXWC79Q3gG8/g51lZA/g0p0PkNOrWCNql3quYwDVubIQtTD5De4VRG3FrRXbd00f7uzfPlFCaXsP//nUXe4HLw==
+           code : |1+
+            MDIOpen(WIN_Compile,“Compile1”,“Compilation1 - Audio CD”,“Compile1”,CompileAudio)
+           type : 32
+     -
+       name : MENU_CDDVDData
+       identifier : 0x219cbec312353bb2
+       internal_properties : CAAAAAgAAADW8e964OEzbkQR2QzP8VEXGRR0NUWpuxjRgrnlpbrh5Su3i905jo7lNfRatrcI8hxMN0gcZqiYdfE1+5jyqvT7JqTkt/oyzz2s+utiYpJc1ZrZbfqpfKpWfepaigkJ+SbR5DDh3Jptbv8mhaCqS+uBmbm3RebphtLwV/rgamxevuoKuN4Lnm/pzu1P3zaROP5g2ku1vywX4o2iZNKlutCgur4bXcTd8QgIGD8MrRzQjYiiilOGYuQVrm5X+TAUHL+oqpmSphxYzvQeAZvKdLaXSrhOxZdv8PIPnuGZ7AaCQzRFhceAa8TLUi9KkFHWaLrX3cnMML3w9dond+rLLLAzSRLeAa4oK8x8EmgS5mrwV6pw45Ud44rzZHD1k/OxQHyRcmFRSEOGipPX1wDJsvq4ydUrxm8DuAQtu8NGrqFn84ZOk2R82FpueBP9+Hnt2+lGmBTlE/u0ulPEpalGrNNSuTLZqg==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAAA+OfrEJ/plmENe884SV6x/ewABvTSlpO4Zo/fDle92T5eofDmtbTfP7pqbmXWC79Q3gG8/g51lZA/g0p0PkNOrWCNql3quYwDVubIQtTD5De4VRG3FrRXbd00f7uzfPlFCaXsP//nUXe4HLw==
+           code : |1+
+            MDIOpen(WIN_Compile,“Compile1”,“Compilation1 - Data CD/DVD”,“Compile1”,CompileData)
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+ languages :
+  - en-GB
+ message_bar :
+  internal_properties : CAAAAAgAAABLczvidRY2h/M6RhTS8zfC1ObMuMVG9jIAV5H3PC7FkUoD70AUgxeo6hVWo6AoNTr39FNzWbOxSmU2WAxdV91Tl0Ea8HVWHBZj3qkklzADS/9PGijdmtcuahfJn9f+
+  controls :
+   -
+     name : SBC_Cell1
+     identifier : 0x219cbec3122a3bb2
+     internal_properties : CAAAAAgAAABmmf5nFVPyjMsZvUCV9Fg8iSrDzhK3agKPDXsyZW7h5y6Tnjw93wDpsyEYI4Lf7/6UiZtRPPrY/Cmg1vpgjITZL5Au9pHISu5SM65jXVtxJqfRnjiCFv3GtR35VXXiTd4=
+     type : 62
+     code_elements :
+      type_code : 62
+      p_codes :
+       -
+         type : 15
+         enabled : false
+       -
+         type : 16
+         enabled : false
+       -
+         type : 39
+         enabled : false
+       -
+         type : 17
+         enabled : false
+   -
+     name : SBC_Cell2
+     identifier : 0x219cbec3122b3bb2
+     internal_properties : CAAAAAgAAADdLtvw5LrfI4BOCvfJhIbpE0XIbcpCYyoV+8u2Wr/q42ox1tIjwBVWTEi6a0XJ+7KH5DwYW/R6OGdLPxnfYmH9mvsdU32RGllyeTDiJrYI6gdOeOPnlbohLgo2SsrxtkU=
+     type : 62
+     code_elements :
+      type_code : 62
+      p_codes :
+       -
+         type : 15
+         enabled : false
+       -
+         type : 16
+         enabled : false
+       -
+         type : 39
+         enabled : false
+       -
+         type : 17
+         enabled : false
+   -
+     name : SBC_Cell6
+     identifier : 0x219cbec3122c3bb2
+     internal_properties : CAAAAAgAAAAHyIKVzsArhegX8cXlBvqlEa5wiX8uPMaVOcyy65C1GbMF9Lw1xs/5PRvOEWeNTU1jRmAaxKuezHqL8tUnRKVNbETGssnUfinimNvaikiytDu2MsrO917aR+GCduI8/4xquLYUIA==
+     type : 62
+     code_elements :
+      type_code : 62
+      p_codes :
+       -
+         type : 15
+         enabled : false
+       -
+         type : 16
+         enabled : false
+       -
+         type : 39
+         enabled : false
+       -
+         type : 17
+         enabled : false
+   -
+     name : SBC_Cell5
+     identifier : 0x219cbec3122d3bb2
+     internal_properties : CAAAAAgAAADv4CqNZugDLUC/id3tvpKNadYIMYcurOYFec/mX3bX+/dLaI6Zqt3hMSH49TMT81tnnPu3Oz4rXcssH+IuS5Ss3TM9/xiny95XjdMi8lBq3MM+SiJmH4aCP+maHkqkF6QC0F78SA==
+     type : 62
+     code_elements :
+      type_code : 62
+      p_codes :
+       -
+         type : 15
+         enabled : false
+       -
+         type : 16
+         enabled : false
+       -
+         type : 39
+         enabled : false
+       -
+         type : 17
+         enabled : false
+   -
+     name : SBC_Cell3
+     identifier : 0x219cbec3122e3bb2
+     internal_properties : CAAAAAgAAACsjjzzi5YA1FrqDkd1lza9ZJfapXmnFY1byjMLvjQNpJ8OT+UaKFibwkMgurFrsYDdjqJspZY1SFpoOFmQP+8hGjasb0Z/HiIDpo0gr3M8WGL29EhObyHOt4tmhWCKtd5+Q48=
+     type : 62
+     code_elements :
+      type_code : 62
+      p_codes :
+       -
+         type : 15
+         enabled : false
+       -
+         type : 16
+         enabled : false
+       -
+         type : 39
+         enabled : false
+       -
+         type : 17
+         enabled : false
+   -
+     name : SBC_Cell4
+     identifier : 0x219cbec3122f3bb2
+     internal_properties : CAAAAAgAAAAsDrxzCxaAVNpqjsf1F7Y95BdaJfknlQ3bSrPLPjSNpB+Oz+WaKFgbwkOgurHrsQDdTuKs5Vb1CBooeBlQ/6/hWvbsr4Y/3qKDJg2gL/O82OJ2dMjO76FONwvmBeAKNV7+ww8=
+     type : 62
+     code_elements :
+      type_code : 62
+      p_codes :
+       -
+         type : 15
+         enabled : false
+       -
+         type : 16
+         enabled : false
+       -
+         type : 39
+         enabled : false
+       -
+         type : 17
+         enabled : false
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAABRM1f9Dj+q+NLRmOC6h5yYnEJ3GZMUoAe5mM2TsZ+g0/h/kTke8t50mutOkNFHst45fZkvH6b1GdOEMteaMIoF40VmVmCiDVGeJDm59Io7cgeh7//12Ii2efwCnkmLQMAoi8RPlXWJVfHGQe6dTlM+Vdn67/CoM5thUXnNbKHj1xlJ6wbBPDIojdH6uaP6N5Hp4akfcNQSI9uBxSMXAkMfGR4S
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+      WinActivateDDW(WIN_Main, False)
+   -
+     code : |1+
+      
+      //Open the menu
+      Multitask(-50)
+      BTN_Eject..State		= Grayed
+      BTN_CloseDraw..State	= Grayed
+      Open(WIN_Menu)
+      BTN_Eject..State		= Active
+      BTN_CloseDraw..State	= Active
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : ActivVISTA_0_D_10_43_07__02_11_2005
+resources :
+ string_res :
+  identifier : 0x140485ff033245c6
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Toto
+     index : 0
+   -
+     text :
+      en-GB : Tata
+     index : 1
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
